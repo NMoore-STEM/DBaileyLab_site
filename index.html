@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NMSU Bailey Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&Darker+Grotesque&family=Exo:wght@700&family=Exo+2&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.js"></script>
+    <script src="accordians_01.js"></script>
+    <!--<script src="practice_01.js"></script>-->
+</head>
+
+<body>
+
+    <div class=container id=main>
+
+        <header id=header>
+
+            <a href="https://www.nmsu.edu/" id=nmsu>
+                <img src="images/red_logo.gif"></img>
+            </a>
+
+            <div id=top>
+            <h1><a href="#welcome">Bailey Lab</a></h1>
+            </div>            
+            <nav type=button class=button><a href="#projectsBG">Research</a></nav>
+            <nav type=button class=button><a href="#ourTeam">Our Team</a></nav>
+            <nav class=button id=button3><a href="#publications">Publications</a></nav>
+            <nav class=button id=button4><a>Software</a></nav>
+            <nav class=button id=button5><a>Supplementary Data</a></nav>
+            <nav class=button id=button6><a href="https://aces.nmsu.edu/herbarium/index.html">NMC Herbarium</a></nav>
+
+            <a class="nmsuBIO" href="https://bio.nmsu.edu/">
+                <img src="images\bioDept.svg"></img>
+            </a>
+
+        </header>
+
+        <div class=wrapper>
+            <main class=scroll_area>
+
+                <section class=block id=welcome>
+
+                    <h2>welcome</h2>
+
+                    <figure class=intro>
+                        <img src="images/Donovan2.JPG" alt="Dr Donovan Bailey">
+                        <figcaption>Dr. Donovan Bailey</figcaption>
+                    </figure>
+
+                    <p class=welcomeText>The variety of topics researched in my lab are selected 
+                        to engage graduate and undergraduate students in aspects 
+                        of molecular biology, integrative evolutionary biology, 
+                        and plant taxonomy, with primary focus on members of the 
+                        mustard and legume plant families (Brassicaceae and Fabaceae).
+                          These systems include numerous western US and Mexican 
+                        representatives, important semi-domesticated crop species, 
+                        and endangered species that provide well-rounded projects 
+                        involving studies derived from fieldwork, molecular biology, 
+                        and morphology.</p>
+
+                    <article>
+                        <h3>NEWS & UPDATES</h3>
+                        <li>Fall 2019 - MS student Alex Abair finished his degree and moves to the Soltis lab 
+                            (University of Florida) for the Ph.D.</li>
+                        <li>Fall 2018 - MS Sudent Vinavi Lakshman finished her degree and moves to the University 
+                            of Missouri for the Ph.D.</li>
+                        <li>Fall 2017 - Undergrad Lynsey Kovar joins the Wallace lab for her Ph.D., 
+                            University of Georgia.</li>
+                        <a class=newsLink href=#news>All news and updates...</a>
+                    </article>
+
+                </section>
+
+                    <img id=foster src="images/NMSU_Foster_Hall_cropped2.jpg" 
+                    alt="NMSU Foster Hall"></img>
+                <!--</div>-->
+                <div class=block id=projectsBG name="projects">
+                    <!--<img src="images\L thichandra.jpg">-->
+                    <section class=block id=projects>
+                        <h5>research</h5>
+                        <br>
+                        <p>As evolutionary biologists focused on plant systems, my students and I are actively 
+                            engaged in researching the evolutionary relationships among taxa, patterns of 
+                            speciation and diversification, and the development of informative classifications.</p>   
+                        <p>Over the last ten years these interests have focused increasingly on homoploid and 
+                            polyploid plant hybridization as important forms of plant-plant and plant-human 
+                            evolutionary interactions in both wild and semi-domesticated plant species.</p>
+                        <p>Our current funded research projects derived from an NSF Plant Genome Research 
+                            program Mid-Career Award entitled MCA-PGR: A Phylogenetically Informed 
+                            Investigation of Transcriptome Evolution and Transcriptome Response of the Tropical 
+                            Crop Genus Leucaena (Leguminosae) to Psyllid Herbivores. (February 2013-2016) 
+                            Please see our developing page on the <a href="http://biology-web.nmsu.edu/~bailey/Leucaena/">project</a> for further details.</p>
+                    </section>
+                    <img id=leuc01 src="images/L thichandra.jpg">
+                </div>
+
+                <section class=block id=publications>
+                    <h2 style="text-align: left;display: block;">publications</h2>
+                    <!--might add side scrolling container here-->
+                    <scroll id=hScroll>
+                        <div class=research1>
+                            <!--<img id=research2 src="images\2019_r1.jpg">-->
+                            <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15732">
+                                <img id=research2 src="images\2019_r1.jpg">
+                            </a>
+                        </div>
+                        <div class=research1>
+                            <a href="http://www.tropicalgrasslands.info/index.php/tgft/article/view/527/298">
+                                <img id=research4 src="images\L_trichandra_CEH1233_inflorescence2.jpg">
+                            </a>
+                        </div>
+                        <div class=research1>
+                            <a href="https://researchrepository.murdoch.edu.au/id/eprint/46478/1/leucaena.pdf">
+                                <img id=research3 src="images\WApastoral.jpg">
+                            </a>
+                        </div>
+                        <div class=research1>
+                            <a href="https://peerj.com/articles/7649/">
+                                <img id=research5 src="images\Asyriaca_infl_fig1.jpg">
+                            </a>
+                        </div>
+                    </scroll>
+                </section>
+
+                <section id=ourTeam>
+                    <div class=teamTop>
+                        <img src="images\bailey_lab2019.jpg">
+                        <h2 class=team>Meet Our Team</h2>
+                    </div>
+                    <person id=bailey>
+                        <img class=smallPic src="images\bailey_donovan_02_021413.jpg">
+                        <h4>dr. donovan bailey</h4>
+                            <ul class=title>New Mexico State University - 
+                                Associate Professor of Biology</ul>
+                            <ul class=education1>(Postdoc, University of Oxford 2000-2003;
+                                 Ph.D. Cornell University, 2000)</ul>
+                            <!--<ul class=education2>Ph.D. Cornell University, 2000</ul>-->
+                            <ul class=specialty><strong>Speciality:</strong> Plant systematics and evolution, 
+                                molecular evolution, Brassicaceae and Leucaena (Leguminosae).</ul>
+                        <!--</h4>-->
+                    </person>
+                    <h1>current associates</h1>
+                    <section class=currentStudents>
+                        <!--<person>
+                                <h4>Post-Docs</h4>
+                                <img class=smallPic src="">
+                                <h6>name here</h6>
+                                <ul class=title2>enter title here</ul>
+                                <ul class=specialty2><strong>Specialty:</strong>enter specialty
+                                info here</ul>
+                        </person>-->
+                        <div class=studentList>
+                            <h4 id=current>Graduates</h4>
+                            <ul class=studentName>Rubin Tamrakar</ul>
+                            <ul class=title2><strong>Speciality:</strong> 
+                                Bioinformatics and Cheatgrass</ul>
+                        </div>
+                        <div class=studentList>
+                            <h4 id=current>Undergraduates</h4>
+                            <!--<div class=studentList>-->
+                            <ul class=studentName>Rosie Balderrama-Marquez</ul>
+                            <ul class=title2><strong>Speciality:</strong> Plant adaptation to 
+                                gypsum and common garden experiments</ul>
+                            <ul class=studentName>Diana Sotelo-Gonzalez</ul>
+                            <ul class=title2><strong>Speciality:</strong> Bioinformatics</ul>
+                        </div>
+                    </section>
+                    <h1>Former Post-Docs</h1>
+                    <div class=formerPost>
+                        <div class=studentList>
+                            <img class=smallPic2 src="images\Rao1.jpg">
+                            <div class=picText>
+                                <h6>M. Nageswara-Rao<br>(Rao for short)</h6>
+                                <ul class=title2><!--dates?--><i>Leucaena</i> transcriptome project.</ul>
+                                <ul class=specialty2><strong>Speciality:</strong> Population, ecological, conservation genetics; 
+                                Genomics; Biodiversity, crop improvement; Biofuels; Stress 
+                                resistance and related topics.</ul>
+                            </div>
+                        </div>
+                        <div class=studentList>
+                            <img class=smallPic2 src="images\Dianaphoto1.JPG">
+                            <div class=picText>
+                                <h6>Diana Toups Dugas</h6>
+                                <ul class=title2><!--dates?--><i>Leucaena</i> transcriptome project.</ul>
+                                <ul class=specialty2><strong>Speciality:</strong> mRNA, miRNA, and informatics.</ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class=accordian1 id=accordian1>
+                        <div class=collapseButton id=link>
+                            <h2>Former Graduate Students</h2>
+                            <div class=expand_button>+
+                            </div>
+                        </div>
+                        <div class=collapseBody id=collapseBody>
+                                <person>
+                                    <img class=smallPic src="">
+                                    <h3>vinavi lakshman</h3>
+                                    <ul class=title2>MS Student 2013</ul>
+                                    <ul class=specialty2>Speciality: Transcriptomics, Plant 
+                                        Insect interactions, and Leucaena psyllid interactions. 
+                                        Currently a Ph.D. student with U. of Georgia.</ul>
+                                </person>
+                                <person>
+                                    <h3>allison heneghan</h3>
+                                    <ul class=title2>MS Student 2013</ul>
+                                    <img class=smallPic src="images\allif1.jpg">
+                                    <ul class=specialty2><strong>Speciality:</strong> <i>Bouteloua eriopoda</i> 
+                                        (Poaceae) and Biology Education. Currently a Biology 
+                                        instructor with the Tierra Enchantada Charter School 
+                                        in Santa Fe. </ul>
+                                    <ul></ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="">
+                                    <h3>alex abair</h3>
+                                    <ul class=title2>Ph.D Student 2012</ul>
+                                    <ul class=specialty2>Speciality: Phylogenetics, Genomics, 
+                                        Bioinformatics, Florisitcs. Currently a Ph.D. student 
+                                        with the University of Florida.</ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\Da_hern.jpg">
+                                    <h3>david hernandez</h3>
+                                    <ul class=title2>MS Student 2012</ul>
+                                    <ul class=specialty2>Speciality: Bacterial endophytes in 
+                                        Leucaena.</ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\D_morin.jpg">
+                                    <h3>david moran</h3>
+                                    <ul class=title2>MS Student 2012</ul>
+                                    <ul class=specialty2>Speciality: Boechera suffrutescens complex.</ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\nabeeh1.jpg">
+                                    <h3>nabeeh hasan</h3>
+                                    <ul class=title2>Ph.D Student 2012</ul>
+                                    <ul class=specialty2>Speciality: Population genetics in 
+                                        California Poppy and next generation sequencing. 
+                                        Currently a postdoc working on tuberculosis genomics 
+                                        and population dynamics with the University of Colorado 
+                                        Denver.</ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\lillis1.jpg">
+                                    <h3>lillis urban</h3>
+                                    <ul class=title2>Ph.D Student 2011</ul>
+                                    <ul class=specialty2>Speciality: <i>Selenia</i> and <i>Leavenworthia</i> 
+                                        (Brassicaceae) evolution and classification. Lillis 
+                                        is employed as an environmental consultant and 
+                                        botanical specialist in northern NM. In June 2014 she 
+                                        took the position as curator of the NMC herbarium.</ul>
+                                    <ul></ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\patrick2.jpg">
+                                    <h3>patrick alexander</h3>
+                                    <ul class=title2>Ph.D 2011</ul>
+                                    <ul class=specialty2>Speciality: <i>Boechera</i> systematics and 
+                                        Flora of the SW US. Patrick was previously the 
+                                        curator of the NMSU Dept of Biology Herbarium (NMC). In 
+                                        June 2014, he took a full time position in conservation 
+                                        and land management with the Chicago Botanic Garden 
+                                        (stationed in Las Cruces, NM).</ul>
+                                    <ul></ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\Raj1.jpg">
+                                    <h3>rajanikanth govindarajulu</h3>
+                                    <ul class=title2>Ph.D 2010</ul>
+                                    <ul class=specialty2>Speciality: <i>Leucaena</i> phylogenetics 
+                                        and population genetics. Raj is currently on a postdoc 
+                                        with Tia Lynn Ashmund's lab, Univ. of Pittsburgh.</ul>
+                                    <ul></ul>
+                                </person>
+                                <person>
+                                    <img class=smallPic src="images\christine1.jpg">
+                                    <h3>christine bacon</h3>
+                                    <ul class=title2>MS 2006</ul>
+                                    <ul class=specialty2>Speciality: Palm systematics. Christine 
+                                        has finished her Ph.D. with Colorado State and is 
+                                        currently on a postdoc with the Smithsonian.</ul>
+                                    <ul></ul>
+                                </person>
+                        </div>
+                    </div>
+                    <div class=accordian2 id=accordian2>
+                        <div class=collapseButton2 id=collapseButton2>
+                            <h2>Former Undergraduate Students<br>(Lab & Herbarium)</h2>
+                        </div>
+                        <div class=collapseBody2 id=collapseBody2>
+                            <ul>Sandy Cervantes</ul>
+                            <ul>Abel Cortes</ul>
+                            <ul>Kevin Delineas</ul>
+                            <ul>Gabriella Escobar</ul>
+                            <ul>Alison Fitzgerald</ul>
+                            <ul>Rease Harker</ul>
+                            <ul>Kelsi Painter</ul>
+                            <ul>Harriet Piche</ul>
+                            <ul>Jorge Porrata</ul>
+                            <ul>Lisa Schauer</ul>
+                            <ul>Dustin Taylor</ul>
+                            <ul>Daniel Trujillo</ul>
+                            <ul>Joshua Trujillo</ul>
+                            <ul>Seal Ortega-Rodriguez</ul>
+                            <ul>Lynsey Kovar</ul>
+                            <ul>Noor Muhyi</ul>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class=block id=footer>
+                    <div class=block id=left>
+                        <p>left footer content</p>
+                    </div>
+                    <div class=block id=middle>
+                        <p>middle footer content</p>
+                        <li>this</li>
+                        <li>that</li>
+                        <li>other</li>
+                    </div>
+                    <div class=block id=right>
+                        <p>right footer content</p>
+                    </div>
+                </footer>
+                <!--<script type="text/javascript">
+                function newFunction() {
+                    $(document).ready(function () {
+                        $('.collapseBody').hide();
+                    $('.open_button').click(function () {
+                        $('.collapseBody').genFx("toggle");
+                        });
+                    });
+                }
+                </script>-->
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
