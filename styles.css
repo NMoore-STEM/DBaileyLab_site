@@ -114,7 +114,7 @@ nav.button a {
     grid-template-columns: 14vw 12vw 12vw 12vw 12vw 12vw 12vw 14vw;
     grid-template-rows: 63px 44px;
     z-index: 3;
-    min-height: 90px;
+    min-height: 107px;
 }
 #top {
     /*position: absolute;*/
@@ -227,7 +227,7 @@ img {
     padding-top: 13.5vh;
     overflow: hidden;
     align-content: center;
-    scroll-padding-top: 15vh;
+    scroll-padding-top: 107px;
     min-width: 70vw;
     grid-template-columns: 1fr 40vw 30vw 1fr;
     grid-template-rows: 67vh 67vh;
