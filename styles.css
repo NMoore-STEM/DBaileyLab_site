@@ -286,11 +286,6 @@ figcaption {
     font-family: 'Exo 2', sans-serif;
     color: dimgray;
 }
-@media (max-width: 840px) {
-    #introPic {
-        display: none;
-    }
-}
 .welcomeText {
     display: block;
     position: relative;
@@ -687,6 +682,11 @@ div.collapseButton h2 {
     grid-template-rows: 5;
     grid-column-start: 1;
 }
+}
+@media (max-width: 840px) {
+    #introPic {
+        display: none;
+    }
 }
 /*====MOBILE====*/
 @media only screen and (max-width:540px) {
