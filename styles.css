@@ -18,6 +18,7 @@ a {
     width: inherit;
     height: inherit;
     align-content: center;
+    color: black;
 }
 a:hover {
     color: green;
@@ -114,7 +115,7 @@ nav.button a {
     grid-template-columns: 14vw 12vw 12vw 12vw 12vw 12vw 12vw 14vw;
     grid-template-rows: 63px 44px;
     z-index: 3;
-    min-height: 90px;
+    min-height: 107px;
 }
 #top {
     /*position: absolute;*/
@@ -200,7 +201,6 @@ img {
 #nmsu {
     display: grid;
     min-height: 90px;
-    /*background-color: gray;*/
     align-content: center;
     justify-items: center;
     grid-row-start: 1;
@@ -216,7 +216,6 @@ img {
     min-width: 110px;
     /*max-height: 80px;*/
     min-height: 95px;
-    /*background-color: gray;*/
     /*grid-column-start: 13;*/
     grid-row-end: span 2;
     z-index: 3;
@@ -224,23 +223,23 @@ img {
 .wrapper {
     display: grid;
     position: relative;
-    padding-top: 13.5vh;
+    padding-top: 107px;
     overflow: hidden;
     align-content: center;
     scroll-padding-top: 15vh;
     min-width: 70vw;
     grid-template-columns: 1fr 40vw 30vw 1fr;
-    grid-template-rows: 67vh 67vh;
+    grid-template-rows: 67vh 20.5vh;
     z-index: 1;
 }
 .scroll_area {
     display: inline-grid;
     position: relative;
-    height: 86.5vh;
+    /*height: 86.5vh;*/
     overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    grid-row-start: 1;
+    /*grid-row-start: 1;*/
     grid-row-end: span 2;
     grid-column-start: 2;
     grid-column-end: span 2;
@@ -286,6 +285,11 @@ figcaption {
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     color: dimgray;
+}
+@media (max-width: 840px) {
+    #introPic {
+        display: none;
+    }
 }
 .welcomeText {
     display: block;
@@ -682,6 +686,7 @@ div.collapseButton h2 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5;
     grid-column-start: 1;
+}
 }
 /*====MOBILE====*/
 @media only screen and (max-width:540px) {
