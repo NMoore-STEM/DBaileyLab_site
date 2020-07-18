@@ -226,7 +226,7 @@ img {
     padding-top: 107px;
     overflow: hidden;
     align-content: center;
-    scroll-padding-top: 15vh;
+    scroll-padding-top: 107px;
     min-width: 70vw;
     grid-template-columns: 1fr 40vw 30vw 1fr;
     grid-template-rows: 67vh 20.5vh;
