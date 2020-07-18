@@ -18,6 +18,7 @@ a {
     width: inherit;
     height: inherit;
     align-content: center;
+    color: black;
 }
 a:hover {
     color: green;
@@ -202,7 +203,6 @@ img {
 #nmsu {
     display: grid;
     min-height: 90px;
-    /*background-color: gray;*/
     align-content: center;
     justify-items: center;
     grid-row-start: 1;
@@ -218,7 +218,6 @@ img {
     min-width: 110px;
     /*max-height: 80px;*/
     min-height: 95px;
-    /*background-color: gray;*/
     /*grid-column-start: 13;*/
     grid-row-end: span 2;
     z-index: 3;
@@ -280,6 +279,11 @@ figcaption {
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     color: dimgray;
+}
+@media only screen and (max-width:1100px) {
+    #introPic {
+        display: none !important;
+    }
 }
 .welcomeText {
     display: block;
@@ -679,7 +683,8 @@ div.collapseButton h2 {
 }
 }
 /*====MOBILE====*/
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:840px) {
+    
 }
 /*====TABLET====*/
 @media only screen and (max-width: 1024px) and (min-width: 541px) {}
