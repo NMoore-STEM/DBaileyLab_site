@@ -59,12 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container {
     background-color: #D1D2D4;
-    /*height: 100vh;*/
+    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    height:auto;
 }
 .button {
     font-family: 'Darker Grotesque', sans-serif;
