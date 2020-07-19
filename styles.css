@@ -255,10 +255,21 @@ img {
     display: block;
     position: relative;
     /*justify-self: left;*/
-    padding: 2vh 1em 0 1em;
+    /*padding: 2vh 1em 0 1em;*/
     max-height: 80vh;
     min-height: 65vh;
     /*min-height: 58vh;*/
+    /*min-width: 40vw;*/
+    /*max-width: 40vw;*/
+    background-color: white;
+    z-index: 2;
+}
+.welcomeSub {
+    display: block;
+    position: relative;
+    /*padding: 2vh 1em 0 1em;*/
+    max-height: 80vh;
+    min-height: 65vh;
     min-width: 40vw;
     max-width: 40vw;
     background-color: white;
