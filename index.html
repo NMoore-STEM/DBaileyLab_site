@@ -25,7 +25,7 @@
             <div id=top>
             <h1><a href="#welcome">Bailey Lab</a></h1>
             </div>            
-            <nav type=button class=button><a href="#projectsBG">Research</a></nav>
+            <nav type=button class=button><a href="#research">Research</a></nav>
             <nav type=button class=button><a href="#ourTeam">Our Team</a></nav>
             <nav class=button id=button3><a href="#publications">Publications</a></nav>
             <nav class=button id=button4><a>Software</a></nav>
@@ -41,46 +41,50 @@
         <div class=wrapper>
             <main class=scroll_area>
 
-                <section class=block id=welcome>
+                <section id=welcome>
+                    <div class=welcomeSub>
 
-                    <h2>welcome</h2>
+                        <h2>welcome</h2>
 
-                    <figure class=intro id=introPic>
-                        <img src="images/Donovan2.JPG" alt="Dr Donovan Bailey">
-                        <figcaption>Dr. Donovan Bailey</figcaption>
-                    </figure>
+                        <figure class=intro id=introPic>
+                            <img src="images/Donovan2.JPG" alt="Dr Donovan Bailey">
+                            <figcaption>Dr. Donovan Bailey</figcaption>
+                        </figure>
 
-                    <p class=welcomeText>The variety of topics researched in my lab are selected 
-                        to engage graduate and undergraduate students in aspects 
-                        of molecular biology, integrative evolutionary biology, 
-                        and plant taxonomy, with primary focus on members of the 
-                        mustard and legume plant families (Brassicaceae and Fabaceae).
-                          These systems include numerous western US and Mexican 
-                        representatives, important semi-domesticated crop species, 
-                        and endangered species that provide well-rounded projects 
-                        involving studies derived from fieldwork, molecular biology, 
-                        and morphology.</p>
+                        <p class=welcomeText>The variety of topics researched in my lab are selected 
+                            to engage graduate and undergraduate students in aspects 
+                            of molecular biology, integrative evolutionary biology, 
+                            and plant taxonomy, with primary focus on members of the 
+                            mustard and legume plant families (Brassicaceae and Fabaceae).
+                            These systems include numerous western US and Mexican 
+                            representatives, important semi-domesticated crop species, 
+                            and endangered species that provide well-rounded projects 
+                            involving studies derived from fieldwork, molecular biology, 
+                            and morphology.</p>
 
-                    <article>
-                        <h3>NEWS & UPDATES</h3>
-                        <li>Fall 2019 - MS student Alex Abair finished his degree and moves to the Soltis lab 
-                            (University of Florida) for the Ph.D.</li>
-                        <li>Fall 2018 - MS Sudent Vinavi Lakshman finished her degree and moves to the University 
-                            of Missouri for the Ph.D.</li>
-                        <li>Fall 2017 - Undergrad Lynsey Kovar joins the Wallace lab for her Ph.D., 
-                            University of Georgia.</li>
-                        <a class=newsLink href=#news>All news and updates...</a>
-                    </article>
-
-                </section>
+                        <article>
+                            <h3>NEWS & UPDATES</h3>
+                            <li>Fall 2019 - MS student Alex Abair finished his degree and moves to the Soltis lab 
+                                (University of Florida) for the Ph.D.</li>
+                            <li>Fall 2018 - MS Sudent Vinavi Lakshman finished her degree and moves to the University 
+                                of Missouri for the Ph.D.</li>
+                            <li>Fall 2017 - Undergrad Lynsey Kovar joins the Wallace lab for her Ph.D., 
+                                University of Georgia.</li>
+                            <a class=newsLink href=#news>All news and updates...</a>
+                        </article>
+                    </div>
 
                     <img id=foster src="images/NMSU_Foster_Hall_cropped2.jpg" 
                     alt="NMSU Foster Hall"></img>
+
+                </section>
+
+                    <!--<img id=foster src="images/NMSU_Foster_Hall_cropped2.jpg" 
+                    alt="NMSU Foster Hall"></img>-->
                 <!--</div>-->
-                <div class=block id=projectsBG name="projects">
-                    <!--<img src="images\L thichandra.jpg">-->
-                    <section class=block id=projects>
-                        <h5>research</h5>
+                <section id=research name="research interests">
+                    <div id=researchText>
+                        <h5>research interests</h5>
                         <br>
                         <p>As evolutionary biologists focused on plant systems, my students and I are actively 
                             engaged in researching the evolutionary relationships among taxa, patterns of 
@@ -93,16 +97,15 @@
                             Investigation of Transcriptome Evolution and Transcriptome Response of the Tropical 
                             Crop Genus Leucaena (Leguminosae) to Psyllid Herbivores. (February 2013-2016) 
                             Please see our developing page on the <a href="http://biology-web.nmsu.edu/~bailey/Leucaena/">project</a> for further details.</p>
-                    </section>
+                    </div>
                     <img id=leuc01 src="images/L thichandra.jpg">
-                </div>
+                </section>
 
-                <section class=block id=publications>
+                <section id=publications>
                     <h2 style="text-align: left;display: block;">publications</h2>
                     <!--might add side scrolling container here-->
                     <scroll id=hScroll>
                         <div class=research1>
-                            <!--<img id=research2 src="images\2019_r1.jpg">-->
                             <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15732">
                                 <img id=research2 src="images\2019_r1.jpg">
                             </a>
@@ -137,10 +140,8 @@
                                 Associate Professor of Biology</ul>
                             <ul class=education1>(Postdoc, University of Oxford 2000-2003;
                                  Ph.D. Cornell University, 2000)</ul>
-                            <!--<ul class=education2>Ph.D. Cornell University, 2000</ul>-->
                             <ul class=specialty><strong>Speciality:</strong> Plant systematics and evolution, 
                                 molecular evolution, Brassicaceae and Leucaena (Leguminosae).</ul>
-                        <!--</h4>-->
                     </person>
                     <h1>current associates</h1>
                     <section class=currentStudents>
@@ -160,7 +161,6 @@
                         </div>
                         <div class=studentList>
                             <h4 id=current>Undergraduates</h4>
-                            <!--<div class=studentList>-->
                             <ul class=studentName>Rosie Balderrama-Marquez</ul>
                             <ul class=title2><strong>Speciality:</strong> Plant adaptation to 
                                 gypsum and common garden experiments</ul>
@@ -317,33 +317,22 @@
                     </div>
                 </section>
 
-                <footer class=block id=footer>
-                    <div class=block id=left>
+                <footer id=footer>
+                    <div id=left>
                         <p>left footer content</p>
                     </div>
-                    <div class=block id=middle>
+                    <div id=middle>
                         <p>middle footer content</p>
                         <li>this</li>
                         <li>that</li>
                         <li>other</li>
                     </div>
-                    <div class=block id=right>
+                    <div id=right>
                         <p>right footer content</p>
                     </div>
                 </footer>
-                <!--<script type="text/javascript">
-                function newFunction() {
-                    $(document).ready(function () {
-                        $('.collapseBody').hide();
-                    $('.open_button').click(function () {
-                        $('.collapseBody').genFx("toggle");
-                        });
-                    });
-                }
-                </script>-->
             </main>
         </div>
     </div>
-    
 </body>
 </html>

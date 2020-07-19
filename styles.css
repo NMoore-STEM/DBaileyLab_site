@@ -59,9 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container {
     background-color: #D1D2D4;
-    /*height: 100vh;*/
+    height: 100vh;
     width: 100vw;
-    z-index: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .button {
     font-family: 'Darker Grotesque', sans-serif;
@@ -78,28 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 nav.button a {
     display: grid;
 }
-/*.button1 {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: span 1;
-    grid-row-start: 2;
-    justify-content: center;
-}
-#button2 {
-    grid-column-start: 4;
-}
-#button3 {
-    grid-column-start: 6;
-}
-#button4 {
-    grid-column-start: 8;
-}
-#button5 {
-    grid-column-start: 10;
-}
-#button6 {
-    grid-column-start: 12;
-}*/
 #nav_container {
     display: flex;
     grid-column-start: 2;
@@ -108,7 +88,7 @@ nav.button a {
 }
 #header {
     display: grid;
-    position: fixed;
+    position: sticky;
     background-color: white;
     justify-content: center;
     box-shadow: 0 0 2em black;
@@ -116,6 +96,7 @@ nav.button a {
     grid-template-rows: 63px 44px;
     z-index: 3;
     min-height: 107px;
+    top: 0;
 }
 #top {
     /*position: absolute;*/
@@ -223,33 +204,27 @@ img {
 .wrapper {
     display: grid;
     position: relative;
-    padding-top: 107px;
-    overflow: hidden;
-    align-content: center;
-    scroll-padding-top: 107px;
     min-width: 70vw;
-    grid-template-columns: 1fr 40vw 30vw 1fr;
-    grid-template-rows: 67vh 20.5vh;
+    /*grid-template-columns: 1fr 40vw 30vw 1fr;*/
+    grid-template-columns: 1fr 70vw 1fr;
+    /*grid-template-rows: 67vh 67vh;*/
     z-index: 1;
 }
 .scroll_area {
     display: inline-grid;
     position: relative;
-    /*height: 86.5vh;*/
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    /*grid-row-start: 1;*/
-    grid-row-end: span 2;
+    height: auto;
+    overflow: hidden;
     grid-column-start: 2;
-    grid-column-end: span 2;
     z-index: 1;
 }
 #foster {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin-right: -4vw;
+    margin-top: 107px;
+    margin-right: -3vw;
+    padding-top: 0;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
@@ -261,10 +236,24 @@ img {
     display: block;
     position: relative;
     /*justify-self: left;*/
-    padding: 2vh 1em 0 1em;
+    /*padding: 2vh 1em 0 1em;*/
     max-height: 80vh;
     min-height: 65vh;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
     /*min-height: 58vh;*/
+    /*min-width: 40vw;*/
+    /*max-width: 40vw;*/
+    background-color: white;
+    z-index: 2;
+    overflow: hidden;
+}
+.welcomeSub {
+    display: block;
+    position: relative;
+    /*padding: 2vh 1em 0 1em;*/
+    max-height: 80vh;
+    min-height: 65vh;
     min-width: 40vw;
     max-width: 40vw;
     background-color: white;
@@ -316,7 +305,7 @@ article h3 {
     font-family: 'Exo 2', sans-serif;
     text-decoration: underline;
 }
-#projectsBG {
+#research {
     display: block;
     position: relative;
     min-height: 60vh;
@@ -325,18 +314,21 @@ article h3 {
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 2;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
 }
 #leuc01 {
     position: absolute;
     top: 0px;
     left: 0px;
+    padding: 107px 0 0;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
     min-height: 60vh;
-    max-height: 67vh;
+    max-height: 80%;
 }
-#projects {
+#researchText {
     display: block;
     position: absolute;
     min-width: 30vw;
@@ -690,9 +682,7 @@ div.collapseButton h2 {
 }
 /*====MOBILE====*/
 @media only screen and (max-width:840px) {
-    #introPic {
-        display: none !important;
-    }
+    
 }
 /*====TABLET====*/
 @media only screen and (max-width: 1024px) and (min-width: 541px) {}
