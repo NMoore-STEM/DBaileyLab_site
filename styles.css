@@ -80,28 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 nav.button a {
     display: grid;
 }
-/*.button1 {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: span 1;
-    grid-row-start: 2;
-    justify-content: center;
-}
-#button2 {
-    grid-column-start: 4;
-}
-#button3 {
-    grid-column-start: 6;
-}
-#button4 {
-    grid-column-start: 8;
-}
-#button5 {
-    grid-column-start: 10;
-}
-#button6 {
-    grid-column-start: 12;
-}*/
 #nav_container {
     display: flex;
     grid-column-start: 2;
@@ -244,7 +222,10 @@ img {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin-right: -4vw;
+    margin-top: 107px;
+    margin-right: -3vw;
+    padding-top: 0;
+    overflow: hidden;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
@@ -259,6 +240,8 @@ img {
     /*padding: 2vh 1em 0 1em;*/
     max-height: 80vh;
     min-height: 65vh;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
     /*min-height: 58vh;*/
     /*min-width: 40vw;*/
     /*max-width: 40vw;*/
