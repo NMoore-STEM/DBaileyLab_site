@@ -110,7 +110,7 @@ nav.button a {
 }
 #header {
     display: grid;
-    position: relative;
+    position: sticky;
     background-color: white;
     justify-content: center;
     box-shadow: 0 0 2em black;
@@ -118,6 +118,7 @@ nav.button a {
     grid-template-rows: 63px 44px;
     z-index: 3;
     min-height: 107px;
+    top: 0;
 }
 #top {
     /*position: absolute;*/
