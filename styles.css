@@ -225,7 +225,6 @@ img {
     margin-top: 107px;
     margin-right: -3vw;
     padding-top: 0;
-    overflow: hidden;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
@@ -247,6 +246,7 @@ img {
     /*max-width: 40vw;*/
     background-color: white;
     z-index: 2;
+    overflow: hidden;
 }
 .welcomeSub {
     display: block;
@@ -319,6 +319,7 @@ article h3 {
     position: absolute;
     top: 0px;
     left: 0px;
+    padding: 107px 0 0;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
@@ -336,6 +337,8 @@ article h3 {
     right: 0px;
     background-color: white;
     z-index: 2;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
 }
 #publications {
     display: block;
