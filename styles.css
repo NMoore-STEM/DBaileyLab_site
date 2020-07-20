@@ -173,7 +173,7 @@ ul {
 li {
     padding: 0 1em 1em 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25vh;
+    font-size: 0.7em;
     margin: 0 0 0 3em;
 }
 img {
@@ -251,7 +251,7 @@ img {
 .welcomeSub {
     display: block;
     position: relative;
-    /*padding: 2vh 1em 0 1em;*/
+    padding: 0 2vw 1em;
     max-height: 80vh;
     min-height: 65vh;
     min-width: 40vw;
