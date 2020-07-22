@@ -1,4 +1,4 @@
-
+//accordian behavior//
 $(document).ready(function () {
     $('.collapseBody').hide();
     $('.collapseButton').click(function () {
@@ -9,3 +9,8 @@ $(document).ready(function () {
         $('.collapseBody2').slideToggle("slow");
     });
 });
+//top three list items from #news section (cloned)//
+$(function() {
+    var cloneFunction = $("#topNews").clone();
+    $("#topNewsClone").html(cloneFunction);
+  });
