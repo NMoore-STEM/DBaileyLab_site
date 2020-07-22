@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+/** {
+    border: 2px solid red;
+}*/
 /*====PC-FULL====*/
 @media only screen and (min-width: 1025px) {
 body {
@@ -223,13 +226,13 @@ img {
     top: 0px;
     right: 0px;
     margin-top: 107px;
-    margin-right: -3vw;
+    margin-right: -4vw;
     padding-top: 0;
     max-width: 110%;
     height: 100%;
     /*left: -3vw;*/
-    min-height: 58vh;
-    max-height: 67vh;
+    min-height: 60%;
+    max-height: 80%;
     /*min-width: 100%;*/
 }
 #welcome {
@@ -237,8 +240,8 @@ img {
     position: relative;
     /*justify-self: left;*/
     /*padding: 2vh 1em 0 1em;*/
-    max-height: 80vh;
-    min-height: 65vh;
+    max-height: 500px;
+    min-height: 450px;
     margin: -107px 0 0;
     padding: 107px 0 0;
     /*min-height: 58vh;*/
@@ -253,11 +256,19 @@ img {
     position: relative;
     padding: 0 2vw 1em;
     max-height: 80vh;
-    min-height: 65vh;
+    min-height: 450px;
     min-width: 40vw;
     max-width: 40vw;
     background-color: white;
     z-index: 2;
+}
+article {
+}
+article.li {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
 }
 .intro {
     display: block;
