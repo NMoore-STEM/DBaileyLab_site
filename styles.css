@@ -248,7 +248,7 @@ img {
     /*min-width: 40vw;*/
     /*max-width: 40vw;*/
     background-color: white;
-    z-index: 2;
+    z-index: 4;
     overflow: hidden;
 }
 .welcomeSub {
