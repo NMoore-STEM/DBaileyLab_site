@@ -319,7 +319,7 @@ article h3 {
     margin: 0;
     padding: 0.5em 0 0.5em 1em;
 }
-#topNews {
+#topNewsClone #topNews {
     padding-left: 0.4em;
 }
 .newsLink {
@@ -421,13 +421,6 @@ article h3 {
     background-color: white;
     grid-column-start: 1;
     grid-row-start: 4;
-}
-#news {
-    display: block;
-    position: relative;
-    height: 100%;
-    background-color: white;
-    grid-column-start: 1;
 }
 .teamTop {
     display: inline-grid;
@@ -697,10 +690,21 @@ div.collapseButton h2 {
     border-bottom: 30px solid lightgray;
 }
 #news {
-
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    grid-column-start: 1;
+    padding-top: 5vw;
 }
 #newsContainer {
-    
+    margin: 2vw 5vw 2vw 5vw;
+    padding: 2vw 3vw 2vw 4vw;
+    border: 1px solid darkgray;
+    background-color: whitesmoke;
+}
+#newsContainer li {
+    font-size: 1em;
 }
 #footer {
     display: inline-grid;
