@@ -696,6 +696,12 @@ div.collapseButton h2 {
     background-color: whitesmoke;
     border-bottom: 30px solid lightgray;
 }
+#news {
+
+}
+#newsContainer {
+    
+}
 #footer {
     display: inline-grid;
     position: relative;
