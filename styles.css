@@ -285,6 +285,7 @@ figcaption {
     padding-top: 0.1vh;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
+    font-size: 0.8em;
     color: dimgray;
 }
 @media only screen and (max-width:1180px) {
@@ -694,6 +695,12 @@ div.collapseButton h2 {
     align-items: center;
     background-color: whitesmoke;
     border-bottom: 30px solid lightgray;
+}
+#news {
+
+}
+#newsContainer {
+    
 }
 #footer {
     display: inline-grid;
