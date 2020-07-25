@@ -21,6 +21,6 @@ $(document).ready(function() {
     var width = $firstSlide.width();
 
     $firstSlide.animate({marginLeft: -width}, 1000, function(){
-        
-    }
-}
+
+    })
+});
