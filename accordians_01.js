@@ -14,3 +14,13 @@ $(function() {
     var cloneFunction = $("#topNews").clone();
     $("#topNewsClone").html(cloneFunction);
   });
+
+//Carousel Attempts
+$(document).ready(function() {
+    var $firstSlide = $('#carouselReel').find('div:first');
+    var width = $firstSlide.width();
+
+    $firstSlide.animate({marginLeft: -width}, 1000, function(){
+        
+    }
+}
