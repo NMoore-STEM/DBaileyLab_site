@@ -24,3 +24,11 @@ $(document).ready(function() {
 
     })
 });
+
+//Attempt at going in blind to write event for left carousel button
+$document.getElementByID('#carouselLeft'); (function() {
+    var $firstSlide = $('#carouselReel').find('div:first');
+    var width = $firstSlide.width();
+    var moveBack = $('#carouselReel').find('div').animate({marginRight: -width}, 1000);
+    $('#carouselLeft').onClick(moveBack);
+  })
