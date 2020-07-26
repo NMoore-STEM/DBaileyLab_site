@@ -378,16 +378,46 @@ article h3 {
     margin: -107px 0 0;
     z-index: 1;
 }
+#carouselLeft {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    top: 31.5vh;
+    left: -10px;
+    z-index: 100;
+    border: 0;
+}
+#carouselRight {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    top: 31.5vh;
+    right: -10px;
+    z-index: 100;
+    border: 0;
+}
 #carouselWindow {
     display: block ruby;
     overflow: hidden;
     height: 250px;
-    width: 66.5vw;
+    width: 60vw;
     /*overflow-x: scroll;*/
     padding-left: 3vw;
 }
 #carouselReel {
-    
+    display: inline-block;
+    min-height: 300px;
+    max-height: 300px;
+    width: max-content;
+    overflow: hidden;
 }
 .research1 {
     display: inline-block;
