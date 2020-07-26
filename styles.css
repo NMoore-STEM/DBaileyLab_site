@@ -302,7 +302,7 @@ figcaption {
     font-size: 0.8em;
     font-family: 'Exo 2', sans-serif;
     margin: 0 0 0 0;
-    padding: 1em 1em 0 0;
+    padding: 1em 1em 1em 0;
     /*float: left;*/
     /*min-width: 18vw;*/
     /*max-width: 20vw;*/
@@ -317,7 +317,7 @@ article h3 {
     font-family: 'Exo', sans-serif;
     color: black;
     margin: 0;
-    padding: 0.5em 0 0.5em 1em;
+    padding: 1em 0 0.3em 1em;
 }
 #topNewsClone #topNews {
     padding-left: 0.4em;
@@ -519,9 +519,9 @@ div#bailey {
 .smallPic2 {
     max-height: 100px;
     vertical-align: top;
-    margin-top: 1vw;
+    /*margin-top: 1vw;*/
     /*max-width: 100px;*/
-    /*margin: auto;*/
+    margin: auto;
 }
 #ourTeam h1 {
     font-size: 250%;
@@ -541,7 +541,7 @@ div#bailey {
     vertical-align: top;
     align-content: center;
     justify-content: center;
-    gap:1vw;
+    gap:3vw;
     /*margin-top: 1.5vw;*/
     margin-bottom: 4vw;
 }
@@ -552,6 +552,7 @@ div.formerPost .title2 {
     font-size: 0.95vw;
 }
 div.formerPost .studentList {
+    display: inline-flex;
     min-width: 25vw;
     max-width: 25vw;
     padding-right: 10px;
@@ -564,6 +565,10 @@ div.formerPost .specialty2 {
 .picText {
     display: inline-block;
     max-width: 20vw;
+}
+.picText h6 {
+    text-align: center;
+    padding-left: 15px;
 }
 .studentList {
     display: inline-block;
