@@ -428,14 +428,17 @@ article h3 {
 }
 #carouselWindow {
     display: block ruby;
+    position: relative;
     overflow: hidden;
     height: 250px;
     width: 60vw;
     /*overflow-x: scroll;*/
     padding-left: 3vw;
+    z-index: 50;
 }
 #carouselReel {
     display: inline-block;
+    position: absolute;
     min-height: 300px;
     max-height: 300px;
     width: max-content;

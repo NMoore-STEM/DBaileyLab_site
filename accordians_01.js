@@ -34,5 +34,5 @@ $(function() {
   });*/
 
 $('#carouselLeft').click(function(){
-      $('#carouselReel').animate({translateX: -220}), 1000;
+      $('#carouselReel').animate({left: -220}), 1000;
 })
