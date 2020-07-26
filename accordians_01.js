@@ -16,11 +16,30 @@ $(function() {
   });
 
 //Carousel Attempts
-$(document).ready(function() {
+/*$(document).ready(function() {
     var $firstSlide = $('#carouselReel').find('div:first');
     var width = $firstSlide.width();
 
     $firstSlide.animate({marginLeft: -width}, 1000, function(){
 
     })
-});
+});*/
+
+//Attempt at going in blind to write event for left carousel button
+//$document.getElementByID('#carouselLeft'); (function() {
+    /*var $firstSlide = $('#carouselReel').find('div:first');
+    var width = $firstSlide.width();
+    var moveBack = $('#carouselReel').find('div').animate({marginRight: -width}, 1000);
+    $('#carouselLeft').onClick(moveBack);
+  });*/
+
+$('#carouselLeft').click(function(){
+      $('#carouselReel').animate({left: -220}), 1000;
+})
+
+function moveLeft(){
+    $('#carouselReel').animate.style.transform = 'left: -220px'
+};
+function moveRight(){
+    $('#carouselReel').style.transform = 'right: -220px'
+}
