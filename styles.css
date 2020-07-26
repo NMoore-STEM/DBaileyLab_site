@@ -387,9 +387,10 @@ article h3 {
     width: 75px;
     height: 75px;
     top: 31.5vh;
-    left: -10px;
+    left: 3.3vw;
     z-index: 100;
     border: 0;
+    opacity: 50%;
 }
 #carouselRight {
     position: absolute;
@@ -400,9 +401,10 @@ article h3 {
     width: 75px;
     height: 75px;
     top: 31.5vh;
-    right: -10px;
+    right: 2vw;
     z-index: 100;
     border: 0;
+    opacity: 50%;
 }
 #carouselWindow {
     display: block ruby;
