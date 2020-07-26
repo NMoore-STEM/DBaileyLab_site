@@ -36,3 +36,10 @@ $(function() {
 $('#carouselLeft').click(function(){
       $('#carouselReel').animate({left: -220}), 1000;
 })
+
+function moveLeft(){
+    $('#carouselReel').animate.style.transform = 'left: -220px'
+};
+function moveRight(){
+    $('#carouselReel').style.transform = 'right: -220px'
+}
