@@ -373,8 +373,8 @@ article h3 {
     /*grid-column-start: 1;*/
     grid-column-end: span 2;
     /*padding: 0.5vw 0.5vw 4vw 2vw;*/
-    width: 67.5vw;
-    padding: 107px 0.5vw 4vw 2vw;
+    width: 60vw;
+    padding: 107px 5vw 4vw 5vw;
     margin: -107px 0 0;
     z-index: 1;
 }
@@ -388,8 +388,8 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 31.5vh;
-    left: 3.3vw;
+    top: 280px;
+    left: 2vw;
     z-index: 100;
     border: none;
     border-radius: 50%;
@@ -400,7 +400,7 @@ article h3 {
     fill: none;
     stroke: black;
     stroke-linecap: round;
-    stroke-width: 5px;
+    stroke-width: 7px;
 }
 #carouselRight {
     position: absolute;
@@ -412,7 +412,7 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 31.5vh;
+    top: 280px;
     right: 2vw;
     z-index: 100;
     border: none;
@@ -424,7 +424,7 @@ article h3 {
     fill: none;
     stroke: black;
     stroke-linecap: round;
-    stroke-width: 5px;
+    stroke-width: 7px;
 }
 #carouselWindow {
     display: block ruby;
@@ -433,7 +433,7 @@ article h3 {
     height: 250px;
     width: 60vw;
     /*overflow-x: scroll;*/
-    padding-left: 3vw;
+    /*padding-left: 3vw;*/
     z-index: 50;
 }
 #carouselReel {
