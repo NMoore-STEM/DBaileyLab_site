@@ -33,7 +33,7 @@ $(function() {
     $('#carouselLeft').onClick(moveBack);
   });*/
 
-$('#carouselLeft').click(function(){
+/*$('#carouselLeft').click(function(){
       $('#carouselReel').animate({left: -220}), 1000;
 })
 
@@ -43,3 +43,57 @@ function moveLeft(){
 function moveRight(){
     $('#carouselReel').style.transform = 'right: -220px'
 }
+
+$('#carouselLeft').click(event) {
+    $('#carouselReel').css('left', '-250px');
+}*/
+//Animations worked on the proper element//
+var tooFarLeft = $('#carouselReel').clone();
+var tooFarRight = $('#carouselReel').clone();
+function moveLeft() {
+    $('#carouselReel').animate({
+        left: '+=250'
+    }, 900, 'swing');
+    if ($('#carouselReel').is('left' >= '0')){
+        /*$('#carouselReel').css('left' >= 0)*/
+    } else {
+        $('#carouselReel').animate({
+            left: '0'
+        }, 100)
+    };
+};
+function moveRight() {
+    $('#carouselReel').animate({
+        left: '-=250'
+    }, 900, 'swing');
+    if ($('#carouselReel').is(style, 'left' <= '-1500px')){
+        /*$('#carouselReel').value('1500');*/
+    } else {
+        $('#carouselReel').animate({
+            left: '0px'
+        }, 100)
+    };
+}
+
+/*function moveRight() {
+    $this = '#carouselReel';
+    $('#carouselReel').animate($this.css({
+        translateX: '-250px',
+    }, 900, 'swing'))
+}
+function moveLeft() {
+    $('#carouselReel').animate.css({
+        translateX: '250px',
+    }, 900, 'swing')
+}*/
+
+/*function moveLeft() {
+    $('#carouselReel').css('translateX', '-250px')
+}*/
+
+/*var slideWidth = $('.research1').width();
+function moveLeft() {
+    $('#carouselReel').animate({
+        left: + slideWidth
+    }, 1000, 'slow')
+}*/
