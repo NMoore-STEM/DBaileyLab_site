@@ -48,32 +48,66 @@ $('#carouselLeft').click(event) {
     $('#carouselReel').css('left', '-250px');
 }*/
 //Animations worked on the proper element//
-var tooFarLeft = $('#carouselReel').clone();
-var tooFarRight = $('#carouselReel').clone();
 function moveLeft() {
     $('#carouselReel').animate({
         left: '+=250'
     }, 900, 'swing');
-    if ($('#carouselReel').is('left' >= '0')){
-        /*$('#carouselReel').css('left' >= 0)*/
-    } else {
-        $('#carouselReel').animate({
-            left: '0'
-        }, 100)
-    };
 };
 function moveRight() {
     $('#carouselReel').animate({
         left: '-=250'
     }, 900, 'swing');
-    if ($('#carouselReel').is(style, 'left' <= '-1500px')){
-        /*$('#carouselReel').value('1500');*/
+}
+
+
+/*var tooFar = $('#carouselReel').css('position-left').value();
+var tooFarRight = $('#carouselReel').clone();
+var deadLeft = $('#carouselLeft').event('onclick');
+//cache DOM
+var $reel = $('#carouselReel');
+var $slides = $reel.find('.research1');
+//
+var currentSlide = 1;
+
+function moveLeft() {
+    $('#carouselReel').animate({
+        left: '+=250'
+    }, 900, 'swing');
+    /*if ($('#carouselReel').is('left' >= '0')){
+        /*$('#carouselReel').css('left' >= 0)*/
+    /*if ($('#carouselReel').is('left' > '0')){
     } else {
         $('#carouselReel').animate({
-            left: '0px'
-        }, 100)
+            left: '0'
+        }, 100)*/
+    /*if (tooFar <= '0'){
+        moveLeft();
+    } else { $reel.animate({
+        left: '+0'
+    }, 100, 'swing');
+    }
     };
-}
+
+function moveRight() {
+    $reel.animate({
+        left: '-=250'
+    }, 900, 'swing');
+    /*if ($('#carouselReel').is('left', '<=', '-1500')){
+        /*$('#carouselReel').value('1500');*/
+    /*} else {
+        $('#carouselReel').animate({
+            left: '0'
+        }, 100)
+    };*/
+    /*if (tooFar > '-1500'){
+        moveRight();
+    } else { if (tooFar <= '-1500')
+        $reel.animate({
+            left: '0'
+        })
+    }
+};
+console.log(window.pageXOffset);
 
 /*function moveRight() {
     $this = '#carouselReel';
