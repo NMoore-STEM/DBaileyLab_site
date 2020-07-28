@@ -14,8 +14,26 @@ $(function() {
     var cloneFunction = $("#topNews").clone();
     $("#topNewsClone").html(cloneFunction);
   });
-
-//Carousel Attempts
+//BEST SOLUTION FOR CAROUSEL !
+function moveLeft() {
+    if ($('#carouselReel').css('left') < '0px'){
+        $('#carouselReel').animate({
+            'left': '+=250px'
+        }, 500, 'swing');
+    } else {
+            $('#carouselLeft').off('click');
+    }
+}
+function moveRight() {
+        if ($('#carouselReel').css('left') > '-1500px'){
+            $('#carouselReel').animate({
+                'left': '-=250px'
+            }, 500, 'swing');
+        } else {
+                $('#carouselRight').off('click');
+        }
+}
+//Carousel Attempts (previous)
 /*$(document).ready(function() {
     var $firstSlide = $('#carouselReel').find('div:first');
     var width = $firstSlide.width();
@@ -48,7 +66,7 @@ $('#carouselLeft').click(event) {
     $('#carouselReel').css('left', '-250px');
 }*/
 //Animations worked on the proper element//
-function moveLeft() {
+/*function moveLeft() {
     $('#carouselReel').animate({
         left: '+=250'
     }, 900, 'swing');
@@ -131,3 +149,4 @@ function moveLeft() {
         left: + slideWidth
     }, 1000, 'slow')
 }*/
+
