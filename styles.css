@@ -767,10 +767,15 @@ div.collapseButton h2 {
     display: flex;
     /*flex-direction: column;*/
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: whitesmoke;
     border-bottom: 30px solid lightgray;
+    padding: 1.5vw;
+}
+.collapseBody2 ul {
+    font-size: 1em;
+
 }
 #news {
     display: block;
