@@ -18,7 +18,7 @@ $(function() {
 function moveLeft() {
     if ($('#carouselReel').css('left') < '0px'){
         $('#carouselReel').animate({
-            'left': '+=250px'
+            'left': '+=650px'
         }, 500, 'swing');
     } else {
             $('#carouselLeft').off('click');
@@ -27,7 +27,7 @@ function moveLeft() {
 function moveRight() {
         if ($('#carouselReel').css('left') > '-1500px'){
             $('#carouselReel').animate({
-                'left': '-=250px'
+                'left': '-=650px'
             }, 500, 'swing');
         } else {
                 $('#carouselRight').off('click');
