@@ -25,7 +25,7 @@ function moveLeft() {
     }
 }
 function moveRight() {
-        if ($('#carouselReel').css('left') > '-150000px'){
+        if ($('#carouselReel').css('left') > '-15000px'){
             $('#carouselReel').animate({
                 'left': '-=650px'
             }, 500, 'swing');
