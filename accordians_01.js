@@ -21,16 +21,21 @@ function moveLeft() {
             'left': '+=650px'
         }, 500, 'swing');
     } else {
-            $('#carouselLeft').off('click');
-    }
+            $('#carouselLeft').animate({
+                'left': '=0px'
+            }, 500, 'linear');
+            };
 }
 function moveRight() {
         if ($('#carouselReel').css('left') > '-3900px'){
             $('#carouselReel').animate({
                 'left': '-=650px'
             }, 500, 'swing');
-        } else {
+        } else { 
                 $('#carouselRight').off('click');
+                /*$('#carouselReel').animate({
+                    'left': '=3900px'
+                }, 500, 'linear')*/
         }
 }
 //TEMP
