@@ -25,7 +25,7 @@ function moveLeft() {
     }
 }
 function moveRight() {
-        if ($('#carouselReel').css('left') > '-15000px'){
+        if ($('#carouselReel').css('left') > '-3900px'){
             $('#carouselReel').animate({
                 'left': '-=650px'
             }, 500, 'swing');
@@ -33,6 +33,12 @@ function moveRight() {
                 $('#carouselRight').off('click');
         }
 }
+//TEMP
+/*function moveRight() {
+    $('#carouselReel').animate({
+        'left': '-=650px'
+    }, 500, 'swing');
+}*/
 //Carousel Attempts (previous)
 /*$(document).ready(function() {
     var $firstSlide = $('#carouselReel').find('div:first');
