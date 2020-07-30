@@ -2,6 +2,7 @@
 $(document).ready(function () {
     $('.collapseBody').hide();
     $('.collapseButton').click(function () {
+        $('.collapseButton h2').toggleClass('open');
         $('.collapseBody').slideToggle("slow");
     }),
     $('.collapseBody2').hide();
@@ -46,7 +47,7 @@ function moveRight() {
         /*}
 }*/
 //TEMP
-var moveRight = function(){
+/*var moveRight = function(){
     $('#carouselReel').animate({
         left: '-=650'
     }, 500, 'swing');
@@ -56,7 +57,7 @@ var moveLeft = $('#carouselReel').animate({
 }, 500, 'swing');
 var n = ($('#carouselReel').css('left'));
 var widthCell = $('.research1').width();
-var moveOn = widthCell*3;
+var moveOn = widthCell*3;*/
 var disableLeft = $('#carouselLeft').off('click');
 var disableRight = $('#carouselRight').off('click');
 $(function(){
@@ -64,20 +65,20 @@ $(function(){
         if (($('#carouselReel').css('left')) < '0px'){
             $('#carouselReel').animate({
                 left: '+=650px'
-            }, 200);
+            }, 200, 'swing');
         } else {
             disableLeft;
         }
     });
     $('#carouselRight').on('click', function(){
-        /*if (($('#carouselReel').css('left')) > '-4200px'){*/
+        if (($('#carouselReel').css('left')) > '-3900px'){
             $('#carouselReel').animate({
                 left: '-=650px'
-            }, 200);
-        /*} /*else if (($('#carouselReel').css('left')) <= '4200px'){
+            }, 200, 'swing');
+        } else {
             disableRight;
-        }*/
-    });
+        }
+    })
 }
 
 
