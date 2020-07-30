@@ -14,8 +14,15 @@ $(function() {
     var cloneFunction = $("#topNews").clone();
     $("#topNewsClone").html(cloneFunction);
   });
-//BEST SOLUTION FOR CAROUSEL !
-function moveLeft() {
+//*Carousel stopped working correctly after adding much more content.
+/*There is an alternative which would involve having a CSS class for each
+each position and using .toggleClass and toggle sequentially through an
+array.  6 additional classes with incremental changes in left property will be
+needed. This action should be animated through JS.
+//---- .toggleClass Attempt ----//
+
+//(one of the) BEST SOLUTION(s) FOR CAROUSEL !
+/*function moveLeft() {
     if ($('#carouselReel').css('left') < '0px'){
         $('#carouselReel').animate({
             'left': '+=650px'
@@ -36,14 +43,44 @@ function moveRight() {
                 /*$('#carouselReel').animate({
                     'left': '=3900px'
                 }, 500, 'linear')*/
-        }
-}
-//TEMP
-/*function moveRight() {
-    $('#carouselReel').animate({
-        'left': '-=650px'
-    }, 500, 'swing');
+        /*}
 }*/
+//TEMP
+var moveRight = function(){
+    $('#carouselReel').animate({
+        left: '-=650'
+    }, 500, 'swing');
+}
+var moveLeft = $('#carouselReel').animate({
+    left: '+=650'
+}, 500, 'swing');
+var n = ($('#carouselReel').css('left'));
+var widthCell = $('.research1').width();
+var moveOn = widthCell*3;
+var disableLeft = $('#carouselLeft').off('click');
+var disableRight = $('#carouselRight').off('click');
+$(function(){
+    $('#carouselLeft').on('click', function(){
+        if (($('#carouselReel').css('left')) < '0px'){
+            $('#carouselReel').animate({
+                left: '+=650px'
+            }, 200);
+        } else {
+            disableLeft;
+        }
+    });
+    $('#carouselRight').on('click', function(){
+        /*if (($('#carouselReel').css('left')) > '-4200px'){*/
+            $('#carouselReel').animate({
+                left: '-=650px'
+            }, 200);
+        /*} /*else if (($('#carouselReel').css('left')) <= '4200px'){
+            disableRight;
+        }*/
+    });
+}
+
+
 //Carousel Attempts (previous)
 /*$(document).ready(function() {
     var $firstSlide = $('#carouselReel').find('div:first');
@@ -160,4 +197,4 @@ function moveLeft() {
         left: + slideWidth
     }, 1000, 'slow')
 }*/
-
+)
