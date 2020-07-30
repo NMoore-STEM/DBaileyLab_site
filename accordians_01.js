@@ -2,11 +2,12 @@
 $(document).ready(function () {
     $('.collapseBody').hide();
     $('.collapseButton').click(function () {
-        $('.collapseButton h2').toggleClass('open');
+        $('rect.vert').toggle();
         $('.collapseBody').slideToggle("slow");
     }),
     $('.collapseBody2').hide();
     $('.collapseButton2').click(function() {
+        $('rect.vert2').toggle();
         $('.collapseBody2').slideToggle("slow");
     });
 });
