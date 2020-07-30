@@ -686,6 +686,9 @@ div.formerPost .specialty2 {
     transition: rotate 2s;
     transform: rotate(90deg);
 }*/
+rect.noVert {
+    visibility: hidden;
+}
 .expand_button {
     content: "+";
     font-family: 'Arial', sans-serif;
