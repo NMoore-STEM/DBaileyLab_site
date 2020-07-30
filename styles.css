@@ -669,14 +669,43 @@ div.formerPost .specialty2 {
     margin: 3vw 0 0 0;
     height: 6vw;
 }
+/*.collapseButton h2::after {
+    content: "+";
+    color: white;
+    margin-left: 3vw;
+}
+.collapseButton h2.open::after {
+    content: "-";
+    color: darkgray;
+    text-shadow: 2px 2px 2px black;
+}
+/*.collapseButton h2:active::after {
+    content: "-";
+    color: darkgray;
+    text-shadow: 2px 2px 2px black;
+    transition: rotate 2s;
+    transform: rotate(90deg);
+}*/
 .expand_button {
-    content: "\002B";
+    content: "+";
     font-family: 'Arial', sans-serif;
     font-size: 3em;
     color: white;
     text-decoration-color: darkgray;
     display: flex;
     align-items: center;
+    width: 2vw;
+}
+.expand_button:hover {
+    color: darkgray;
+    text-shadow: 2px 2px 2px black;
+    transform: rotate(90deg);
+    transition: ;
+}
+.expand_button:visited {
+    animation: ;
+    transform: rotate(90deg);
+    content: "&#8722";
 }
 i {
     cursor: pointer;
