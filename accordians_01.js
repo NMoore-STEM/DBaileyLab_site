@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('.collapseBody2').hide();
     $('.collapseButton2').click(function() {
         $('rect.vert2').toggle();
-        $('.collapseBody2').slideToggle("slow");
+        $('.collapseBody2').slideToggle("fast");
     });
 });
 //top three list items from #news section (cloned)//
