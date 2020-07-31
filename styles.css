@@ -801,11 +801,64 @@ i {
 #footer {
     display: inline-grid;
     position: relative;
-    width: 100%;
+    width: 66vw;
+    height: 20vw;
+    padding: 3.5vw 2vw 0;
     background-color:gray;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5;
+    grid-template-columns: 3fr 2fr 3fr;
     grid-column-start: 1;
+    color: whitesmoke;
+}
+#footer * {
+    padding: 0;
+    margin:0;
+}
+#footer h3, #footer h4, #footer a {
+    color: whitesmoke !important;
+    font-family: 'Roboto', sans-serif;
+}
+#footer h4 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 100%;
+    padding: 0 0 2vw 0;
+}
+#footer h3 {
+    font-size: 1.2vw;
+}
+#middle h3:nth-of-type(2) {
+    padding-left: 2vw;
+    font-size: 1vw;
+}
+#footer a {
+    display: inline-block;
+    width: 100%;
+}
+email a {
+    display: flex;
+    flex-direction: column;
+}
+email img {
+    max-height: 30px;
+}
+email ul {
+    width: 60%;
+}
+#middle {
+    color: whitesmoke;
+}
+#middle > img {
+    height: 20px;
+    background: whitesmoke;
+}
+#left > img {
+    height: 4vw;
+}
+#left > :nth-of-type(3) {
+    width:100%;
+}
+#right a {
+    padding: 0 0 0.5vw 2vw;
 }
 }
 /*====MOBILE====*/
