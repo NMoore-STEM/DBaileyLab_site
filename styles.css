@@ -23,12 +23,12 @@ a {
     align-content: center;
     color: black;
 }
-a:hover {
+/* a:hover {
     color: green;
 }
 a:visited {
     color: black;
-}
+} */
 a:active {
     /*color: blue;*/
     background: -webkit-linear-gradient(45deg, rgb(93, 117, 250), rgb(10, 13, 165));
@@ -39,9 +39,11 @@ a:active {
 }
 nav:hover {
     background-color:whitesmoke;
-    transition: all 0.3s;
+    /*transition: all 0.3s;*/
 }
-nav:hover::after {
+
+/* lines below w pseudo-elements might need to be deleted */
+/* nav:hover::after {
     width: 0;
     height: 103%;
     top: 50%;
@@ -54,7 +56,7 @@ nav:hover::after {
     z-index: -1;
     content: '';
     overflow: hidden;
-}
+} */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
     color: black;
@@ -79,6 +81,25 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     width: 12vw;
     height: 44px;
+}
+
+/* new attempt at button animation (CSS) */
+.button a::before {
+    width: 0.1vw;
+    color: darkgray;
+    left: 5.5vw;
+    margin: 4px 0.5vw 0;
+    background: darkgray;
+    content: "";
+    height: 36px;
+    position: absolute;
+    opacity: 0.3;
+    transition: all 0.7s cubic-bezier(0.13, 1.18, 0.7, 0.84);
+}
+.button a:hover::before {
+    width: 11vw;
+    opacity: 0.8;
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 nav.button a {
     display: grid;
@@ -822,6 +843,7 @@ i {
     font-weight: bold;
     width: 100%;
     padding: 0 0 2vw 0;
+    text-shadow: 1px 1px black;
 }
 #footer h3 {
     font-size: 1.2vw;
