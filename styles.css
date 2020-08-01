@@ -85,19 +85,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /* new attempt at button animation (CSS) */
 .button a::before {
-    width: 0.1vw;
+    width: 2px;
     color: darkgray;
-    left: 5.5vw;
-    margin: 4px 0.5vw 0;
-    background: darkgray;
+    margin: 4px;
+    margin-left: 5.4vw;
+    border: 2px solid darkgray;
+    border-right: none;
+    /*background: darkgray;*/
     content: "";
-    height: 36px;
+    height: 18px;
     position: absolute;
-    opacity: 0.3;
-    transition: all 0.7s cubic-bezier(0.13, 1.18, 0.7, 0.84);
+    /* border-radius: 4px 0 4px 0; */
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.13, 1.18, 0.7, 0.84);
 }
 .button a:hover::before {
-    width: 11vw;
+    width: 5px;
+    height: 30px;
+    margin: 4px 0;
+    opacity: 0.8;
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button a::after {
+    width: 2px;
+    color: darkgray;
+    margin: 4px;
+    margin-left: 5.4vw;
+    border: 2px solid darkgray;
+    border-left: none;
+    /*background: darkgray;*/
+    content: "";
+    height: 18px;
+    position: absolute;
+    /* border-radius: 4px 0 4px 0; */
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.13, 1.18, 0.7, 0.84);
+}
+.button a:hover::after {
+    width: 5px;
+    height: 30px;
+    margin: 4px 0 4px 11.35vw;
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
