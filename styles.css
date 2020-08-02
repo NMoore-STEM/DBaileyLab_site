@@ -14,7 +14,8 @@ body {
 }
 p {
     font-family: 'Exo 2', sans-serif;
-    font-size: 1vw;
+    font-size: 0.8em;
+    margin: 0 0 1.5vw 0;
 }
 a {
     text-decoration: none;
@@ -208,7 +209,7 @@ h5 {
     font-size: 220%;
     text-align: center;
     min-width: 30vw;
-    margin: 4vh 0 2vh 0;
+    margin: 3vw 0;
 }
 h6 {
     display: inline-flex;
@@ -304,7 +305,7 @@ img {
 .welcomeSub {
     display: block;
     position: relative;
-    padding: 0 2vw 0.7em;
+    padding: 0 1vw 0.7em;
     max-height: 80vh;
     min-height: 450px;
     min-width: 40vw;
@@ -351,8 +352,8 @@ figcaption {
     position: relative;
     font-size: 0.8em;
     font-family: 'Exo 2', sans-serif;
-    margin: 0 0 0 0;
-    padding: 1em 1em 1em 0;
+    margin: 0;
+    padding: 0.8vw 1em 0 0;
     /*float: left;*/
     /*min-width: 18vw;*/
     /*max-width: 20vw;*/
