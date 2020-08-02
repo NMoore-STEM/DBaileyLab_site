@@ -647,9 +647,9 @@ div#bailey {
     vertical-align: top;
     align-content: center;
     justify-content: center;
-    gap:3vw;
+    gap:3.5vw;
     /*margin-top: 1.5vw;*/
-    margin-bottom: 4vw;
+    /*margin-bottom: 4vw;*/
 }
 div.formerPost .title2 {
     vertical-align: top;
@@ -974,6 +974,9 @@ i {
 }
 #left > :nth-of-type(3) {
     width:100%;
+}
+#right {
+    padding-right: 2vw;
 }
 #right a {
     display: inline-flex;
