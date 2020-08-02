@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 4px;
     margin-left: 5.4vw;
     border: 2px solid darkgray;
+    border-left: 4px solid darkgray;
     border-right: none;
     /*background: darkgray;*/
     content: "";
@@ -97,11 +98,11 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     /* border-radius: 4px 0 4px 0; */
     opacity: 0;
-    transition: all 0.2s cubic-bezier(0.13, 1.18, 0.7, 0.84);
+    transition: all 0.3s cubic-bezier(0.13, 1.18, 0.7, 0.84);
 }
 .button a:hover::before {
     width: 5px;
-    height: 30px;
+    height: 32px;
     margin: 4px 0;
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -112,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 4px;
     margin-left: 5.4vw;
     border: 2px solid darkgray;
+    border-right: 4px solid darkgray;
     border-left: none;
     /*background: darkgray;*/
     content: "";
@@ -119,11 +121,11 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     /* border-radius: 4px 0 4px 0; */
     opacity: 0;
-    transition: all 0.2s cubic-bezier(0.13, 1.18, 0.7, 0.84);
+    transition: all 0.3s cubic-bezier(0.13, 1.18, 0.7, 0.84);
 }
 .button a:hover::after {
     width: 5px;
-    height: 30px;
+    height: 32px;
     margin: 4px 0 4px 11.35vw;
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -850,12 +852,13 @@ i {
     display: inline-grid;
     position: relative;
     width: 66vw;
-    height: 20vw;
+    /*height: 20vw;*/
     padding: 3.5vw 2vw 0;
     background-color:gray;
-    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-columns: 6fr 5fr 5fr;
     grid-column-start: 1;
     color: whitesmoke;
+    height: min-content;
 }
 #footer * {
     padding: 0;
@@ -869,36 +872,94 @@ i {
     font-size: 1.3vw;
     font-weight: bold;
     width: 100%;
-    padding: 0 0 2vw 0;
+    padding: 0 0 1.3vw 0;
     text-shadow: 1px 1px black;
+    grid-column-start:  1;
 }
 #footer h3 {
     font-size: 1.2vw;
 }
+#left {
+    display: grid;
+    grid-template-rows: 3vw 8vw 6vw;
+    grid-template-columns: 3vw 8vw 8vw auto;
+}
+.first {
+    height: 8vw;
+    width: 8vw;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.second {
+    height: 6.5vw;
+    width: 12vw;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    position: relative;
+    left: -29px;
+    top: 12px;
+}
+.third {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    height: 5vw;
+}
 #middle h3:nth-of-type(2) {
-    padding-left: 2vw;
-    font-size: 1vw;
+    /*padding-left: 2vw;*/
+    font-size: 1.2vw;
+}
+#middle a {
+    display: inline-flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+    width: min-content;
 }
 #footer a {
+    display: inline-flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+    width: min-content;
+}
+#footer a:hover {
+    text-decoration: 2px solid darkgray;
+}
+.footerIndent {
     display: inline-block;
     width: 100%;
+    padding-top: 3px !important;
+    padding-left: 2vw !important;
+    margin-bottom: 1.5vw !important;
 }
-email a {
+.footerIndent a {
     display: flex;
     flex-direction: column;
 }
-email img {
-    max-height: 30px;
+.footerIndent a:hover {
+    text-decoration: underline;
 }
-email ul {
+.footerIndent img {
+    max-height: 20px;
+    margin-right: 6px !important;
+}
+.footerIndent ul {
     width: 60%;
+}
+.footerIndent ul:hover {
+    text-decoration: underline;
+    color: white;
+}
+.number {
+    display: flex;
+    align-items: center;
 }
 #middle {
     color: whitesmoke;
 }
 #middle > img {
     height: 20px;
-    background: whitesmoke;
+    background: transparent;
 }
 #left > img {
     height: 4vw;
@@ -907,7 +968,9 @@ email ul {
     width:100%;
 }
 #right a {
-    padding: 0 0 0.5vw 2vw;
+    display: inline-flex;
+    width: 100%;
+    padding: 5px 0;
 }
 }
 /*====MOBILE====*/
