@@ -849,6 +849,13 @@ i {
 #newsContainer li {
     font-size: 1em;
 }
+#alumni {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    grid-column-start: 1;
+}
 #footer {
     display: inline-grid;
     position: relative;
