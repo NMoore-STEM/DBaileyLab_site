@@ -14,7 +14,8 @@ body {
 }
 p {
     font-family: 'Exo 2', sans-serif;
-    font-size: 1vw;
+    font-size: 0.8em;
+    margin: 0 0 1.5vw 0;
 }
 a {
     text-decoration: none;
@@ -208,7 +209,7 @@ h5 {
     font-size: 220%;
     text-align: center;
     min-width: 30vw;
-    margin: 4vh 0 2vh 0;
+    margin: 3vw 0;
 }
 h6 {
     display: inline-flex;
