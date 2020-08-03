@@ -1017,6 +1017,27 @@ i {
     width: 100%;
     padding: 5px 0;
 }
+.copyright {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px purple;
+    margin-left: 30px;
+}
+.copyright::before::after {
+    content: "&#169 2020 ASC,LLC.";
+}
+.copyright::before {
+    font-size: 16pt;
+    background: -webkit-linear-gradient(rgb(3, 24, 218), rgb(160, 0, 160));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copyright::after {
+    color: radial(circle, rgb(160, 0, 160) 30%, rgb(3, 24, 218) 30%);
+}
 }
 /*====MOBILE====*/
 @media only screen and (max-width:840px) {
