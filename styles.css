@@ -838,7 +838,9 @@ i {
     height: 100%;
     background-color: white;
     grid-column-start: 1;
-    padding-top: 5vw;
+    margin: -107px 0 0;
+    padding: 112px 0 0;
+    /*padding-top: 5vw;*/
 }
 #newsContainer {
     margin: 2vw 5vw 2vw 5vw;
@@ -855,6 +857,8 @@ i {
     height: 100%;
     background-color: white;
     grid-column-start: 1;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
 }
 #fundingPartners {
     display: flex;
