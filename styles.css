@@ -864,6 +864,10 @@ i {
     padding: 107px 0 0;
     z-index: 1;
 }
+#alumni h2 {
+    text-align: center;
+    width: 100%;
+}
 #fundingPartners {
     display: flex;
     height: 130px;
