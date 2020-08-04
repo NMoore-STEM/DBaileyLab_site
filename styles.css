@@ -390,6 +390,7 @@ article h3 {
     grid-row-start: 2;
     margin: -107px 0 0;
     padding: 107px 0 0;
+    z-index: 5;
 }
 #leuc01 {
     position: absolute;
@@ -427,7 +428,7 @@ article h3 {
     width: 60vw;
     padding: 107px 5vw 4vw 5vw;
     margin: -107px 0 0;
-    z-index: 1;
+    z-index: 4;
 }
 #carouselLeft {
     position: absolute;
@@ -533,6 +534,7 @@ article h3 {
     grid-row-start: 4;
     margin: -107px 0 0;
     padding: 107px 0 0;
+    z-index: 3;
 }
 .teamTop {
     display: inline-grid;
@@ -838,7 +840,10 @@ i {
     height: 100%;
     background-color: white;
     grid-column-start: 1;
-    padding-top: 5vw;
+    margin: -107px 0 0;
+    padding: 112px 0 0;
+    /*padding-top: 5vw;*/
+    z-index: 2;
 }
 #newsContainer {
     margin: 2vw 5vw 2vw 5vw;
@@ -855,6 +860,9 @@ i {
     height: 100%;
     background-color: white;
     grid-column-start: 1;
+    margin: -107px 0 0;
+    padding: 107px 0 0;
+    z-index: 1;
 }
 #fundingPartners {
     display: flex;
