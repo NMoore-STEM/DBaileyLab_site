@@ -867,6 +867,19 @@ i {
 #alumni h2 {
     text-align: center;
     width: 100%;
+    margin: auto;
+}
+.headingPost {
+    display: inline-flex;
+    width: 60vw;
+    background-color: lightgray;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 2vw;
+    margin: 3vw 5vw 0 5vw;
+    height: 6vw;
+    border: none;
+    align-items: center;
 }
 #fundingPartners {
     display: flex;
