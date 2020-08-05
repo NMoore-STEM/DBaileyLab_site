@@ -844,7 +844,7 @@ i {
     z-index: 2;
 }
 #newsContainer {
-    margin: 2vw 5vw 2vw 5vw;
+    margin: 2vw 5vw 5vw 5vw;
     padding: 2vw 3vw 2vw 4vw;
     border: 1px solid darkgray;
     background-color: whitesmoke;
@@ -859,7 +859,7 @@ i {
     background-color: white;
     grid-column-start: 1;
     margin: -107px 0 0;
-    padding: 107px 0 0;
+    padding: 107px 0 3vw;
     z-index: 1;
 }
 #alumni h2 {
