@@ -943,11 +943,10 @@ i {
 #footer h4 {
     font-size: 1.3vw;
     font-weight: bold;
-    width: 100%;
+    width: auto;
     padding: 0 0 0 1.3vw;
-    border-bottom: 2px solid lightgray;
-    box-shadow: 0 1px gray;
-    margin: 0 3vw 1.3vw 0;
+    box-shadow: 0 1px lightgray;
+    margin: 0 0 1.3vw 0;
     text-shadow: 1px 1px gray;
     grid-column-start:  1;
     grid-column-end: span 1;
