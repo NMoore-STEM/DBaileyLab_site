@@ -880,34 +880,40 @@ i {
     align-items: center;
 }
 #fundingPartners {
-    display: flex;
-    height: 130px;
+    display: grid;
+    width: 62vw;
     grid-column-start: 1;
     background-color: gray;
-    padding: 4vw 4vw 6vw;
+    padding: 0 4vw 6vw;
+    margin: 3vw 0 0;
     justify-content: space-evenly;
     align-items: center;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #fundingPartners h4 {
-    position: absolute;
-    align-self: baseline;
+    width: 100%;
+    text-align: center;
     padding: 0;
+    margin: 2vw 0 2vw;
     color: whitesmoke;
     text-shadow: 0 1px darkgray;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+.first, .second, .third {
+    grid-row-start: 2;
+    margin: auto;
 }
 .first {
-    height: 8vw;
-    width: 8vw;
-    align-self: end;
+    max-height: 150px;
 }
 .second {
-    height: 6.5vw;
-    width: 12vw;
-    align-self: end;
+    max-height: 70px;
 }
 .third {
-    height: 5vw;
-    align-self: end;
+    max-height: 120px;
 }
 #footer {
     display: block;
