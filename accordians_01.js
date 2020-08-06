@@ -20,7 +20,29 @@ $(function() {
 /*There is an alternative which would involve having a CSS class for each
 each position and using .toggleClass and toggle sequentially through an
 array.  6 additional classes with incremental changes in left property will be
-needed. This action should be animated through JS.
+needed. This action should be animated through JS. */
+
+// try manipulating div position with:
+
+$(function() {
+    var ofs = $('#carouselReel').offset();
+
+    $('#carouselLeft').on('click', function() {
+
+        if (ofs.left > '0px') {
+            $('#carouselReel').animate(ofs.left += '650px', 500, swing);
+        }
+        $('#carouselLeft').off('click');
+    });
+    $('#carouselRight').on('click', function() {
+
+        if (ofs.left <= '-3900px') {
+            $('#carouselReel').animate(ofs.left -= '650px', 500, swing);
+        }
+        $('#carouselRight').off('click');
+    });
+}
+
 //---- .toggleClass Attempt ----//
 
 //(one of the) BEST SOLUTION(s) FOR CAROUSEL !
