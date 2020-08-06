@@ -24,7 +24,7 @@ needed. This action should be animated through JS. */
 
 // try manipulating div position with:
 
-$(function() {
+/* $(function() {
     var ofs = $('#carouselReel').offset();
 
     $('#carouselLeft').on('click', function() {
@@ -41,7 +41,7 @@ $(function() {
         }
         $('#carouselRight').off('click');
     });
-}
+} */
 
 //---- .toggleClass Attempt ----//
 
