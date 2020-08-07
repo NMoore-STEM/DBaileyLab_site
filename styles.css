@@ -508,14 +508,31 @@ article h3 {
 }
 .research1 .overlayTitle {
     opacity: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    /* white-space: nowrap; */
+    position: absolute;
+    overflow: hidden;
+    top: 0;
     color: black;
     background-color: whitesmoke;
-    z-index: 20;
-    width: inherit;
-    height: inherit;
+    width: 180px;
+    max-width: 180px;
+    height: 180px;
+    padding: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
 }
 .research1:hover .overlayTitle {
-    opacity: 0.4;
+    opacity: 0.7;
+    transition: 0.8s fade-in;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 #research2 {
     display: block;
