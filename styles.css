@@ -487,7 +487,7 @@ article h3 {
 #carouselReel {
     display: inline-block;
     position: absolute;
-    width: 2000px;
+    width: 2220px;
     height: 450px;
     overflow: hidden;
 }
@@ -497,7 +497,25 @@ article h3 {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    margin: 0.75vw;
+    margin: 12px;
+    transition: 0.5s ease;
+}
+.research1:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.research1 .overlayTitle {
+    opacity: 0;
+    color: black;
+    background-color: whitesmoke;
+    z-index: 20;
+    width: inherit;
+    height: inherit;
+}
+.research1:hover .overlayTitle {
+    opacity: 0.4;
 }
 #research2 {
     display: block;
@@ -516,9 +534,69 @@ article h3 {
 #research5 {
     display: block;
     position: relative;
-    top: -3px;
-    left: -3px;
+    top: -4px;
+    left: -25px;
     height: 103%;
+}
+#research6 {
+    width: 110%;
+    left: -10px;
+    position: relative;
+    top: -8px;
+}
+#research7 {
+    height: 100%;
+    position: absolute;
+    right: -5px;
+}
+#research8 {
+    width: 140%;
+    left: -80px;
+    position: relative;
+}
+#research9 {
+    height: 100%;
+    position: relative;
+}
+#research10 {
+    height: 100%;
+}
+#research11 {
+    height: 100%;
+}
+#research12 {
+    height: 110%;
+}
+#research13 {
+    height: 100%;
+    left: -30px;
+    position: relative;
+}
+#research14 {
+    height: 130%;
+    left: -60px;
+    position: relative;
+}
+#research15 {
+    width: 100%;
+    top: -100px;
+    position: relative;
+}
+#research16 {
+    height: 100%;
+}
+#research17 {
+    height: 100%;
+    position: relative;
+    left: -40px;
+}
+#research18 {
+    height: 105%;
+}
+#research20 {
+    height: 100%;
+    left: -50px;
+    position: relative;
 }
 #ourTeam {
     display: block;
