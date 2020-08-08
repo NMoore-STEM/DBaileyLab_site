@@ -763,6 +763,13 @@ div.formerPost .title2 {
     padding: 0 0 8px 1vw;
     font-size: 0.95vw;
 }
+.studentList {
+    display: inline-block;
+    min-width: 25vw;
+    max-width: 25vw;
+    background-color:rgb(223, 223, 223);
+    padding-left: 1vw;
+}
 .headingPost .studentList {
     display: grid;
     min-width: 25vw;
@@ -772,7 +779,7 @@ div.formerPost .title2 {
     background-color: rgb(223, 223, 223);
     padding-left: 1vw;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
 }
 .headingPost .smallPic2 {
     margin: auto;
@@ -786,10 +793,10 @@ div.formerPost .title2 {
 .headingPost .specialty2 {
     display: block;
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: span 2;
     grid-row-start: 2;
-    padding: 2vw 2vw 0 2vw;
-    max-width: 16vw;
+    padding: 0 15px 0 4vw;
+    max-width: 25vw;
     font-size: 1.1vw;
 }
 .picText {
@@ -800,13 +807,7 @@ div.formerPost .title2 {
     text-align: center;
     padding-left: 15px;
 }
-.studentList {
-    display: inline-block;
-    min-width: 25vw;
-    max-width: 25vw;
-    background-color:rgb(223, 223, 223);
-    padding-left: 1vw;
-}
+
 #current {
     display: block;
     margin: 0.8vw 0 1vw 0;
