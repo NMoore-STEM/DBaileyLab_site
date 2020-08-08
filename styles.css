@@ -733,6 +733,7 @@ div#bailey {
     /*margin-top: 1vw;*/
     /*max-width: 100px;*/
     margin: auto;
+    border-radius: 50% 0;
 }
 #ourTeam h1 {
     font-size: 250%;
@@ -836,7 +837,7 @@ div.formerPost .title2 {
     cursor: pointer;
     display: inline-flex;
     width: 60vw;
-    background-color: lightgray;
+    background-color: silver;
     justify-content: center;
     flex-flow: wrap;
     gap: 2vw;
@@ -890,6 +891,7 @@ i {
     max-height: 6vw;
     min-height: 6vw;
     justify-self: center;
+    border-radius: 0 50%;
 }
 .accordian1 h3 {
     grid-column-start: 1;
@@ -921,7 +923,7 @@ i {
     display: inline-flex;
     flex-direction: column;
     width: 60vw;
-    background-color: lightgray;
+    background-color: silver;
     justify-content: center;
     margin: 3vw 0 0 0;
     height: 6vw;
@@ -967,6 +969,9 @@ i {
     /*padding-top: 5vw;*/
     z-index: 2;
 }
+#news h1 {
+    padding: 40px 0 25px 0;
+}
 #newsContainer {
     margin: 2vw 5vw 5vw 5vw;
     padding: 2vw 3vw 2vw 4vw;
@@ -980,11 +985,14 @@ i {
     display: block;
     position: relative;
     height: 100%;
-    background-color: white;
+    background-color: darkgray;
     grid-column-start: 1;
     margin: -107px 0 0;
     padding: 107px 0 3vw;
     z-index: 1;
+}
+#alumni h1 {
+    padding: 40px 0 10px 0;
 }
 #alumni h2 {
     text-align: center;
@@ -994,11 +1002,12 @@ i {
 .headingPost {
     display: inline-flex;
     width: 60vw;
-    background-color: lightgray;
+    background-color: silver;
     justify-content: center;
     flex-flow: wrap;
     gap: 2vw;
     margin: 3vw 5vw 0 5vw;
+    padding: 0 0 30px;
     /* height: 6vw; */
     border: none;
     align-items: center;
