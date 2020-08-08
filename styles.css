@@ -508,7 +508,7 @@ article h3 {
 }
 .research1 .overlayTitle {
     opacity: 0;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -577,6 +577,7 @@ article h3 {
 }
 #research10 {
     height: 100%;
+    position: relative;
 }
 #research11 {
     height: 100%;
