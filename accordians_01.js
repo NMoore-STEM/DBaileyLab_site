@@ -104,7 +104,15 @@ $(function(){
     })
 }
 
-
+/* Carousel Brainstorming --------------
+--need to move #carouselReel to reveal all images
+--buttons/click will control the movement of this element
+--heights will not change on any of these elements (aside from the scaling)
+--the left attribute WILL change
+--the right attribute WILL change - keep from scrolling left past value
+--need to add "swipe" motion for mobile
+--could add grab and drag
+-------------------------------------- */
 //Carousel Attempts (previous)
 /*$(document).ready(function() {
     var $firstSlide = $('#carouselReel').find('div:first');
