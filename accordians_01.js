@@ -87,7 +87,7 @@ $(function(){
     $('#carouselLeft').on('click', function(){
         if (($('#carouselReel').css('left')) < '0px'){
             $('#carouselReel').animate({
-                left: '+=650px'
+                left: '+=685px'
             }, 200, 'swing');
         } else {
             disableLeft;
@@ -96,7 +96,7 @@ $(function(){
     $('#carouselRight').on('click', function(){
         if (($('#carouselReel').css('left')) > '-3900px'){
             $('#carouselReel').animate({
-                left: '-=650px'
+                left: '-=685px'
             }, 200, 'swing');
         } else {
             disableRight;
