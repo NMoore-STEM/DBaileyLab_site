@@ -419,7 +419,7 @@ article h3 {
     background-color: #808284;
     grid-column-end: span 2;
     width: 60vw;
-    padding: 107px 5vw 8vw 5vw;
+    padding: 137px 5vw 8vw 5vw;
     margin: -107px 0 0;
     z-index: 4;
 }
@@ -433,7 +433,7 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 385px;
+    top: 420px;
     left: 2vw;
     z-index: 100;
     border: 1px solid darkgray;
@@ -457,7 +457,7 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 385px;
+    top: 420px;
     right: 2vw;
     z-index: 100;
     border: none;
