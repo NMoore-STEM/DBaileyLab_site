@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 /** {
-    border: 2px solid red;
+    outline: 2px solid red;
 }*/
 /*====PC-FULL====*/
 @media only screen and (min-width: 1025px) {
@@ -283,22 +283,17 @@ img {
     height: 100%;
     /*left: -3vw;*/
     min-height: 60%;
-    max-height: 80%;
+    max-height: 550px;
     /*min-width: 100%;*/
 }
 #welcome {
     display: block;
     position: relative;
-    /*justify-self: left;*/
-    /*padding: 2vh 1em 0 1em;*/
     width: 70vw;
-    max-height: 500px;
-    min-height: 450px;
+    max-height: 550px;
+    min-height: 550px;
     margin: -107px 0 0;
     padding: 107px 0 0;
-    /*min-height: 58vh;*/
-    /*min-width: 40vw;*/
-    /*max-width: 40vw;*/
     background-color: white;
     z-index: 6;
     overflow: hidden;
@@ -307,15 +302,12 @@ img {
     display: block;
     position: relative;
     padding: 0 1vw 0.7em;
-    max-height: 80vh;
-    min-height: 450px;
+    max-height: 550px;
+    min-height: 550px;
     min-width: 40vw;
     max-width: 40vw;
     background-color: white;
     z-index: 2;
-}
-article {
-    /*background-color: blue;*/
 }
 article.li {
     white-space: nowrap;
@@ -347,6 +339,9 @@ figcaption {
     .welcomeSub {
         padding: 12px 2vw 1em;
     }
+    #foster {
+        right: -55px;
+    }
 }
 .welcomeText {
     display: block;
@@ -362,7 +357,7 @@ figcaption {
 }
 article {
     display: inline-block;
-    vertical-align: bottom;
+    margin-top: 2vw;
 }
 article h3 {
     text-align: left;
@@ -513,7 +508,7 @@ article h3 {
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1em;
     text-align: center;
     text-overflow: ellipsis;
     -webkit-line-clamp: 4;
