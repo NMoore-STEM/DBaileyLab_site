@@ -456,7 +456,7 @@ article h3 {
 #inlineSVG_1 {
     opacity: 70%;
     fill: none;
-    stroke: white;
+    stroke: black;
     stroke-linecap: round;
     stroke-width: 7px;
 }
@@ -859,6 +859,12 @@ div.formerPost .title2 {
     border: none;
     align-items: center;
 }
+.collapseButton:hover {
+    /*margin-bottom: 10px;*/
+    box-shadow: 0 3px 10px -8px black;
+    outline: 2px solid gray;
+    /*transition: 0.3s ease;*/
+}
 .expand_button {
     position: absolute;
     width: 2vw;
@@ -942,6 +948,11 @@ i {
     height: 6vw;
     border: none;
     align-items: center;
+}
+.collapseButton2:hover {
+    box-shadow: 0 3px 10px -8px black;
+    outline: 2px solid gray;
+    /*transition: 0.3s ease;*/
 }
 .collapseButton2 h2 {
     font-size: 1.9vw;
