@@ -419,11 +419,11 @@ article h3 {
     margin: -107px 0 0;
     z-index: 4;
 }
+/* -- Alternate carousel button style (darker grays, more translucent
 #carouselLeft {
     position: absolute;
     display: block;
     cursor: cell;
-    /*background-color: transparent;*/
     background: gray;
     padding: 0;
     margin: 0;
@@ -435,6 +435,23 @@ article h3 {
     border: 1px solid darkgray;
     border-radius: 50%;
     opacity: 50%;
+}  --  */
+#carousel_NavLeft {
+    position: absolute;
+    display: block;
+    cursor:cell;
+    /*background-color: transparent;*/
+    background: lightgray;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    top: 420px;
+    left: 2vw;
+    z-index: 100;
+    border: none;
+    border-radius: 50%;
+    opacity: 30%;
 }
 #inlineSVG_1 {
     opacity: 70%;
@@ -443,7 +460,7 @@ article h3 {
     stroke-linecap: round;
     stroke-width: 7px;
 }
-#carouselRight {
+#carousel_NavRight {
     position: absolute;
     display: block;
     cursor:cell;
@@ -458,7 +475,7 @@ article h3 {
     z-index: 100;
     border: none;
     border-radius: 50%;
-    opacity: 50%;
+    opacity: 30%;
 }
 #inlineSVG_2 {
     opacity: 70%;
@@ -478,7 +495,7 @@ article h3 {
     width: 60vw;
     margin-top: 3vw;
     z-index: 50;
-    box-shadow: 4px 4px 20px inset;
+    /*box-shadow: 4px 4px 20px inset;*/
 }
 #carouselReel {
     display: inline-block;
@@ -1190,6 +1207,7 @@ i {
     font-size: 16pt;
     background: -webkit-linear-gradient(rgb(3, 24, 218), rgb(160, 0, 160));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .copyright::after {
