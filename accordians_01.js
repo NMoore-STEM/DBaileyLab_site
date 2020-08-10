@@ -81,10 +81,10 @@ var moveLeft = $('#carouselReel').animate({
 var n = ($('#carouselReel').css('left'));
 var widthCell = $('.research1').width();
 var moveOn = widthCell*3;*/
-var disableLeft = $('#carouselLeft').off('click');
-var disableRight = $('#carouselRight').off('click');
+var disableLeft = $('#carousel_NavLeft').off('click');
+var disableRight = $('#carousel_NavRight').off('click');
 $(function(){
-    $('#carouselLeft').on('click', function(){
+    $('#carousel_NavLeft').on('click', function(){
         if (($('#carouselReel').css('left')) < '0px'){
             $('#carouselReel').animate({
                 left: '+=685px'
@@ -93,7 +93,7 @@ $(function(){
             disableLeft;
         }
     });
-    $('#carouselRight').on('click', function(){
+    $('#carousel_NavRight').on('click', function(){
         if (($('#carouselReel').css('left')) > '-3900px'){
             $('#carouselReel').animate({
                 left: '-=685px'
