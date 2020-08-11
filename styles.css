@@ -26,13 +26,13 @@ h1 {
 }
 h2 {
     font-size: 220%;
-    min-width: 30vw;
+    width: 23vw;
+    /*min-width: 30vw;*/
 
     /*display: inline-block;
     font-size: 220%;
     padding-top: 1vh;
-    margin-bottom: 2px;
-    width: 23vw;*/
+    margin-bottom: 2px;*/
 }
 h3 {
     text-align: left;
@@ -265,6 +265,9 @@ nav.button a {
     background-color: white;
     z-index: 6;
     overflow: hidden;
+}
+#welcome h2 {
+    max-width: 23vw;
 }
 .welcomeSub {
     display: block;
