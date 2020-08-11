@@ -9,8 +9,75 @@ html {
 body {
     position: fixed;
     margin: 0 0 0 0;
-    top: 0px;
-    background-size: fill;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo', sans-serif;
+    color: black;
+    text-transform: capitalize;
+}
+h1, h2, h5 {
+    text-align: center;
+}
+h1 {
+    font-size: 250%;
+    padding-top: 15px;
+    margin: 0;
+}
+h2 {
+    display: inline-block;
+    font-size: 220%;
+    padding-top: 1vh;
+    margin-bottom: 2px;
+    width: 23vw;
+}
+h3 {
+    text-align: left;
+    margin: 0;
+    padding: 1em 0 0.5em 1em;
+}
+h4 {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: auto;
+    padding: 0 0 0.25em 1em;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+h5 {
+    font-size: 220%;
+    min-width: 30vw;
+}
+h6 {
+    display: inline-flex;
+    font-size: 1.18vw;
+    margin: 1vw 0.5vw 0.3vw 0.5vw;
+}
+ul {
+    display: block;
+    padding: 0 1em 1em 3em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    grid-column-start: 2;
+}
+li {
+    padding: 0 1em 1em 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    margin: 0 0 0 3em;
+}
+img {
+    object-fit: contain;
+}
+.container {
+    background-color: #D1D2D4;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 p {
     font-family: 'Exo 2', sans-serif;
@@ -24,12 +91,6 @@ a {
     align-content: center;
     color: black;
 }
-/* a:hover {
-    color: green;
-}
-a:visited {
-    color: black;
-} */
 a:active {
     /*color: blue;*/
     background: -webkit-linear-gradient(45deg, rgb(93, 117, 250), rgb(10, 13, 165));
@@ -41,35 +102,6 @@ a:active {
 nav:hover {
     background-color:whitesmoke;
     /*transition: all 0.3s;*/
-}
-
-/* lines below w pseudo-elements might need to be deleted */
-/* nav:hover::after {
-    width: 0;
-    height: 103%;
-    top: 50%;
-    left: 50%;
-    background: gray;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%);
-    transition: all 0.3s;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    overflow: hidden;
-} */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Exo', sans-serif;
-    color: black;
-    text-transform: capitalize;
-}
-.container {
-    background-color: #D1D2D4;
-    height: 100vh;
-    width: 100vw;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 .button {
     font-family: 'Darker Grotesque', sans-serif;
@@ -83,8 +115,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 12vw;
     height: 44px;
 }
-
-/* new attempt at button animation (CSS) */
 .button a::before {
     width: 2px;
     color: darkgray;
@@ -93,11 +123,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid darkgray;
     border-left: 4px solid darkgray;
     border-right: none;
-    /*background: darkgray;*/
     content: "";
     height: 18px;
     position: absolute;
-    /* border-radius: 4px 0 4px 0; */
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.13, 1.18, 0.7, 0.84);
 }
@@ -116,11 +144,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid darkgray;
     border-right: 4px solid darkgray;
     border-left: none;
-    /*background: darkgray;*/
     content: "";
     height: 18px;
     position: absolute;
-    /* border-radius: 4px 0 4px 0; */
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.13, 1.18, 0.7, 0.84);
 }
@@ -162,76 +188,8 @@ nav.button a {
 #top h1 {
     padding-top: 11px;
 }
-#top h1::after {
-    position: absolute;
-    width: 0;
-    height: 10px;
-    -moz-transition: width 5000ms ease-in-out;
-    transition: width 5000ms ease-in-out;
-}
 #top h1.fade::after {
     width: 100%
-}
-h1 {
-    font-size: 250%;
-    padding-top: 15px;
-    text-align: center;
-    margin: 0;
-}
-h2 {
-    display: inline-block;
-    font-size: 220%;
-    padding-top: 1vh;
-    text-align: center;
-    /*vertical-align: top;*/
-    /*margin: inherit;*/
-    margin-bottom: 2px;
-    /*width: auto;*/
-    width: 23vw;
-}
-h3 {
-    text-align: left;
-    margin: 0;
-    padding: 1em 0 0.5em 1em;
-}
-h4 {
-    display: inline-block;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 0;
-    margin-top: auto;
-    padding: 0 0 0.25em 1em;
-    grid-column-start: 2;
-    grid-column-end: span 2;
-}
-h5 {
-    display: inline-block;
-    font-size: 220%;
-    text-align: center;
-    min-width: 30vw;
-    margin: 3vw 0;
-}
-h6 {
-    display: inline-flex;
-    font-size: 1.18vw;
-    margin: 1vw 0.5vw 0.3vw 0.5vw;
-}
-ul {
-    display: block;
-    padding: 0 1em 1em 3em;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10pt;
-    margin: 0;
-    grid-column-start: 2;
-}
-li {
-    padding: 0 1em 1em 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.7em;
-    margin: 0 0 0 3em;
-}
-img {
-    object-fit: contain;
 }
 #nmsu {
     display: grid;
