@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
 }
 h1, h2, h5 {
+    display: inline-block;
     text-align: center;
 }
 h1 {
@@ -26,7 +27,7 @@ h1 {
 h2 {
     font-size: 220%;
     min-width: 30vw;
-    
+
     /*display: inline-block;
     font-size: 220%;
     padding-top: 1vh;
