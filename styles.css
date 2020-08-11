@@ -24,11 +24,14 @@ h1 {
     margin: 0;
 }
 h2 {
-    display: inline-block;
+    font-size: 220%;
+    min-width: 30vw;
+    
+    /*display: inline-block;
     font-size: 220%;
     padding-top: 1vh;
     margin-bottom: 2px;
-    width: 23vw;
+    width: 23vw;*/
 }
 h3 {
     text-align: left;
@@ -46,8 +49,14 @@ h4 {
     grid-column-end: span 2;
 }
 h5 {
+    /*font-size: 220%;
+    min-width: 30vw;*/
+
+    display: inline-block;
     font-size: 220%;
-    min-width: 30vw;
+    padding-top: 1vh;
+    margin-bottom: 2px;
+    width: 23vw;
 }
 h6 {
     display: inline-flex;
