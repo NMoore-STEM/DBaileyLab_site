@@ -358,6 +358,9 @@ article h3 {
     padding: 107px 0 0;
     z-index: 5;
 }
+#research h2 {
+    text-align: center;
+}
 #leuc01 {
     position: absolute;
     /*top: -40px;*/
