@@ -391,6 +391,9 @@ article h3 {
     margin: -107px 0 0;
     z-index: 4;
 }
+#publications h2 {
+    text-align: center;
+}
 /* -- Alternate carousel button style (darker grays, more translucent
 #carouselLeft {
     position: absolute;
