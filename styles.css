@@ -15,12 +15,13 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     text-transform: capitalize;
 }
-h1, h2, h5 {
+h2, h5 {
     display: inline-block;
     text-align: center;
 }
 h1 {
     font-size: 250%;
+    text-align: center;
     padding-top: 15px;
     margin: 0;
 }
@@ -389,6 +390,9 @@ article h3 {
     padding: 137px 5vw 8vw 5vw;
     margin: -107px 0 0;
     z-index: 4;
+}
+#publications h2 {
+    text-align: center;
 }
 /* -- Alternate carousel button style (darker grays, more translucent
 #carouselLeft {
