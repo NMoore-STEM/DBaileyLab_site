@@ -281,11 +281,10 @@ nav.button a {
     background-color: white;
     z-index: 2;
 }
-article.li {
-    white-space: nowrap;
+article li {
     overflow: hidden;
     display: block;
-    text-overflow: ellipsis;
+    font-size: 12px;
 }
 .intro {
     display: block;
@@ -315,11 +314,14 @@ figcaption {
     #foster {
         right: -55px;
     }
+    article {
+        float: inline-end !important;
+    }
 }
 .welcomeText {
     display: block;
     position: relative;
-    font-size: 14px;
+    font-size: 1.095vw;
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0.8vw 1em 0 0;
