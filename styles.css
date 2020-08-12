@@ -320,6 +320,9 @@ figcaption {
         margin-top: 6vw;
         transition: all 150ms ease;
     }
+    #leuc01 {
+        left: -20vw;
+    }
 }
 .welcomeText {
     display: block;
@@ -371,15 +374,10 @@ article h3 {
     margin: 4vw 0 4vw 0;
 }
 #leuc01 {
-    position: absolute;
-    /*top: -40px;*/
-    left: -80px;
-    /*padding: 107px 0 0;*/
-    /*max-width: 110%;*/
+    position: relative;
+    top: -40px;
+    left: -10vw;
     height: 110%;
-    /*left: -3vw;*/
-    /*min-height: 60vh;
-    max-height: 80%;*/
     z-index: 2;
 }
 #researchText {
