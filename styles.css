@@ -317,6 +317,8 @@ figcaption {
     }
     article {
         float: inline-end !important;
+        margin-top: 6vw;
+        transition: all 150ms ease;
     }
 }
 .welcomeText {
