@@ -328,7 +328,7 @@ figcaption {
     /*top: 8vh;*/
 }
 article {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-top: 2vw;
 }
 article h3 {
