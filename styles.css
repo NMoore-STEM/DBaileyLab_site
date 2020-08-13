@@ -112,7 +112,6 @@ a:active {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s;
 }
-
 /* =======================================================*/
 /*------------Header, Title, Navigation-------------------*/
 /*========================================================*/
@@ -321,7 +320,31 @@ figcaption {
     font-size: 0.8em;
     color: dimgray;
 }
-
+@media only screen and (max-width:1290px) {
+    #introPic {
+        display: none !important;
+    }
+    .welcomeSub {
+        padding: 12px 2vw 1em;
+    }
+    #welcome h2 {
+        width: 100%;
+        max-width: 100%;
+    }
+    #foster {
+        right: -55px;
+    }
+    article {
+        float: inline-end !important;
+        margin-top: 4.5vw;
+        /*transition: all 150ms ease;*/
+        background-color: whitesmoke;
+        padding-bottom: 20px;
+    }
+    #leuc01 {
+        left: -20vw;
+    }
+}
 .welcomeText {
     display: block;
     position: relative;
@@ -1257,31 +1280,7 @@ i {
 }
 }
 /*====In-Between===*/
-@media only screen and (max-width:1290px) {
-    #introPic {
-        display: none !important;
-    }
-    .welcomeSub {
-        padding: 12px 2vw 1em;
-    }
-    #welcome h2 {
-        width: 100%;
-        max-width: 100%;
-    }
-    #foster {
-        right: -55px;
-    }
-    article {
-        float: inline-end !important;
-        margin-top: 4.5vw;
-        /*transition: all 150ms ease;*/
-        background-color: whitesmoke;
-        padding-bottom: 20px;
-    }
-    #leuc01 {
-        left: -20vw;
-    }
-}
+
 /*====MOBILE====*/
 @media only screen and (max-width:840px) {
     
