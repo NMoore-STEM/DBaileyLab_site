@@ -255,7 +255,7 @@ nav.button a {
     right: 0px;
     margin-top: 107px;
     margin-right: -4vw;
-    max-height: 550px;
+    max-height: 560px;
 }
 #welcome {
     display: block;
@@ -339,10 +339,6 @@ figcaption {
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0 1em 0 0;
-    /*float: left;*/
-    /*min-width: 18vw;*/
-    /*max-width: 20vw;*/
-    /*top: 8vh;*/
 }
 article {
     /*display: inline-block;*/
@@ -413,12 +409,9 @@ article h3 {
     background-color: #808284;
     grid-column-end: span 2;
     width: 60vw;
-    padding: 137px 5vw 8vw 5vw;
+    padding: 107px 5vw 8vw 5vw;
     margin: -107px 0 0;
     z-index: 4;
-}
-#publications h2 {
-    text-align: center;
 }
 /* -- Alternate carousel button style (darker grays, more translucent
 #carouselLeft {
@@ -497,16 +490,13 @@ article h3 {
     stroke-linecap: round;
     stroke-width: 7px;
 }
-#publications h2 {
-    margin: 0;
-}
 #carouselWindow {
     display: block;
     position: relative;
     overflow: hidden;
     height: 450px;
     width: 60vw;
-    margin-top: 3vw;
+    margin-top: 2vw;
     z-index: 50;
     /*box-shadow: 4px 4px 20px inset;*/
 }
