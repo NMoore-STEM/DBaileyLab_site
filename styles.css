@@ -315,6 +315,7 @@ figcaption {
     }
     #welcome h2 {
         width: 100%;
+        max-width: 100%;
     }
     #foster {
         right: -55px;
