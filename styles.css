@@ -322,8 +322,8 @@ figcaption {
     }
     article {
         float: inline-end !important;
-        margin-top: 6vw;
-        transition: all 150ms ease;
+        margin-top: 4.5vw;
+        /*transition: all 150ms ease;*/
     }
     #leuc01 {
         left: -20vw;
