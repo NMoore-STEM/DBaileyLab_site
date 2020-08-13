@@ -112,6 +112,11 @@ a:active {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s;
 }
+
+/* =======================================================*/
+/*------------Header, Title, Navigation-------------------*/
+/*========================================================*/
+
 nav:hover {
     background-color:whitesmoke;
     /*transition: all 0.3s;*/
@@ -226,6 +231,11 @@ nav.button a {
     grid-row-end: span 2;
     z-index: 3;
 }
+
+/* =======================================================*/
+/*-----------General/ Main content Elements---------------*/
+/*========================================================*/
+
 .wrapper {
     display: grid;
     position: relative;
@@ -243,6 +253,11 @@ nav.button a {
     grid-column-start: 2;
     z-index: 1;
 }
+
+/* =======================================================*/
+/*--------------Welcome Section---------------------------*/
+/*========================================================*/
+
 #foster {
     position: absolute;
     top: 0px;
@@ -306,29 +321,7 @@ figcaption {
     font-size: 0.8em;
     color: dimgray;
 }
-@media only screen and (max-width:1290px) {
-    #introPic {
-        display: none !important;
-    }
-    .welcomeSub {
-        padding: 12px 2vw 1em;
-    }
-    #welcome h2 {
-        width: 100%;
-        max-width: 100%;
-    }
-    #foster {
-        right: -55px;
-    }
-    article {
-        float: inline-end !important;
-        margin-top: 4.5vw;
-        /*transition: all 150ms ease;*/
-    }
-    #leuc01 {
-        left: -20vw;
-    }
-}
+
 .welcomeText {
     display: block;
     position: relative;
@@ -362,6 +355,11 @@ article h3 {
     font-family: 'Exo 2', sans-serif;
     text-decoration: underline;
 }
+
+/* =======================================================*/
+/*---------------Research Interests-----------------------*/
+/*========================================================*/
+
 #research {
     display: inline-block;
     position: relative;
@@ -396,6 +394,11 @@ article h3 {
     background-color: white;
     z-index: 3;
 }
+
+/* =======================================================*/
+/*--------------Publications Section----------------------*/
+/*========================================================*/
+
 #publications {
     display: block;
     position: relative;
@@ -506,6 +509,7 @@ article h3 {
     height: 450px;
     overflow: hidden;
 }
+/*---Publication Tiles--------------------------------------------*/
 .research1 {
     display: inline-block;
     position: relative;
@@ -631,6 +635,11 @@ article h3 {
     left: -50px;
     position: relative;
 }
+
+/* =======================================================*/
+/*----------------Our Team Section------------------------*/
+/*========================================================*/
+
 #ourTeam {
     display: block;
     position: relative;
@@ -642,6 +651,10 @@ article h3 {
     margin: -107px 0 0;
     padding: 107px 0 0;
     z-index: 3;
+}
+#ourTeam h2, #news h2 {
+    text-align: center;
+    width: 100%;
 }
 .teamTop {
     display: inline-grid;
@@ -749,6 +762,7 @@ div#bailey {
     margin: auto;
     border-radius: 50% 0;
 }
+/*--- delete below style??? ---*/
 #ourTeam h1 {
     font-size: 250%;
     /*padding-top: 15px;*/
@@ -841,6 +855,62 @@ div.formerPost .title2 {
 .studentName {
     font-size: 2.5vh;
     padding: 0 1vw 0.2vw 1vw;
+}
+
+/* =======================================================*/
+/*------------------News Section--------------------------*/
+/*========================================================*/
+
+#news {
+    display: block;
+    position: relative;
+    /*height: 100%;*/
+    background-color: white;
+    grid-column-start: 1;
+    margin: -107px 0 0;
+    padding: 112px 0 0;
+    /*padding-top: 5vw;*/
+    z-index: 2;
+}
+#news h1 {
+    padding: 40px 0 25px 0;
+}
+#newsContainer {
+    margin: 2vw 5vw 5vw 5vw;
+    padding: 2vw 3vw 2vw 4vw;
+    border: 1px solid darkgray;
+    background-color: whitesmoke;
+}
+#newsContainer li {
+    font-size: 1em;
+}
+#alumni {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color: darkgray;
+    grid-column-start: 1;
+    margin: -107px 0 0;
+    padding: 107px 0 3vw;
+    z-index: 1;
+}
+#alumni h2 {
+    text-align: center;
+    width: 100%;
+    margin: 3vw 0 3vw 0;
+}
+.headingPost {
+    display: inline-flex;
+    width: 60vw;
+    background-color: silver;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 2vw;
+    margin: 0 5vw 0 5vw;
+    padding: 0 0 30px;
+    /* height: 6vw; */
+    border: none;
+    align-items: center;
 }
 .accordian1 {
     display: inline-flex;
@@ -984,60 +1054,14 @@ i {
     font-size: 1em;
 
 }
-#news {
-    display: block;
-    position: relative;
-    height: 100%;
-    background-color: white;
-    grid-column-start: 1;
-    margin: -107px 0 0;
-    padding: 112px 0 0;
-    /*padding-top: 5vw;*/
-    z-index: 2;
-}
-#news h1 {
-    padding: 40px 0 25px 0;
-}
-#newsContainer {
-    margin: 2vw 5vw 5vw 5vw;
-    padding: 2vw 3vw 2vw 4vw;
-    border: 1px solid darkgray;
-    background-color: whitesmoke;
-}
-#newsContainer li {
-    font-size: 1em;
-}
-#alumni {
-    display: block;
-    position: relative;
-    height: 100%;
-    background-color: darkgray;
-    grid-column-start: 1;
-    margin: -107px 0 0;
-    padding: 107px 0 3vw;
-    z-index: 1;
-}
-#alumni h1 {
+.collapseButton h2 {
     padding: 40px 0 10px 0;
 }
-#alumni h2 {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-.headingPost {
-    display: inline-flex;
-    width: 60vw;
-    background-color: silver;
-    justify-content: center;
-    flex-flow: wrap;
-    gap: 2vw;
-    margin: 3vw 5vw 0 5vw;
-    padding: 0 0 30px;
-    /* height: 6vw; */
-    border: none;
-    align-items: center;
-}
+
+/* =======================================================*/
+/*------------------Funding Partners Section--------------*/
+/*========================================================*/
+
 #fundingPartners {
     display: grid;
     width: 62vw;
@@ -1074,6 +1098,11 @@ i {
 .third {
     max-height: 120px;
 }
+
+/* =======================================================*/
+/*--------------------Footer------------------------------*/
+/*========================================================*/
+
 #footer {
     display: block;
     position: relative;
@@ -1226,6 +1255,32 @@ i {
 .copyright::after {
     color: radial(circle, rgb(160, 0, 160) 30%, rgb(3, 24, 218) 30%);
 }
+}
+/*====In-Between===*/
+@media only screen and (max-width:1290px) {
+    #introPic {
+        display: none !important;
+    }
+    .welcomeSub {
+        padding: 12px 2vw 1em;
+    }
+    #welcome h2 {
+        width: 100%;
+        max-width: 100%;
+    }
+    #foster {
+        right: -55px;
+    }
+    article {
+        float: inline-end !important;
+        margin-top: 4.5vw;
+        /*transition: all 150ms ease;*/
+        background-color: whitesmoke;
+        padding-bottom: 20px;
+    }
+    #leuc01 {
+        left: -20vw;
+    }
 }
 /*====MOBILE====*/
 @media only screen and (max-width:840px) {
