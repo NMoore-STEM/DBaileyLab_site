@@ -271,6 +271,7 @@ nav.button a {
 }
 #welcome h2, #publications h2 {
     width: 23vw;
+    margin-bottom: 2vw;
 }
 .welcomeSub {
     display: block;
@@ -337,7 +338,7 @@ figcaption {
     /*font-size: 1.095vw;*/
     font-family: 'Exo 2', sans-serif;
     margin: 0;
-    padding: 0.8vw 1em 0 0;
+    padding: 0 1em 0 0;
     /*float: left;*/
     /*min-width: 18vw;*/
     /*max-width: 20vw;*/
