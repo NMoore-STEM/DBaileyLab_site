@@ -93,7 +93,8 @@ img {
 p {
     font-family: 'Exo 2', sans-serif;
     /*font-size: 0.8em;*/
-    font-size: 1.095vw;
+    /*font-size: 1.095vw;*/
+    font-size: 14.25px;
     margin: 0 0 1.5vw 0;
 }
 a {
@@ -312,13 +313,17 @@ figcaption {
     .welcomeSub {
         padding: 12px 2vw 1em;
     }
+    #welcome h2 {
+        width: 100%;
+        max-width: 100%;
+    }
     #foster {
         right: -55px;
     }
     article {
         float: inline-end !important;
-        margin-top: 6vw;
-        transition: all 150ms ease;
+        margin-top: 4.5vw;
+        /*transition: all 150ms ease;*/
     }
     #leuc01 {
         left: -20vw;
@@ -327,7 +332,7 @@ figcaption {
 .welcomeText {
     display: block;
     position: relative;
-    font-size: 1.095vw;
+    /*font-size: 1.095vw;*/
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0.8vw 1em 0 0;
