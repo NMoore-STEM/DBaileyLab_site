@@ -112,7 +112,6 @@ a:active {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s;
 }
-
 /* =======================================================*/
 /*------------Header, Title, Navigation-------------------*/
 /*========================================================*/
@@ -321,7 +320,31 @@ figcaption {
     font-size: 0.8em;
     color: dimgray;
 }
-
+@media only screen and (max-width:1290px) {
+    #introPic {
+        display: none !important;
+    }
+    .welcomeSub {
+        padding: 12px 2vw 1em;
+    }
+    #welcome h2 {
+        width: 100%;
+        max-width: 100%;
+    }
+    #foster {
+        right: -55px;
+    }
+    article {
+        float: inline-end !important;
+        margin-top: 4.5vw;
+        /*transition: all 150ms ease;*/
+        background-color: whitesmoke;
+        padding-bottom: 20px;
+    }
+    #leuc01 {
+        left: -20vw;
+    }
+}
 .welcomeText {
     display: block;
     position: relative;
@@ -884,6 +907,11 @@ div.formerPost .title2 {
 #newsContainer li {
     font-size: 1em;
 }
+
+/* =======================================================*/
+/*------------------Alumni Section------------------------*/
+/*========================================================*/
+
 #alumni {
     display: block;
     position: relative;
@@ -897,7 +925,7 @@ div.formerPost .title2 {
 #alumni h2 {
     text-align: center;
     width: 100%;
-    margin: 3vw 0 3vw 0;
+    /*margin: 3vw 0 3vw 0;*/
 }
 .headingPost {
     display: inline-flex;
@@ -917,6 +945,10 @@ div.formerPost .title2 {
     flex-direction: column;
     width: 60vw;
     margin: 0 5vw 0 5vw;
+}
+.accordian h2 {
+    margin: 0;
+    padding: 0;
 }
 .collapseButton {
     cursor: pointer;
@@ -948,7 +980,7 @@ i {
 }
 .collapseButton > h2 {
     width: 100%;
-    margin: auto;
+    margin: auto !important;
     padding: 0;
     align-items: center;
     text-align: center;
@@ -1053,9 +1085,6 @@ i {
 .collapseBody2 ul {
     font-size: 1em;
 
-}
-.collapseButton h2 {
-    padding: 40px 0 10px 0;
 }
 
 /* =======================================================*/
@@ -1257,31 +1286,7 @@ i {
 }
 }
 /*====In-Between===*/
-@media only screen and (max-width:1290px) {
-    #introPic {
-        display: none !important;
-    }
-    .welcomeSub {
-        padding: 12px 2vw 1em;
-    }
-    #welcome h2 {
-        width: 100%;
-        max-width: 100%;
-    }
-    #foster {
-        right: -55px;
-    }
-    article {
-        float: inline-end !important;
-        margin-top: 4.5vw;
-        /*transition: all 150ms ease;*/
-        background-color: whitesmoke;
-        padding-bottom: 20px;
-    }
-    #leuc01 {
-        left: -20vw;
-    }
-}
+
 /*====MOBILE====*/
 @media only screen and (max-width:840px) {
     
