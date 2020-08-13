@@ -912,7 +912,7 @@ div.formerPost .title2 {
     border: none;
     align-items: center;
 }
-.accordian1 {
+.accordian {
     display: inline-flex;
     flex-direction: column;
     width: 60vw;
@@ -962,7 +962,7 @@ i {
     background-color: whitesmoke;
     border-bottom: 30px solid lightgray;
 }
-.accordian1 person {
+.accordian person {
     max-width: 18vw;
     min-width: 18vw;
     padding: 1vw;
@@ -974,7 +974,7 @@ i {
     border: none;
     background-color: transparent;
 }
-.accordian1 img {
+.accordian img {
     margin: 0 0 0 0;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -984,31 +984,31 @@ i {
     justify-self: center;
     border-radius: 0 50%;
 }
-.accordian1 h3 {
+.accordian h3 {
     grid-column-start: 1;
     grid-row-start: 1;
     padding: 0;
     margin-top: auto;
 }
-.accordian1 ul.title2 {
+.accordian ul.title2 {
     grid-column-start: 1;
     grid-row-start: 2;
     padding: 0.5em;
     margin: 0 0 auto 0;
 }
-.accordian1 ul.specialty2 {
+.accordian ul.specialty2 {
     grid-column-start: 1;
     grid-row-start: 3;
     padding: 0;
     font-size: 0.95vw;
     height: auto;
 }
-.accordian2 {
+/*.accordian2 {
     display: inline-flex;
     flex-direction: column;
     width: 60vw;
     margin: 0 5vw 0 5vw;
-}
+}*/
 .collapseButton2 {
     cursor: pointer;
     display: inline-flex;
