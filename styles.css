@@ -22,7 +22,7 @@ h2, h5 {
 h1 {
     font-size: 250%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 11px;
     margin: 0;
 }
 h2 {
@@ -201,9 +201,6 @@ nav.button a {
     height: 63px;
     z-index: 1;
     grid-column-end: span 6;
-}
-#top h1 {
-    padding-top: 11px;
 }
 #top h1.fade::after {
     width: 100%
