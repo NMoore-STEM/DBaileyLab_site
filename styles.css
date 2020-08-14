@@ -754,6 +754,12 @@ article h3 {
     width: 60vw;
     /*border-bottom: 10px solid gray;*/
 }
+.currentTeam {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 1.5vw;
+}
 .formerPost {
     display: inline-flex;
     grid-template-columns: 1fr 1fr;
