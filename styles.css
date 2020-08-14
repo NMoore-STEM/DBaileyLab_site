@@ -1278,6 +1278,28 @@ i {
 .copyright::after {
     color: radial(circle, rgb(160, 0, 160) 30%, rgb(3, 24, 218) 30%);
 }
+
+/*======================================================*/
+/*--------------publications_full stlyes----------------*/
+/*======================================================*/
+
+#publicationListTop {
+    display: block;
+    width: 70vw;
+    background-color: whitesmoke;
+}
+.publicationContent {
+    display: grid;
+    background-color: whitesmoke;
+}
+.mostRecent {
+    display: inline-flex;
+    background-color: whitesmoke;
+}
+.allOthers {
+    display: inline-block;
+    background-color: whitesmoke;
+}
 }
 /*====In-Between===*/
 
