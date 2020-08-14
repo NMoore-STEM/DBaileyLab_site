@@ -787,6 +787,10 @@ div.formerPost .title2 {
     background-color:rgb(223, 223, 223);
     padding-left: 1vw;
 }
+.headingPost h2 {
+    margin: 2vw 0 0 0;
+    font-size: 1.7em;
+}
 .headingPost .studentList {
     display: grid;
     min-width: 25vw;
@@ -1072,13 +1076,15 @@ i {
 #fundingPartners h4 {
     width: 100%;
     text-align: center;
+    font-size: 1.7em;
     padding: 0;
     margin: 2vw 0 2vw;
     color: whitesmoke;
-    text-shadow: 0 1px darkgray;
+    text-shadow: 0 1px darkslategray;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: span 3;
+    opacity: 0.9;
 }
 .first, .second, .third {
     grid-row-start: 2;
