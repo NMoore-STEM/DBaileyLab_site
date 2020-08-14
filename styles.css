@@ -1296,6 +1296,9 @@ i {
     display: inline-flex;
     background-color: whitesmoke;
 }
+.publicationTile {
+    display: inline-grid;
+}
 .allOthers {
     display: inline-block;
     background-color: whitesmoke;
