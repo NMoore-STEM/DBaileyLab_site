@@ -1294,14 +1294,20 @@ i {
 }
 .mostRecent {
     display: inline-flex;
+    flex-direction: column;
+    width: 70vw;
     background-color: whitesmoke;
 }
 .publicationTile {
     display: inline-grid;
 }
+.publicationTile img {
+    max-height: 100px;
+}
 .allOthers {
     display: inline-block;
     background-color: whitesmoke;
+    padding: 0 9vw 5vw 6vw;
 }
 }
 /*====In-Between===*/
