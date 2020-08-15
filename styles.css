@@ -1292,31 +1292,45 @@ i {
     text-align: center;
     width: 100%;
 }
+#publicationListTop h3 {
+    text-align: center;
+    width: 100%;
+}
 .publicationContent {
     display: grid;
-    background-color: whitesmoke;
+    background-color: darkgray;
+    padding: 0 4vw;
 }
 .mostRecent {
     display: inline-flex;
     flex-direction: column;
-    width: 62vw;
-    background-color: darkgray;
+    width: 54vw;
+    background-color: lightgray;
     font-size: 150px;
     color: lightgray;
     line-height: 0.5;
-    font-family: 'Exo', sans serif;
-    padding: 4vw;
+    font-family: 'Exo', sans-serif;
+    padding: 2vw 4vw;
+    margin-top: 125px;
+}
+.yearHeadingTop {
+    font-size: 150px;
+    color: lightgray;
+    line-height: 0.5;
+    font-family: 'Exo', sans-serif;
+    position: absolute;
+    margin-top: -100px;
 }
 .publicationTile {
     display: inline-grid;
-    background-color: lightgray;
+    background-color: whitesmoke;
     color: black;
     line-height: 1.5;
-    padding: 2vw;
-    margin-bottom: 20px
+    padding: 1vw;
+    margin-bottom: 10px
 }
 .publicationTile ul {
-    font-size: 18px;
+    font-size: 14px;
     margin: auto;
 }
 /*.publicationTile img {
@@ -1324,15 +1338,39 @@ i {
 }*/
 .publicationFrame {
     overflow: hidden;
-    min-width: 200px;
-    height: 200px;
-    max-width: 200px;
-    width: 200px;
+    min-width: 100px;
+    height: 100px;
+    max-width: 100px;
+    width: 100px;
+    border: 1px solid darkgray;
 }
 .allOthers {
-    display: inline-block;
-    background-color: whitesmoke;
-    padding: 0 9vw 5vw 6vw;
+    display: grid;
+    position: relative;
+    background-color: darkgray;
+    padding: 0 4.5vw 5vw 2.5vw;
+    color: lightgray;
+    grid-template-columns: 30px auto;
+}
+.allOthers li {
+    color: black;
+}
+.yearHeading {
+    writing-mode: sideways-lr;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    line-height: 1.45;
+    width: min-content;
+    display: block;
+    position: relative;
+    margin-right: -6px;
+    text-align: right;
+    text-shadow: 2px 2px 1.5px darkgray;
+}
+.yearGroup {
+    background-color: lightgray;
+    padding: 1vw 2vw 1vw 1vw;
+    margin: 4px 0 4px 0;
 }
 }
 /*====In-Between===*/
