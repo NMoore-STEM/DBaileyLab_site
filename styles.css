@@ -1286,7 +1286,11 @@ i {
 #publicationListTop {
     display: block;
     width: 70vw;
-    background-color: whitesmoke;
+    background-color: gray;
+}
+#publicationListTop h2 {
+    text-align: center;
+    width: 100%;
 }
 .publicationContent {
     display: grid;
@@ -1295,14 +1299,35 @@ i {
 .mostRecent {
     display: inline-flex;
     flex-direction: column;
-    width: 70vw;
-    background-color: whitesmoke;
+    width: 62vw;
+    background-color: darkgray;
+    font-size: 150px;
+    color: lightgray;
+    line-height: 0.5;
+    font-family: 'Exo', sans serif;
+    padding: 4vw;
 }
 .publicationTile {
     display: inline-grid;
+    background-color: lightgray;
+    color: black;
+    line-height: 1.5;
+    padding: 2vw;
+    margin-bottom: 20px
 }
-.publicationTile img {
+.publicationTile ul {
+    font-size: 18px;
+    margin: auto;
+}
+/*.publicationTile img {
     max-height: 100px;
+}*/
+.publicationFrame {
+    overflow: hidden;
+    min-width: 200px;
+    height: 200px;
+    max-width: 200px;
+    width: 200px;
 }
 .allOthers {
     display: inline-block;
