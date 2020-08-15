@@ -1291,10 +1291,15 @@ i {
 #publicationListTop h2 {
     text-align: center;
     width: 100%;
+    margin-bottom: 0;
+    color: whitesmoke;
 }
 #publicationListTop h3 {
     text-align: center;
     width: 100%;
+    color: silver;
+    padding: 0;
+    margin-bottom: 4vw;
 }
 .publicationContent {
     display: grid;
@@ -1311,15 +1316,15 @@ i {
     line-height: 0.5;
     font-family: 'Exo', sans-serif;
     padding: 2vw 4vw;
-    margin-top: 125px;
+    margin-top: 80px;
 }
 .yearHeadingTop {
-    font-size: 150px;
+    font-size: 75px;
     color: lightgray;
     line-height: 0.5;
     font-family: 'Exo', sans-serif;
     position: absolute;
-    margin-top: -100px;
+    margin-top: -67px;
 }
 .publicationTile {
     display: inline-grid;
