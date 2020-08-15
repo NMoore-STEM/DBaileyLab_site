@@ -1337,10 +1337,9 @@ i {
 .publicationTile ul {
     font-size: 14px;
     margin: auto;
+    text-indent: -30px;
+    padding: 0 3vw 0 50px;
 }
-/*.publicationTile img {
-    max-height: 100px;
-}*/
 .publicationFrame {
     overflow: hidden;
     min-width: 100px;
