@@ -41,7 +41,11 @@ function scrollBtt() {
         }
     })
 }; */
-
+/* BELOW is code that is supposed to make a "to top" button appear after
+ scrolling down the page a bit.  After using the console, I could not find
+  any element in the document that had a changing/responsive scrollTop() value.
+  If I could find this, then I feel like this code would work.  I suspect this 
+  might be due to having a fixed header, but not sure...  */
 $(document).ready(function(){
 
     //Check to see if the window is top if not then display button
