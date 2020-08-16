@@ -16,6 +16,50 @@ $(function() {
     var cloneFunction = $("#topNews").clone();
     $("#topNewsClone").html(cloneFunction);
   });
+//To Top button on full publication list page//
+/* $(function() {
+    var btt = $('#buttonToTop');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+            btt.style.display('inline-block');
+        } else {
+            btt.style.display('none');
+        }
+    })
+}); */
+
+/* $(window).scroll(scrollBtt);
+function scrollBtt() {
+    var btt = $('#buttonToTop');
+
+    $('.scroll_area').scroll(function() {
+        if ($(window).scrollTop() > 200) {
+            btt.addClass('reveal');
+        } else {
+            btt.removeClass('reveal');
+        }
+    })
+}; */
+
+$(document).ready(function(){
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 100) {
+            $('#buttonToTop').style.display('inline-block');
+        } else {
+            $('#buttonToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('#buttonToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},400);
+        return false;
+    });
+
+});
 //*Carousel stopped working correctly after adding much more content.
 /*There is an alternative which would involve having a CSS class for each
 each position and using .toggleClass and toggle sequentially through an
