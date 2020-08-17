@@ -176,7 +176,7 @@ nav.button a {
 }
 #header {
     display: grid;
-    position: sticky;
+    position: fixed;
     background-color: white;
     justify-content: center;
     box-shadow: 0 0 2em black;
