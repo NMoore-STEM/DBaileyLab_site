@@ -487,6 +487,12 @@ article h3 {
     stroke-linecap: round;
     stroke-width: 7px;
 }
+.pubLink {
+    font-family: 'Exo', sans-serif;
+    font-size: 12pt;
+    text-align: right;
+    padding: 0 2.5vw 0 20vw;
+}
 #carouselWindow {
     display: block;
     position: relative;
