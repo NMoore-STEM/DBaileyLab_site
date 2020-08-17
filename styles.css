@@ -4,7 +4,6 @@
 /*====PC-FULL====*/
 @media only screen and (min-width: 1025px) {
 body {
-    position: fixed;
     margin: 0 0 0 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -76,8 +75,8 @@ img {
 }
 .container {
     background-color: #D1D2D4;
-    height: 100vh;
-    width: 100vw;
+    /*height: 100vh;
+    width: 100vw;*/
     overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -488,10 +487,31 @@ article h3 {
     stroke-width: 7px;
 }
 .pubLink {
-    font-family: 'Exo', sans-serif;
-    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
     text-align: right;
-    padding: 0 2.5vw 0 20vw;
+    padding: 0 1.5vw 0 2.5vw;
+    margin: 0 0 0 17vw;
+}
+.pubLink:hover {
+    color: lightgray;
+}
+.pubLink::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 20px;
+    border-bottom: 2px solid silver;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.pubLink:hover::before {
+    content: "";
+    width: 16vw;
+    height: 20px;
+    border-bottom: 2px solid silver;
+    opacity: 1;
+    transition: all 0.4s ease;
 }
 #carouselWindow {
     display: block;
@@ -1389,9 +1409,11 @@ i {
     z-index: 10;
     transition: all 0.2s ease;
 }
-/*.reveal {
+.reveal {
     visibility: visible;
-}*/
+    display: inline-block !important;
+    transition: all 0.3s ease;
+}
 #buttonToTop:hover {
     box-shadow: 0 6px 4px 0 darkgray;
     bottom: 78px;
