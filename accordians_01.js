@@ -17,46 +17,22 @@ $(function() {
     $("#topNewsClone").html(cloneFunction);
   });
 //To Top button on full publication list page//
-/* $(function() {
-    var btt = $('#buttonToTop');
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 200) {
-            btt.style.display('inline-block');
-        } else {
-            btt.style.display('none');
-        }
-    })
-}); */
-
-/* $(window).scroll(scrollBtt);
-function scrollBtt() {
-    var btt = $('#buttonToTop');
-
-    $('.scroll_area').scroll(function() {
-        if ($(window).scrollTop() > 200) {
-            btt.addClass('reveal');
-        } else {
-            btt.removeClass('reveal');
-        }
-    })
-}; */
 /* BELOW is code that is supposed to make a "to top" button appear after
  scrolling down the page a bit.  After using the console, I could not find
   any element in the document that had a changing/responsive scrollTop() value.
   If I could find this, then I feel like this code would work.  I suspect this 
   might be due to having a fixed header, but not sure...  */
+
+/*UPDATE: had a few css properties on body tag and main container fo page that
+prevented returning a value for scrollTop().  Once position:fixed was removed
+from the body element and width and height was removed from main container,
+I could get a value returned in the console with: console.log($(document)
+.scrollTop())
+*/
 $(document).ready(function(){
    //var posY = $(document).scrollTop();//
    /*var btt = $('#buttonToTop');*/
-    //Check to see if the window is top if not then display button
-    /*$(document).scroll(function(){
-        if (posY > 400) {
-            $('#buttonToTop').css({'display':'inline-block'});
-        } else {
-            $('#buttonToTop').css({'display':'none'});
-        }
-    });*/
     //Add class/ remove class approach//
     $(document).scroll(function(){
         if ($(document).scrollTop() > 450) {
@@ -73,6 +49,21 @@ $(document).ready(function(){
     });
 
 });
+
+//Attempt to return page to top on page refresh
+function applyBeforeunload() {
+    $(window).on('beforeunload', function() {
+      $('body').hide();
+      $(window).scrollTop(0);
+    });
+  }
+  applyBeforeunload();
+  $(document).on('click', '[samepage]', function() {
+    $(window).off('beforeunload');
+    setTimeout(applyBeforeunload, 1000);
+  });
+
+  
 //*Carousel stopped working correctly after adding much more content.
 /*There is an alternative which would involve having a CSS class for each
 each position and using .toggleClass and toggle sequentially through an
