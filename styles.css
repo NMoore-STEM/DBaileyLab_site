@@ -1325,6 +1325,7 @@ i {
     display: grid;
     background-color: darkgray;
     padding: 0 4vw;
+    margin-bottom: -3vw;
 }
 .mostRecent {
     display: inline-flex;
@@ -1389,7 +1390,8 @@ i {
     position: relative;
     margin-right: -6px;
     text-align: right;
-    text-shadow: 2px 2px 1.5px darkgray;
+    /*text-shadow: 2px 2px 1.5px darkgray;*/
+    padding-top: 2vw;
 }
 .yearGroup {
     background-color: lightgray;
