@@ -496,7 +496,7 @@ article h3 {
 .pubLink:hover {
     color: lightgray;
 }
-.pubLink::before {
+/*.pubLink::before {
     content: "";
     position: absolute;
     width: 0;
@@ -512,7 +512,7 @@ article h3 {
     border-bottom: 2px solid silver;
     opacity: 1;
     transition: all 0.4s ease;
-}
+}*/
 #carouselWindow {
     display: block;
     position: relative;
