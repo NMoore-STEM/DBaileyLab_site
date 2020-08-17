@@ -1397,7 +1397,7 @@ i {
     margin: 4px 0 4px 0;
 }
 #buttonToTop {
-    display: none;
+    display: inline-block;
     position: fixed;
     bottom: 75px;
     right: 100px;
@@ -1407,12 +1407,11 @@ i {
     border-radius: 50%;
     box-shadow: 0 3px 2px 0 darkgray;
     z-index: 10;
-    transition: all 0.2s ease;
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 .reveal {
-    visibility: visible;
-    display: inline-block !important;
-    transition: all 0.3s ease;
+    opacity: 1 !important;
 }
 #buttonToTop:hover {
     box-shadow: 0 6px 4px 0 darkgray;
@@ -1421,6 +1420,9 @@ i {
 }
 #buttonToTop:active {
     background-color: white;
+    box-shadow: 0 2px 4px 0 darkgray;
+    bottom: 74px;
+    transition: all 0.2s ease;
 }
 #buttonToTop::after {
 
