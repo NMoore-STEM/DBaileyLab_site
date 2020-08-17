@@ -47,13 +47,22 @@ function scrollBtt() {
   If I could find this, then I feel like this code would work.  I suspect this 
   might be due to having a fixed header, but not sure...  */
 $(document).ready(function(){
-
+   //var posY = $(document).scrollTop();//
+   /*var btt = $('#buttonToTop');*/
     //Check to see if the window is top if not then display button
-    $(window).scroll(function(){
-        if ($(window).scrollTop() > 100) {
-            $('#buttonToTop').style.display = 'inline-block';
+    /*$(document).scroll(function(){
+        if (posY > 400) {
+            $('#buttonToTop').css({'display':'inline-block'});
         } else {
-            $('#buttonToTop').fadeOut();
+            $('#buttonToTop').css({'display':'none'});
+        }
+    });*/
+    //Add class/ remove class approach//
+    $(document).scroll(function(){
+        if ($(document).scrollTop() > 450) {
+            $('#buttonToTop').addClass('reveal');
+        } else {
+            $('#buttonToTop').removeClass('reveal');
         }
     });
 
