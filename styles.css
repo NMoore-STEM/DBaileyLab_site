@@ -151,6 +151,9 @@ nav:hover {
     width: 12vw;
     height: 44px;
 }
+.button a {
+    display: grid;
+}
 .button a::before {
     width: 2px;
     color: darkgray;
@@ -193,19 +196,15 @@ nav:hover {
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-/*nav.button a {
-    display: grid;
-}*/
-#nav_container {
+/*#nav_container {
     display: flex;
     grid-column-start: 2;
     grid-column-end: span 11;
     grid-row-start: 2;
 }
-
 #top h1.fade::after {
     width: 100%
-}
+}*/
 
 .nmsuBIO {
     display: grid;
@@ -438,8 +437,8 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 450px;
-    left: 2vw;
+    top: 480px;
+    left: 1.2vw;
     z-index: 100;
     border: none;
     border-radius: 50%;
@@ -468,8 +467,8 @@ article h3 {
     margin: 0;
     width: 75px;
     height: 75px;
-    top: 450px;
-    right: 2vw;
+    top: 480px;
+    right: 1.2vw;
     z-index: 100;
     border: none;
     border-radius: 50%;
@@ -500,6 +499,7 @@ article h3 {
 }
 .pubLink:hover {
     color: lightgray;
+    box-shadow: 1px 1px 1px 1px black;
 }
 /*.pubLink::before {
     content: "";
@@ -524,9 +524,11 @@ article h3 {
     overflow: hidden;
     height: 450px;
     width: 60vw;
-    margin-top: 2vw;
+    /*margin-top: 2vw;*/
     z-index: 50;
     /*box-shadow: 4px 4px 20px inset;*/
+    padding-top: 60px;
+    border-top: 2px solid darkgray;
 }
 #carouselReel {
     display: inline-block;
