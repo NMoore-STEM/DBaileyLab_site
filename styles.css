@@ -109,7 +109,32 @@ a {
 /* =======================================================*/
 /*------------Header, Title, Navigation-------------------*/
 /*========================================================*/
-
+#header {
+    display: grid;
+    position: fixed;
+    background-color: white;
+    /*justify-content: center;*/
+    box-shadow: 0 0 2em black;
+    grid-template-columns: 14vw 12vw 12vw 12vw 12vw 12vw 12vw 14vw;
+    grid-template-rows: 63px 44px;
+    z-index: 3;
+    min-height: 107px;
+    /*top: 0;*/
+}
+#nmsu {
+    display: grid;
+    /*min-height: 90px;*/
+    /*align-content: center;*/
+    justify-items: center;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    /*z-index: 2;*/
+}
+#top {
+    height: 63px;
+    z-index: 1;
+    grid-column-end: span 6;
+}
 nav:hover {
     background-color:whitesmoke;
     /*transition: all 0.3s;*/
@@ -168,46 +193,20 @@ nav:hover {
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-nav.button a {
+/*nav.button a {
     display: grid;
-}
+}*/
 #nav_container {
     display: flex;
     grid-column-start: 2;
     grid-column-end: span 11;
     grid-row-start: 2;
 }
-#header {
-    display: grid;
-    position: fixed;
-    background-color: white;
-    justify-content: center;
-    box-shadow: 0 0 2em black;
-    grid-template-columns: 14vw 12vw 12vw 12vw 12vw 12vw 12vw 14vw;
-    grid-template-rows: 63px 44px;
-    z-index: 3;
-    min-height: 107px;
-    top: 0;
-}
-#top {
-    /*position: absolute;*/
-    /*width: 100vw;*/
-    height: 63px;
-    z-index: 1;
-    grid-column-end: span 6;
-}
+
 #top h1.fade::after {
     width: 100%
 }
-#nmsu {
-    display: grid;
-    min-height: 90px;
-    align-content: center;
-    justify-items: center;
-    grid-row-start: 1;
-    grid-row-end: span 2;
-    z-index: 2;
-}
+
 .nmsuBIO {
     display: grid;
     /*position: absolute;*/
@@ -488,6 +487,9 @@ article h3 {
     stroke: black;
     stroke-linecap: round;
     stroke-width: 7px;
+}
+#publications button:active, #publications svg:active {
+    scale: 0.9;
 }
 .pubLink {
     font-family: 'Roboto', sans-serif;
@@ -1430,12 +1432,6 @@ i {
     bottom: 74px;
     transition: all 0.2s ease;
 }
-#buttonToTop::after {
-
-}
-#buttonToTop:hover::after {
-
-}
 polygon {
     fill: lightgray;
     stroke: none;
@@ -1444,7 +1440,7 @@ polygon {
 svg {
     transition: all 0.2s ease;
 }
-svg:active {
+#buttonToTop svg:active {
     transform: scale(1.3);
     transform-origin: center;
     transition: all 0.2s ease;
