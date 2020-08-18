@@ -262,7 +262,7 @@ nav.button a {
     width: 70vw;
     max-height: 600px;
     /*min-height: 550px;*/
-    margin: -107px 0 0;
+    /*margin: -107px 0 0;*/
     padding: 107px 0 0;
     background-color: white;
     z-index: 6;
@@ -1310,6 +1310,7 @@ i {
     display: block;
     width: 70vw;
     background-color: gray;
+    padding: 107px 0 0 0;
 }
 #publicationListTop h2 {
     text-align: center;

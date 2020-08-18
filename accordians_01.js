@@ -1,3 +1,9 @@
+//top three list items from #news section (cloned)//
+$(function() {
+    var cloneFunction = $("#topNews").clone();
+    $("#topNewsClone").html(cloneFunction);
+  });
+  
 //accordian behavior//
 $(document).ready(function () {
     $('.collapseBody').hide();
@@ -11,11 +17,7 @@ $(document).ready(function () {
         $('.collapseBody2').slideToggle("fast");
     });
 });
-//top three list items from #news section (cloned)//
-$(function() {
-    var cloneFunction = $("#topNews").clone();
-    $("#topNewsClone").html(cloneFunction);
-  });
+
 //To Top button on full publication list page//
 
 /* BELOW is code that is supposed to make a "to top" button appear after
@@ -44,7 +46,7 @@ $(document).ready(function(){
 
     //Click event to scroll to top
     $('#buttonToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},400);
+        $('html, body').animate({scrollTop : 0},250);
         return false;
     });
 
