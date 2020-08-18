@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     //Click event to scroll to top
     $('#buttonToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},400);
+        $('html, body').animate({scrollTop : 0},250);
         return false;
     });
 
