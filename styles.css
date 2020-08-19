@@ -1508,6 +1508,8 @@ p {
 }
 .scroll_area {
     padding: 0 15px;
+    width: auto;
+    overflow: hidden;
 }
 #welcome {
     width: 100%;
@@ -1564,7 +1566,7 @@ p {
 }
 #researchText h2 {
     /*top: -85px;*/
-    width: 110%;
+    width: 95.5%;
     font-size: 32px;
     background-color: lightgray;
     margin: 0 0 30px;
@@ -1580,31 +1582,97 @@ p {
 #publications {
     position: relative;
     top: 600px;
+    margin-top: -80px;
+    padding-top: 80px;
+    height: 520px;
 }
 #publications button {
     display: none;
 }
 #publications h2 {
     margin: 0;
-    padding: 0 30px;
+    padding: 20px 30px 20px;
     left: -15px;
     position: relative;
+    z-index: 3;
+}
+#publications h2::before {
+    content: "recent ";
+    font-size: 30px;
+}
+#publications a {
+    position: relative;
+    height: 150px;
+}
+#publications img {
+    /*display: none;*/
+    max-width: 150px;
+    max-height: 150px;
+    /*position: absolute;*/
 }
 .pubLink {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    position: relative;
-    right: 0;
+    position: absolute !important;
+    top: 520px;
+    right: -15px;
     background-color: gray;
     color: whitesmoke;
-    padding: 5px 15px;
+    padding: 15px 15px;
+    z-index: 3;
+    height: auto !important;
 }
-#publications img {
-    display: none;
+#carouselWindow {
+    margin-top: 30px;
+    overflow: hidden;
+    height: 285px;
+    display: block;
+    z-index: 2;
+    position: relative;
+    top: -140px;
+    padding-top: 140px;
+    margin-bottom: 50px;
+    background-color: lightgray;
+}
+#carouselReel {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    /*left: -15px;*/
+    height: 225px;
+    overflow-y: hidden;
+}
+.research1 {
+    position: relative;
+    display: grid;
+    margin: auto;
+}
+.overlayTitle {
+    position: absolute;
+    opacity: 0.5;
+    color: whitesmoke;
+    background-color: black;
+    overflow: hidden;
+    z-index: 4;
+    top: 0;
+    height: inherit;
 }
 #ourTeam {
-    width: 80%;
-    overflow: hidden;
+    /*width: 80%;
+    overflow: hidden;*/
+    position: relative;
+    top: 650px;
+}
+#news {
+    position: relative;
+    top: 650px;
+}
+#alumni {
+    position: relative;
+    top: 650px;
 }
 #fundingPartners {
     width: 80%;
