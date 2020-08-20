@@ -1371,7 +1371,7 @@ i {
     margin-bottom: 10px
 }
 .publicationTile ul {
-    font-size: 14px;
+    font-size: 17px;
     margin: auto;
     text-indent: -30px;
     padding: 0 3vw 0 50px;
@@ -1385,7 +1385,9 @@ i {
     border: 1px solid darkgray;
 }
 .publicationFrame img {
+    display: block;
     width: 100%;
+    line-height: 0;
 }
 .allOthers {
     display: grid;
@@ -1397,6 +1399,10 @@ i {
 }
 .allOthers li {
     color: black;
+    font-size: 15px;
+    text-indent: -30px;
+    list-style: none;
+    padding-left: 20px;
 }
 .yearHeading {
     writing-mode: sideways-lr;
