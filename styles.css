@@ -219,6 +219,9 @@ nav:hover {
     grid-row-end: span 2;
     z-index: 3;
 }
+.mobileMenu {
+    display: none;
+}
 
 /* =======================================================*/
 /*-----------General/ Main content Elements---------------*/
@@ -1478,8 +1481,9 @@ h1, h2 {
     text-transform: capitalize;
 }
 h1 {
-    font-size: 42px;
+    font-size: 38px;
     margin: auto;
+    margin-left: 75px;
 }
 h2 {
     font-size: 42px;
@@ -1514,6 +1518,7 @@ p {
     justify-items: center;
     align-content: center;
     width: 100%;
+    height: 100%;
 }
 .nmsuBIO {
     display: grid;
@@ -1521,6 +1526,21 @@ p {
     top: 0;
     right: 0;
     scale: 0.6;
+}
+.mobileMenu {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    outline: 1px solid lightgray;
+    outline-offset: -4px;
+}
+.mobileMenu svg {
+    color: gray;
+    fill: darkgray;
 }
 .scroll_area {
     padding: 0 15px;
