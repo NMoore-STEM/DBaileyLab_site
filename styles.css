@@ -538,6 +538,13 @@ article h3 {
     overflow: hidden;
 }
 /*---Publication Tiles--------------------------------------------*/
+#carouselReel a {
+    display: block;
+    height: 100%;
+}
+#carouselReel img {
+    width: 100%;
+}
 .research1 {
     display: inline-block;
     position: relative;
@@ -581,7 +588,7 @@ article h3 {
     transition: 0.8s fade-in;
     -webkit-font-smoothing: subpixel-antialiased;
 } 
-#research2 {
+/*#research2 {
     display: block;
     width: 160%;
 }
@@ -662,7 +669,7 @@ article h3 {
     height: 100%;
     left: -50px;
     position: relative;
-}
+}*/
 
 /* =======================================================*/
 /*----------------Our Team Section------------------------*/
@@ -1376,6 +1383,9 @@ i {
     max-width: 100px;
     width: 100px;
     border: 1px solid darkgray;
+}
+.publicationFrame img {
+    width: 100%;
 }
 .allOthers {
     display: grid;
