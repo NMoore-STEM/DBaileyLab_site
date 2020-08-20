@@ -538,6 +538,13 @@ article h3 {
     overflow: hidden;
 }
 /*---Publication Tiles--------------------------------------------*/
+#carouselReel a {
+    display: block;
+    height: 100%;
+}
+#carouselReel img {
+    width: 100%;
+}
 .research1 {
     display: inline-block;
     position: relative;
@@ -581,7 +588,7 @@ article h3 {
     transition: 0.8s fade-in;
     -webkit-font-smoothing: subpixel-antialiased;
 } 
-#research2 {
+/*#research2 {
     display: block;
     width: 160%;
 }
@@ -662,7 +669,7 @@ article h3 {
     height: 100%;
     left: -50px;
     position: relative;
-}
+}*/
 
 /* =======================================================*/
 /*----------------Our Team Section------------------------*/
@@ -1364,7 +1371,7 @@ i {
     margin-bottom: 10px
 }
 .publicationTile ul {
-    font-size: 14px;
+    font-size: 17px;
     margin: auto;
     text-indent: -30px;
     padding: 0 3vw 0 50px;
@@ -1377,6 +1384,11 @@ i {
     width: 100px;
     border: 1px solid darkgray;
 }
+.publicationFrame img {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
 .allOthers {
     display: grid;
     position: relative;
@@ -1387,6 +1399,10 @@ i {
 }
 .allOthers li {
     color: black;
+    font-size: 15px;
+    text-indent: -30px;
+    list-style: none;
+    padding-left: 20px;
 }
 .yearHeading {
     writing-mode: sideways-lr;
