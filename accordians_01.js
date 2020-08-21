@@ -100,9 +100,11 @@ $(function(){
 $(document).ready(function(){
     $('#mobileMenu').on('click', function(){
         $('.menuClosed').toggleClass('menuOpen');
+        $('#mobileMenu').toggleClass('menuButtonOpen');
     });
     $('.button').on('click', function(){
         $('.menuClosed').removeClass('menuOpen');
+        $('#mobileMenu').removeClass('menuButtonOpen');
     })
 });
 //*Carousel stopped working correctly after adding much more content.

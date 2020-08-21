@@ -1555,8 +1555,8 @@ p {
     color: gray;
     fill: darkgray;
 }
-#mobileMenu:active {
-    background-color: gray;
+.menuButtonOpen {
+    background-color: gray !important;
 }
 .menuClosed {
     display: flex;
@@ -1607,7 +1607,11 @@ p {
 }
 .menuOpen a {
     display: block;
+    text-decoration: none;
     transition: all 1s ease;    
+}
+.button {
+    font-family: 'Biryani', sans-serif;
 }
 .scroll_area {
     padding: 0 15px;
