@@ -65,7 +65,37 @@ function applyBeforeunload() {
     setTimeout(applyBeforeunload, 1000);
   });
 
-  
+//----------Carousel code
+var disableLeft = $('#carousel_NavLeft').off('click');
+var disableRight = $('#carousel_NavRight').off('click');
+$(function(){
+    $('#carousel_NavLeft').on('click', function(){
+        if (($('#carouselReel').css('left')) < '0px'){
+            $('#carouselReel').animate({
+                left: '+=685px'
+            }, 200, 'swing');
+        } else {
+            disableLeft;
+        }
+    });
+    $('#carousel_NavRight').on('click', function(){
+        if (($('#carouselReel').css('left')) > '-3900px'){
+            $('#carouselReel').animate({
+                left: '-=685px'
+            }, 200, 'swing');
+        } else {
+            disableRight;
+        }
+    })
+}
+);
+
+//-----MOBILE menu button----//
+$(document).ready(function(){
+    $('#mobileMenu').on('click', function(){
+        $('.menuClosed').toggleClass('menuOpen');
+    });
+});
 //*Carousel stopped working correctly after adding much more content.
 /*There is an alternative which would involve having a CSS class for each
 each position and using .toggleClass and toggle sequentially through an
@@ -131,28 +161,8 @@ var moveLeft = $('#carouselReel').animate({
 var n = ($('#carouselReel').css('left'));
 var widthCell = $('.research1').width();
 var moveOn = widthCell*3;*/
-var disableLeft = $('#carousel_NavLeft').off('click');
-var disableRight = $('#carousel_NavRight').off('click');
-$(function(){
-    $('#carousel_NavLeft').on('click', function(){
-        if (($('#carouselReel').css('left')) < '0px'){
-            $('#carouselReel').animate({
-                left: '+=685px'
-            }, 200, 'swing');
-        } else {
-            disableLeft;
-        }
-    });
-    $('#carousel_NavRight').on('click', function(){
-        if (($('#carouselReel').css('left')) > '-3900px'){
-            $('#carouselReel').animate({
-                left: '-=685px'
-            }, 200, 'swing');
-        } else {
-            disableRight;
-        }
-    })
-}
+
+
 
 /* Carousel Brainstorming --------------
 --need to move #carouselReel to reveal all images
@@ -279,4 +289,4 @@ function moveLeft() {
         left: + slideWidth
     }, 1000, 'slow')
 }*/
-)
+

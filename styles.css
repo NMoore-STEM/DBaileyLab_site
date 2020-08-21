@@ -135,6 +135,15 @@ a {
     z-index: 1;
     grid-column-end: span 6;
 }
+.menuClosed {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: span 6;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
 nav:hover {
     background-color:whitesmoke;
     /*transition: all 0.3s;*/
@@ -219,9 +228,12 @@ nav:hover {
     grid-row-end: span 2;
     z-index: 3;
 }
-.mobileMenu {
+#mobileMenu {
     display: none;
 }
+/*.menuClosed {
+    display: none;
+}*/
 
 /* =======================================================*/
 /*-----------General/ Main content Elements---------------*/
@@ -1521,13 +1533,14 @@ p {
     height: 100%;
 }
 .nmsuBIO {
-    display: grid;
+    /*display: grid;*/
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     scale: 0.6;
 }
-.mobileMenu {
+#mobileMenu {
     width: 50px;
     height: 50px;
     display: block;
@@ -1538,9 +1551,37 @@ p {
     outline: 1px solid lightgray;
     outline-offset: -4px;
 }
-.mobileMenu svg {
+#mobileMenu svg {
     color: gray;
     fill: darkgray;
+}
+#mobileMenu:active {
+    background-color: gray;
+}
+.menuClosed {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.menuOpen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0 0 4px 8px black;
+    top: 65px;
+    right: 15px;
+    margin: 0;
+    width: 120px;
+    height: 275px;
+    opacity: 1;
+    transition: all 0.4s ease;
 }
 .scroll_area {
     padding: 0 15px;
