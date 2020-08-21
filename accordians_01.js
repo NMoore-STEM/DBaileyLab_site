@@ -91,10 +91,19 @@ $(function(){
 );
 
 //-----MOBILE menu button----//
+//---NOTE:  Although this small section of code below may seem humble,
+//---       it marks an important step in my growth as a front-
+//---       end dev.  This JS was written from memory/intuition
+//---       without the aid of example code or any cut/paste and
+//---       worked on first attempt as intended. =D
+
 $(document).ready(function(){
     $('#mobileMenu').on('click', function(){
         $('.menuClosed').toggleClass('menuOpen');
     });
+    $('.button').on('click', function(){
+        $('.menuClosed').removeClass('menuOpen');
+    })
 });
 //*Carousel stopped working correctly after adding much more content.
 /*There is an alternative which would involve having a CSS class for each
