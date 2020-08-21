@@ -1437,6 +1437,10 @@ i {
     padding: 1vw 2vw 1vw 1vw;
     margin: 4px 0 4px 0;
 }
+.yearGroup a {
+    border-radius: 5px;
+    background-color: darkgray;
+}
 #buttonToTop {
     display: inline-block;
     position: fixed;
@@ -1495,7 +1499,7 @@ h1, h2 {
 h1 {
     font-size: 38px;
     margin: auto;
-    margin-left: 75px;
+    margin-left: -5px;
 }
 h2 {
     font-size: 42px;
@@ -1516,21 +1520,22 @@ p {
     top: 0;
     z-index: 8;
 }
+#header a {
+    text-decoration: none;
+    color: black;
+}
 #nmsu {
-    display: block;
+    display: inline-grid;
     scale: 0.6;
-    position: relative;
-    left: 0;
-    width: min-content;
+    position: absolute;
+    align-content: center;
+    height: 80px;
 }
 #top {
     display: inline-grid;
-    top: 0;
-    position: absolute;
-    justify-items: center;
-    align-content: center;
     width: 100%;
     height: 100%;
+    justify-content: center;
 }
 .nmsuBIO {
     /*display: grid;*/
