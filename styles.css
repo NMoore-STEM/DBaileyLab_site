@@ -1487,7 +1487,8 @@ svg {
 
 /*==============================MOBILE===========================*/
 
-@media only screen and (max-width:840px) {
+/*@media only screen and (max-width:840px)*/
+@media only screen and (max-width:599px) {
 body {
     margin: 0;
     padding: 0;
@@ -1666,23 +1667,48 @@ p {
     position: absolute;
     top: 80px;
 }
+@media only screen and (min-width:450px) {
+    #foster {
+        /*width: 130%;*/
+        right: -15px;
+        position: absolute;
+        top: 80px;
+        height: 90vw;
+        max-height: 600px;
+    }
+    .welcomeSub {
+        top: 280px;
+    }
+}
+@media only screen and (min-width:675px) {
+    .welcomeSub {
+        opacity: 0.8;
+    }
+}
 #research {
     top: 240px;
     position: relative;
 }
 #researchText {
     position: relative;
-    top: 290px;
+    /*top: 290px;*/
+    top: 80vw;
     z-index: 1;
     /*padding-top: 10px;*/
 }
 #researchText h2 {
     /*top: -85px;*/
+    position: relative;
     width: 95.5%;
     font-size: 32px;
     background-color: lightgray;
-    margin: 0 0 30px;
+    /*margin: 0 0 30px;*/
+    margin: 0 0 15vw;
     padding-left: 30px;
+    right: -15px;
+}
+#researchText p {
+    margin: 6vw 0;
 }
 #leuc01 {
     width: 140%;
@@ -1736,7 +1762,7 @@ p {
 }
 #carouselWindow {
     margin-top: 30px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 285px;
     display: block;
     z-index: 2;
@@ -1752,8 +1778,8 @@ p {
     display: inline-flex;
     flex-direction: row;
     overflow-x: scroll;
-    width: 100%;
-    /*left: -15px;*/
+    width: 110%;
+    left: -15px;
     height: 225px;
     overflow-y: hidden;
 }
@@ -1777,14 +1803,73 @@ p {
     overflow: hidden;*/
     position: relative;
     top: 650px;
+    margin-top: -80px;
+    padding-top: 80px;
+}
+.teamTop {
+    height: 258px;
+}
+.teamTop img {
+    position: relative;
+    left: -15px;
+    max-width: 110%;
+}
+.teamTop h2 {
+    position: relative;
+    top: -50px;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    left: -15px;
+}
+#bailey {
+    padding: 6vw 0;
+}
+#bailey img {
+    position: absolute;
+    max-width: 100px;
+}
+#bailey h4 {
+    position: absolute;
+    left: 120px;
+    top: 350px;
+    text-transform: capitalize;
+}
+#bailey .title {
+    position: absolute;
+    left: 120px;
+    margin: 0;
+    padding: 0;
+    top: 390px;
+}
+#bailey .education .speciality {
+    position: relative;
+    top: 100px;
+}
+.currentTeam {
+    position: relative;
+    top: 80px;
+    text-transform: capitalize;
+    font-size: 17pt;
+}
+.currentStudents {
+    position: relative;
+    top: 70px;
 }
 #news {
     position: relative;
-    top: 650px;
+    top: 760px;
+    margin-top: -80px;
+    padding-top: 80px;
 }
 #alumni {
     position: relative;
-    top: 650px;
+    top: 850px;
+    margin-top: -80px;
+    padding-top: 80px;
 }
 #fundingPartners {
     width: 80%;
@@ -1792,4 +1877,4 @@ p {
 }
 }
 /*====TABLET====*/
-@media only screen and (max-width: 1024px) and (min-width: 541px) {}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {}
