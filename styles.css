@@ -720,6 +720,9 @@ article h3 {
 .teamTop img {
     width: 100%;
 }
+.filter {
+    display: none;
+}
 .team {
     margin: auto;
     /*margin-left: 0;*/
@@ -1493,7 +1496,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2 {
+h1, h2, h4 {
     font-family: 'Exo', sans-serif;
     text-transform: capitalize;
 }
@@ -1510,6 +1513,9 @@ h2 {
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+ul {
+    font-family: 'Roboto', sans-serif;
 }
 #header {
     height: 80px;
@@ -1833,7 +1839,18 @@ p {
 .teamTop img {
     position: relative;
     left: -15px;
-    max-width: 110%;
+    max-width: 109%;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('images\bailey_lab2019.jpg');*/
+}
+.filter {
+    display: block;
+    background-color: rgb(0,0,0,0.3);
+    width: 109%;
+    height: 225px;
+    position: absolute;
+    left: -15px;
+    z-index: 1;
 }
 .teamTop h2 {
     position: relative;
@@ -1846,6 +1863,9 @@ p {
     display: grid;
     left: -15px;
 }
+.team {
+    z-index: 3;
+}
 #bailey {
     padding: 6vw 0;
 }
@@ -1854,21 +1874,24 @@ p {
     max-width: 100px;
 }
 #bailey h4 {
-    position: absolute;
+    position: relative;
     left: 120px;
-    top: 350px;
-    text-transform: capitalize;
+    margin: 15px 0;
+    font-size: 18px;
 }
 #bailey .title {
-    position: absolute;
-    left: 120px;
-    margin: 0;
-    padding: 0;
-    top: 390px;
-}
-#bailey .education .speciality {
     position: relative;
-    top: 100px;
+    left: 120px;
+    margin: 10px 0;
+    padding: 0;
+    width: 70%;
+    font-size: 14px;
+}
+#bailey .education, #bailey .speciality {
+    position: relative;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 14px;
 }
 .currentTeam {
     position: relative;
