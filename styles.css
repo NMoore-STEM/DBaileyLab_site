@@ -1935,6 +1935,24 @@ ul {
     margin-top: -80px;
     padding-top: 80px;
 }
+#news h2 {
+    margin: 20px 0;
+    width: inherit;
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+#newsContainer {
+    padding: 10px 10px 20px 30px;
+    background-color: whitesmoke;
+    outline: 2px solid lightgray;
+    outline-offset: -2px;
+}
+#newsContainer li {
+    padding-bottom: 15px;
+    text-indent: -10px;
+    list-style-type: none;
+}
 #alumni {
     position: relative;
     top: 850px;
