@@ -1624,6 +1624,9 @@ p {
     width: auto;
     overflow: hidden;
 }
+/*====================================================*/
+/*--------------WELCOME - MOBILE----------------------*/
+/*====================================================*/
 #welcome {
     width: 100%;
     display: grid;
@@ -1685,6 +1688,9 @@ p {
         opacity: 0.8;
     }
 }
+/*==================================================*/
+/*----------------RESEARCH - MOBILE-----------------*/
+/*==================================================*/
 #research {
     top: 240px;
     position: relative;
@@ -1717,19 +1723,22 @@ p {
     top: 0px;
     z-index: 0;
 }
+/*===================================================*/
+/*-------------PUBLICATIONS - MOBILE-----------------*/
+/*===================================================*/
 #publications {
     position: relative;
     top: 600px;
     margin-top: -80px;
     padding-top: 80px;
-    height: 520px;
+    height: 550px;
 }
 #publications button {
     display: none;
 }
 #publications h2 {
     margin: 0;
-    padding: 20px 30px 20px;
+    padding: 10px 30px 20px;
     left: -15px;
     position: relative;
     z-index: 3;
@@ -1740,19 +1749,20 @@ p {
 }
 #publications a {
     position: relative;
-    height: 150px;
+    height: 200px;
+    width: 200px;
 }
 #publications img {
-    /*display: none;*/
-    max-width: 150px;
-    max-height: 150px;
-    /*position: absolute;*/
+    /*max-width: 150px;
+    max-height: 150px;*/
+    width: 100%;
+    object-fit: contain;
 }
 .pubLink {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     position: absolute !important;
-    top: 520px;
+    top: 535px;
     right: -15px;
     background-color: gray;
     color: whitesmoke;
@@ -1763,11 +1773,11 @@ p {
 #carouselWindow {
     margin-top: 30px;
     /*overflow: hidden;*/
-    height: 285px;
+    height: 320px;
     display: block;
     z-index: 2;
     position: relative;
-    top: -140px;
+    top: -160px;
     padding-top: 140px;
     margin-bottom: 50px;
     background-color: lightgray;
@@ -1779,25 +1789,36 @@ p {
     flex-direction: row;
     overflow-x: scroll;
     width: 110%;
-    left: -15px;
-    height: 225px;
+    /*left: -15px;*/
+    height: 275px;
     overflow-y: hidden;
+    margin-left: -15px;
 }
 .research1 {
     position: relative;
     display: grid;
-    margin: auto;
+    margin: auto 5px;
+    box-shadow: 3px 3px 0 0 darkgray;
 }
 .overlayTitle {
+    display: grid;
     position: absolute;
-    opacity: 0.5;
-    color: whitesmoke;
-    background-color: black;
+    /*opacity: 0.5;*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(0,0,0,0.5);
     overflow: hidden;
     z-index: 4;
     top: 0;
-    height: inherit;
+    height: 170px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+
 }
+/*=====================================================*/
+/*---------------OUR TEAM - MOBILE---------------------*/
+/*=====================================================*/
 #ourTeam {
     /*width: 80%;
     overflow: hidden;*/
@@ -1859,6 +1880,9 @@ p {
     position: relative;
     top: 70px;
 }
+/*===================================================*/
+/*------------------NEWS - MOBILE--------------------*/
+/*===================================================*/
 #news {
     position: relative;
     top: 760px;
