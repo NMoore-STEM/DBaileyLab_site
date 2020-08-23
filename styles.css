@@ -1874,7 +1874,10 @@ ul {
     z-index: 3;
 }
 #bailey {
-    padding: 6vw 0;
+    padding: 15vw 0;
+}
+#bailey div {
+    margin-top: 7vw;
 }
 #bailey img {
     position: absolute;
@@ -1893,12 +1896,16 @@ ul {
     padding: 0;
     width: 70%;
     font-size: 14px;
+    font-weight: bold;
 }
 #bailey .education1, #bailey .specialty {
     position: relative;
-    padding: 0;
+    padding: 0 25px 0;
     margin: 20px 0;
     font-size: 14px;
+}
+#current {
+    margin: 0 0 15px;
 }
 .currentTeam {
     position: relative;
@@ -1913,6 +1920,10 @@ ul {
     top: 0;
     padding: 0 15px;
 }
+.currentStudents .title2 {
+    position: relative;
+    padding: 0 0 10px 25px !important;
+}
 .studentList {
     padding: 15px 15px 20px;
     background-color: whitesmoke;
@@ -1925,6 +1936,10 @@ ul {
 .studentList ul {
     font-size: 15px;
     margin: 0;
+    padding: 5px 0 5px 10px;
+}
+.studentList h4 {
+    margin: 0 0 15px;
 }
 /*===================================================*/
 /*------------------NEWS - MOBILE--------------------*/
@@ -1947,6 +1962,7 @@ ul {
     background-color: whitesmoke;
     outline: 2px solid lightgray;
     outline-offset: -2px;
+    font-family: 'Roboto', sans-serif;
 }
 #newsContainer li {
     padding-bottom: 15px;
