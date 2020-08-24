@@ -1634,7 +1634,7 @@ ul {
     font-family: 'Biryani', sans-serif;
 }
 .scroll_area {
-    padding: 0 15px;
+    padding: 0 4vw;
     width: auto;
     overflow: hidden;
     height: 6800px;
@@ -1643,8 +1643,6 @@ ul {
 /*--------------WELCOME - MOBILE----------------------*/
 /*====================================================*/
 #welcome {
-    width: 100%;
-    display: grid;
     margin-top: -80px;
     z-index: 5;
     position: relative;
@@ -1652,17 +1650,13 @@ ul {
 }
 .welcomeSub {
     position: relative;
-    grid-row-start: 1;
     background-color: lightgray;
-    /*opacity: 0.8;*/
     z-index: 6;
-    margin-top: 15px;
-    top: 280px;
-    /*border-radius: 4px;*/
-    padding: 0 15px 15px;
+    top: calc(60vw + 80px);
+    padding: 0 4vw 4vw;
 }
 .welcomeSub h2 {
-    left: -15px;
+    left: -4vw;
     position: absolute;
     padding: 0 10px;
     top: -60px;
@@ -1670,25 +1664,35 @@ ul {
 .welcomeText {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding-top: 50px;
+    padding: 14vw 0 4vw;
     font-size: 16px;
 }
 #introPic {
     visibility: hidden;
+    display: none;
     height: 0;
     width: 0;
     margin: 0;
 }
-#foster {
-    width: 130%;
-    right: -75px;
-    position: absolute;
-    top: 80px;
+article {
+    visibility: hidden;
+    display: none;
+    height: 0;
+    margin: 0;
 }
-@media only screen and (min-width:450px) {
+#foster {
+    /*width: 130%;
+    right: -75px;
+    position: absolute;*/
+    top: 80px;
+    width: 92vw;
+    position: absolute;
+    margin: 80px 0 0 0;
+}
+/*@media only screen and (min-width:450px) {
     #foster {
         /*width: 130%;*/
-        right: -15px;
+        /*right: -15px;
         position: absolute;
         top: 80px;
         height: 90vw;
@@ -1697,7 +1701,7 @@ ul {
     .welcomeSub {
         top: 280px;
     }
-}
+}*/
 @media only screen and (min-width:675px) {
     .welcomeSub {
         opacity: 0.8;
@@ -2031,7 +2035,7 @@ ul {
     height: 20vw;
     background-color: silver;
 }
-.collapseButton h2 {
+.collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
     width: 80%;
     font-size: 18pt;
