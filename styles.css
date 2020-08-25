@@ -2034,12 +2034,16 @@ article {
     height: 80px;
     background-color: silver;
     border: none;
+    padding: 0 30px 0;
 }
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
-    width: 80%;
-    font-size: 18pt;
-    margin: auto;
+    width: 80vw !important;
+    font-size: 16pt;
+    margin: auto !important;
+}
+.collapseButton2 h3 {
+    display: none;
 }
 .expand_button {
     position: relative;
@@ -2047,14 +2051,22 @@ article {
     width: 35px;
     right: 0;
 }
+#accordian2 {
+    margin-top: 16px;
+}
 .collapseBody2 {
     display: inline-grid;
     margin: auto;
     justify-items: center;
     width: 92vw;
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 0 4vw;
 }
 .listColumn1 ul, .listColumn2 ul, .listColumn3 ul {
     padding: 0;
+    margin: 0;
+    line-height: 1.8;
 }
 .listColumn1, .listColumn2, .listColumn3 {
     width: 92vw;
