@@ -1983,7 +1983,7 @@ article {
 /*=================================================*/
 #alumni {
     position: relative;
-    top: 200px;
+    top: 55vw;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -2053,6 +2053,11 @@ article {
 }
 #accordian2 {
     margin-top: 16px;
+}
+.collapseBody {
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 0 4vw;
 }
 .collapseBody2 {
     display: inline-grid;
