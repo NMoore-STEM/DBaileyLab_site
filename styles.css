@@ -1,8 +1,10 @@
 /** {
-    outline: 2px solid red;
+    outline: 1px solid red;
+    outline-offset:-1px;
 }*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /*====PC-FULL====*/
 @media only screen and (min-width: 1025px) {
@@ -1738,7 +1740,6 @@ article {
     /*margin: 0 0 30px;*/
     margin: 0 0 11vw 25vw;
     padding-left: 5vw;
-    right: -15px;
 }
 #researchText p {
     margin: 6vw 0;
@@ -1893,7 +1894,7 @@ article {
 }
 #bailey h4 {
     position: relative;
-    left: 120px;
+    /*left: 120px;*/
     margin: 15px 0;
     font-size: 16pt;
 }
@@ -2089,8 +2090,24 @@ article {
 /*======================================================*/
 #footer {
     position: relative;
-    top: 850px;
+    top: 400px;
     display: grid;
+    width: 100vw;
+    left: -4vw;
+    background-color: silver;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+.footerHeadings {
+    display: flex;
+}
+.footerIndent {
+    padding-left: 4vw;
+}
+.footerIndent img {
+    height: 20px;
 }
 }
 /*====TABLET====*/
