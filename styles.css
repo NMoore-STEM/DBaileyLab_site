@@ -1879,7 +1879,7 @@ article {
 }
 .team {
     z-index: 3;
-    font-size: 17pt;
+    font-size: 20pt;
 }
 #bailey {
     padding: 15vw 0;
@@ -1954,7 +1954,7 @@ article {
 /*===================================================*/
 #news {
     position: relative;
-    top: 680px;
+    top: 40vw;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -1982,7 +1982,7 @@ article {
 /*=================================================*/
 #alumni {
     position: relative;
-    top: 740px;
+    top: 200px;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -2027,14 +2027,12 @@ article {
     width: 150px;
     padding: 0;
 }
-.accordian {
-    display: inline-flex;
-}
 .collapseButton, .collapseButton2 {
     display: flex;
-    width: 100%;
-    height: 20vw;
+    width: 92vw;
+    height: 80px;
     background-color: silver;
+    border: none;
 }
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
@@ -2043,22 +2041,35 @@ article {
     margin: auto;
 }
 .expand_button {
-    display: inline-flex;
-    height: 40%;
+    position: relative;
+    margin: auto 0;
+    width: 35px;
+    right: 0;
+}
+.collapseBody2 {
+    display: inline-grid;
     margin: auto;
+    justify-items: center;
+    width: 92vw;
+}
+.listColumn1 ul, .listColumn2 ul, .listColumn3 ul {
+    padding: 0;
+}
+.listColumn1, .listColumn2, .listColumn3 {
+    width: 92vw;
 }
 /*==========================================================*/
 /*-----------------PARTNERS - MOBILE------------------------*/
 /*==========================================================*/
 #fundingPartners {
-    width: 80%;
+    width: 100vw;
     overflow: hidden;
     position: relative;
-    top: 850px;
+    top: 400px;
     margin-top: -80px;
     padding-top: 80px;
     background-color: gray;
-    left: -15px;
+    left: -4vw;
     justify-items: center;
     align-items: center;
     justify-content: center;
