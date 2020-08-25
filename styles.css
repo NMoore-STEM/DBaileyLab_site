@@ -395,7 +395,7 @@ article h3 {
     margin: 4vw 0 4vw 0;
 }
 #leuc01 {
-    position: relative;
+    position: absolute;
     top: -40px;
     left: -10vw;
     height: 110%;
@@ -1665,8 +1665,9 @@ ul {
 .welcomeText {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 14vw 0 4vw;
+    padding: 4vw 0 4vw;
     font-size: 16px;
+    line-height: 1.4;
 }
 #introPic {
     visibility: hidden;
@@ -1711,34 +1712,44 @@ article {
 /*----------------RESEARCH - MOBILE-----------------*/
 /*==================================================*/
 #research {
-    /*top: 240px;*/
+    top: 20px;
     position: relative;
+    left: -4vw;
+    width: 100vw;
+    margin-top: -60px;
+    padding-top: 60px;
 }
 #researchText {
     position: relative;
+    top: -18px;
     /*top: 290px;*/
-    top: 80vw;
+    /*top: 80vw;*/
     z-index: 1;
     /*padding-top: 10px;*/
 }
 #researchText h2 {
     /*top: -85px;*/
     position: relative;
-    width: 95.5%;
-    font-size: 32px;
+    float: right;
+    font-size: 20pt;
+    width: 70vw;
+    /*font-size: 32px;*/
     background-color: lightgray;
     /*margin: 0 0 30px;*/
-    margin: 0 0 15vw;
-    padding-left: 30px;
+    margin: 0 0 11vw 25vw;
+    padding-left: 5vw;
     right: -15px;
 }
 #researchText p {
     margin: 6vw 0;
+    line-height: 1.4;
+    padding: 0 8vw;
 }
 #leuc01 {
-    width: 140%;
-    left: -100px;
-    position: absolute;
+    /*width: 140%;
+    left: -100px;*/
+    position: relative;
+    width: 100vw;
     top: 0px;
     z-index: 0;
 }
