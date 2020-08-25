@@ -1758,10 +1758,10 @@ article {
 /*===================================================*/
 #publications {
     position: relative;
-    top: 600px;
+    top: 50px;
     margin-top: -80px;
     padding-top: 80px;
-    height: 550px;
+    height: 530px;
 }
 #publications button {
     display: none;
@@ -1769,7 +1769,7 @@ article {
 #publications h2 {
     margin: 0;
     padding: 10px 30px 20px;
-    left: -15px;
+    left: -2vw;
     position: relative;
     z-index: 3;
 }
@@ -1793,7 +1793,7 @@ article {
     font-size: 16px;
     position: absolute !important;
     top: 535px;
-    right: -15px;
+    right: -2vw;
     background-color: gray;
     color: whitesmoke;
     padding: 15px 15px;
@@ -1818,11 +1818,10 @@ article {
     display: inline-flex;
     flex-direction: row;
     overflow-x: scroll;
-    width: 110%;
-    /*left: -15px;*/
+    width: 100vw;
     height: 275px;
     overflow-y: hidden;
-    margin-left: -15px;
+    margin-left: -4vw;
 }
 .research1 {
     position: relative;
@@ -1853,7 +1852,7 @@ article {
     /*width: 80%;
     overflow: hidden;*/
     position: relative;
-    top: 650px;
+    top: 140px;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -1862,34 +1861,25 @@ article {
 }
 .teamTop img {
     position: relative;
-    left: -15px;
-    max-width: 109%;
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('images\bailey_lab2019.jpg');*/
-}
-.filter {
-    display: block;
-    background-color: rgb(0,0,0,0.3);
-    width: 109%;
-    height: 225px;
-    position: absolute;
-    left: -15px;
-    z-index: 1;
+    left: -4vw;
+    width: 360px;
 }
 .teamTop h2 {
     position: relative;
+    float: right;
     top: -50px;
     margin: 0;
-    width: 100%;
+    width: 70vw;
     height: 80px;
     align-content: center;
     text-align: center;
     display: grid;
-    left: -15px;
+    right: -4vw;
     background-color: lightgray;
 }
 .team {
     z-index: 3;
+    font-size: 17pt;
 }
 #bailey {
     padding: 15vw 0;
