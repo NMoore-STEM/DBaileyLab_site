@@ -2063,6 +2063,7 @@ article {
     display: inline-grid;
     margin: auto;
     justify-items: center;
+    text-align: center;
     width: 92vw;
     outline: 2px solid darkgray;
     outline-offset: -2px;
