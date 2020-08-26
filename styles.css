@@ -2118,7 +2118,7 @@ person .smallPic {
 /*======================================================*/
 #footer {
     position: relative;
-    top: 400px;
+    top: 320px;
     display: grid;
     width: 100vw;
     left: -4vw;
