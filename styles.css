@@ -2124,6 +2124,9 @@ person .smallPic {
     left: -4vw;
     background-color: silver;
 }
+.additionalFull {
+    visibility: hidden;
+}
 .copyright {
     position: absolute;
     bottom: 0;
