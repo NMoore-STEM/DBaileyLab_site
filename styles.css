@@ -1500,7 +1500,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h4 {
+h1, h2, h3, h4 {
     font-family: 'Exo', sans-serif;
     text-transform: capitalize;
 }
@@ -2034,7 +2034,7 @@ article {
     height: 80px;
     background-color: silver;
     border: none;
-    padding: 0 30px 0;
+    padding: 0 15px 0 0;
 }
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
@@ -2057,7 +2057,7 @@ article {
 .collapseBody {
     outline: 2px solid darkgray;
     outline-offset: -2px;
-    padding: 4vw 0 4vw;
+    padding: 4vw 6vw 4vw;
 }
 .collapseBody2 {
     display: inline-grid;
@@ -2068,6 +2068,19 @@ article {
     outline: 2px solid darkgray;
     outline-offset: -2px;
     padding: 4vw 0 4vw;
+}
+person {
+    border-top: 2px solid lightgray;
+    display: block;
+    margin-top: 8vw;
+    padding-top: 4vw;
+}
+person .title2 {
+    top: 0 !important;
+}
+person .smallPic {
+    float: right;
+    padding: 0 4vw 4vw;
 }
 .listColumn1 ul, .listColumn2 ul, .listColumn3 ul {
     padding: 0;
@@ -2084,14 +2097,10 @@ article {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    top: 400px;
-    margin-top: -80px;
-    padding-top: 80px;
+    top: 320px;
     background-color: gray;
     left: -4vw;
     justify-items: center;
-    align-items: center;
-    justify-content: center;
     display: grid;
 }
 .first {
