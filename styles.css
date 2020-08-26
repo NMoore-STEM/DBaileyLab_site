@@ -1,8 +1,10 @@
 /** {
-    outline: 2px solid red;
+    outline: 1px solid red;
+    outline-offset:-1px;
 }*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /*====PC-FULL====*/
 @media only screen and (min-width: 1025px) {
@@ -1498,7 +1500,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h4 {
+h1, h2, h3, h4 {
     font-family: 'Exo', sans-serif;
     text-transform: capitalize;
 }
@@ -1738,7 +1740,6 @@ article {
     /*margin: 0 0 30px;*/
     margin: 0 0 11vw 25vw;
     padding-left: 5vw;
-    right: -15px;
 }
 #researchText p {
     margin: 6vw 0;
@@ -1879,7 +1880,7 @@ article {
 }
 .team {
     z-index: 3;
-    font-size: 17pt;
+    font-size: 20pt;
 }
 #bailey {
     padding: 15vw 0;
@@ -1887,17 +1888,18 @@ article {
 #bailey div {
     margin-top: 7vw;
 }
-#bailey img {
-    position: absolute;
+.smallPic3 {
     max-width: 100px;
+    float: left;
+    padding: 4vw 4vw 0;
 }
 #bailey h4 {
     position: relative;
-    left: 120px;
+    /*left: 120px;*/
     margin: 15px 0;
     font-size: 16pt;
 }
-#bailey .title {
+.title {
     position: relative;
     left: 120px;
     margin: 10px 0;
@@ -1908,8 +1910,7 @@ article {
 }
 #bailey .education1, #bailey .specialty {
     position: relative;
-    padding: 0 25px 0;
-    margin: 20px 0;
+    padding: 10px 25px 0;
     font-size: 14px;
 }
 #current {
@@ -1954,7 +1955,7 @@ article {
 /*===================================================*/
 #news {
     position: relative;
-    top: 680px;
+    top: 40vw;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -1982,7 +1983,7 @@ article {
 /*=================================================*/
 #alumni {
     position: relative;
-    top: 740px;
+    top: 55vw;
     margin-top: -80px;
     padding-top: 80px;
 }
@@ -2027,41 +2028,80 @@ article {
     width: 150px;
     padding: 0;
 }
-.accordian {
-    display: inline-flex;
-}
 .collapseButton, .collapseButton2 {
     display: flex;
-    width: 100%;
-    height: 20vw;
+    width: 92vw;
+    height: 80px;
     background-color: silver;
+    border: none;
+    padding: 0 15px 0 0;
 }
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
-    width: 80%;
-    font-size: 18pt;
-    margin: auto;
+    width: 80vw !important;
+    font-size: 16pt;
+    margin: auto !important;
+}
+.collapseButton2 h3 {
+    display: none;
 }
 .expand_button {
-    display: inline-flex;
-    height: 40%;
+    position: relative;
+    margin: auto 0;
+    width: 35px;
+    right: 0;
+}
+#accordian2 {
+    margin-top: 16px;
+}
+.collapseBody {
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 6vw 4vw;
+}
+.collapseBody2 {
+    display: inline-grid;
     margin: auto;
+    justify-items: center;
+    text-align: center;
+    width: 92vw;
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 0 4vw;
+}
+person {
+    border-top: 2px solid lightgray;
+    display: block;
+    margin-top: 8vw;
+    padding-top: 4vw;
+}
+person .title2 {
+    top: 0 !important;
+}
+person .smallPic {
+    float: right;
+    padding: 7vw 4vw 4vw;
+    border-radius: 0 50%;
+}
+.listColumn1 ul, .listColumn2 ul, .listColumn3 ul {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+.listColumn1, .listColumn2, .listColumn3 {
+    width: 92vw;
 }
 /*==========================================================*/
 /*-----------------PARTNERS - MOBILE------------------------*/
 /*==========================================================*/
 #fundingPartners {
-    width: 80%;
+    width: 100vw;
     overflow: hidden;
     position: relative;
-    top: 850px;
-    margin-top: -80px;
-    padding-top: 80px;
+    top: 320px;
     background-color: gray;
-    left: -15px;
+    left: -4vw;
     justify-items: center;
-    align-items: center;
-    justify-content: center;
     display: grid;
 }
 .first {
@@ -2078,8 +2118,24 @@ article {
 /*======================================================*/
 #footer {
     position: relative;
-    top: 850px;
+    top: 320px;
     display: grid;
+    width: 100vw;
+    left: -4vw;
+    background-color: silver;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+.footerHeadings {
+    display: flex;
+}
+.footerIndent {
+    padding-left: 4vw;
+}
+.footerIndent img {
+    height: 20px;
 }
 }
 /*====TABLET====*/
