@@ -2124,6 +2124,9 @@ person .smallPic {
     left: -4vw;
     background-color: silver;
 }
+.additionalFull {
+    visibility: hidden;
+}
 .copyright {
     position: absolute;
     bottom: 0;
@@ -2131,11 +2134,37 @@ person .smallPic {
 .footerHeadings {
     display: flex;
 }
+.footerHeadings h4 {
+    padding-top: 4vw;
+    margin: auto;
+    height: 20px;
+}
 .footerIndent {
-    padding-left: 4vw;
+    /*padding-left: 4vw;*/
+    width: 165px;
 }
 .footerIndent img {
     height: 20px;
+}
+#footerContent {
+    font-size: 10pt;
+    padding: 4vw;
+    border-top: 2px solid darkgray;
+}
+#footerContent h3 {
+    margin: 5px;
+    width: 155px;
+}
+.footerIndent ul {
+    padding-left: 25px;
+}
+phone {
+    padding-left: 5px;
+}
+.footerIndent address:first-child {
+    padding-top: 10px;
+    position: relative;
+    left: -10px;
 }
 }
 /*====TABLET====*/
