@@ -2128,7 +2128,6 @@ person .smallPic {
     grid-template-columns: 1fr 1fr;
 }
 .additionalFull {
-    visibility: hidden;
     position: absolute;
     top: 250px;
 }
@@ -2201,6 +2200,16 @@ phone {
 #right {
     position: absolute;
     top: 290px;
+    font-family: 'Roboto', sans-serif;
+}
+#right .footerIndent {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-top: 2vw;
+}
+#right .footerIndent a {
+    text-decoration: none;
 }
 }
 /*====TABLET====*/
