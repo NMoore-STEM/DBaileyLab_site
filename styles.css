@@ -2166,7 +2166,7 @@ person .smallPic {
     grid-row-end: span 1;
 }
 #footerContent h3 {
-    margin: 5px;
+    margin: 5px 0;
     width: 155px;
 }
 .footerIndent ul {
@@ -2197,6 +2197,10 @@ phone {
     padding-top: 10px;
     position: relative;
     left: -10px;
+}
+#right {
+    position: absolute;
+    top: 290px;
 }
 }
 /*====TABLET====*/
