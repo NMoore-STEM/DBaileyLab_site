@@ -2132,6 +2132,8 @@ person .smallPic {
 }
 .additionalFull {
     visibility: hidden;
+    position: absolute;
+    top: 250px;
 }
 .copyright {
     grid-row-start: 4;
@@ -2169,6 +2171,7 @@ person .smallPic {
 .footerIndent ul {
     padding-left: 25px;
     margin-bottom: 7px;
+    margin-top: 0;
 }
 .number {
     margin-bottom: 7px;
@@ -2187,7 +2190,7 @@ phone {
 #baileyIndent {
     position: absolute;
     right: 0;
-    top: 78px;
+    top: 82px;
 }
 .footerIndent address:first-child {
     padding-top: 10px;
