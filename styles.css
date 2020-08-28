@@ -2103,15 +2103,19 @@ person .smallPic {
     left: -4vw;
     justify-items: center;
     display: grid;
+    padding: 0 0 10vw;
 }
 .first {
     height: 175px;
+    padding: 4vw;
 }
 .second {
     height: 80px;
+    padding: 4vw;
 }
 .third {
     height: 150px;
+    padding: 4vw;
 }
 /*======================================================*/
 /*-----------------FOOTER - MOBILE----------------------*/
@@ -2123,16 +2127,19 @@ person .smallPic {
     width: 100vw;
     left: -4vw;
     background-color: silver;
+    grid-template-rows: 35px 200px 200px 50px;
+    grid-template-columns: 1fr 1fr;
 }
 .additionalFull {
     visibility: hidden;
 }
 .copyright {
-    position: absolute;
-    bottom: 0;
+    grid-row-start: 4;
+    grid-column-end: span 2;
 }
 .footerHeadings {
     display: flex;
+    grid-column-end: span 2;
 }
 .footerHeadings h4 {
     padding-top: 4vw;
@@ -2140,16 +2147,20 @@ person .smallPic {
     height: 20px;
 }
 .footerIndent {
-    /*padding-left: 4vw;*/
+    padding-left: 3vw;
     width: 165px;
 }
 .footerIndent img {
-    height: 20px;
+    height: 17px;
+    float: left;
 }
 #footerContent {
     font-size: 10pt;
     padding: 4vw;
     border-top: 2px solid darkgray;
+    grid-column-end: span 2;
+    grid-column-start: 1;
+    grid-row-end: span 1;
 }
 #footerContent h3 {
     margin: 5px;
@@ -2157,9 +2168,26 @@ person .smallPic {
 }
 .footerIndent ul {
     padding-left: 25px;
+    margin-bottom: 7px;
+}
+.number {
+    margin-bottom: 7px;
 }
 phone {
     padding-left: 5px;
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+.baileyFooter {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+#baileyIndent {
+    position: absolute;
+    right: 0;
+    top: 78px;
 }
 .footerIndent address:first-child {
     padding-top: 10px;
