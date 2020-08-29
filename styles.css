@@ -605,88 +605,6 @@ article h3 {
     transition: 0.8s fade-in;
     -webkit-font-smoothing: subpixel-antialiased;
 } 
-/*#research2 {
-    display: block;
-    width: 160%;
-}
-#research3 {
-    display: block;
-    height: 100%;
-}
-#research4 {
-    display: block;
-    position: relative;
-    left: -15px;
-    height: 100%;
-}
-#research5 {
-    display: block;
-    position: relative;
-    top: -4px;
-    left: -25px;
-    height: 103%;
-}
-#research6 {
-    width: 110%;
-    left: -10px;
-    position: relative;
-    top: -8px;
-}
-#research7 {
-    height: 100%;
-    position: absolute;
-    right: -5px;
-}
-#research8 {
-    width: 140%;
-    left: -80px;
-    position: relative;
-}
-#research9 {
-    height: 100%;
-    position: relative;
-}
-#research10 {
-    height: 100%;
-    position: relative;
-}
-#research11 {
-    height: 100%;
-}
-#research12 {
-    height: 110%;
-}
-#research13 {
-    height: 100%;
-    left: -30px;
-    position: relative;
-}
-#research14 {
-    height: 130%;
-    left: -60px;
-    position: relative;
-}
-#research15 {
-    width: 100%;
-    top: -100px;
-    position: relative;
-}
-#research16 {
-    height: 100%;
-}
-#research17 {
-    height: 100%;
-    position: relative;
-    left: -40px;
-}
-#research18 {
-    height: 105%;
-}
-#research20 {
-    height: 100%;
-    left: -50px;
-    position: relative;
-}*/
 
 /* =======================================================*/
 /*----------------Our Team Section------------------------*/
@@ -2218,9 +2136,7 @@ phone {
 /*-------------Full Publications Page - MOBILE--------------*/
 /*==========================================================*/
 /*==========================================================*/
-img {
-    width: 20px;
-}
+
 }
 /*====TABLET====*/
 @media only screen and (max-width: 1024px) and (min-width: 600px) {}
