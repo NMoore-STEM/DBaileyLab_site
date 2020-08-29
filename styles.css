@@ -605,88 +605,6 @@ article h3 {
     transition: 0.8s fade-in;
     -webkit-font-smoothing: subpixel-antialiased;
 } 
-/*#research2 {
-    display: block;
-    width: 160%;
-}
-#research3 {
-    display: block;
-    height: 100%;
-}
-#research4 {
-    display: block;
-    position: relative;
-    left: -15px;
-    height: 100%;
-}
-#research5 {
-    display: block;
-    position: relative;
-    top: -4px;
-    left: -25px;
-    height: 103%;
-}
-#research6 {
-    width: 110%;
-    left: -10px;
-    position: relative;
-    top: -8px;
-}
-#research7 {
-    height: 100%;
-    position: absolute;
-    right: -5px;
-}
-#research8 {
-    width: 140%;
-    left: -80px;
-    position: relative;
-}
-#research9 {
-    height: 100%;
-    position: relative;
-}
-#research10 {
-    height: 100%;
-    position: relative;
-}
-#research11 {
-    height: 100%;
-}
-#research12 {
-    height: 110%;
-}
-#research13 {
-    height: 100%;
-    left: -30px;
-    position: relative;
-}
-#research14 {
-    height: 130%;
-    left: -60px;
-    position: relative;
-}
-#research15 {
-    width: 100%;
-    top: -100px;
-    position: relative;
-}
-#research16 {
-    height: 100%;
-}
-#research17 {
-    height: 100%;
-    position: relative;
-    left: -40px;
-}
-#research18 {
-    height: 105%;
-}
-#research20 {
-    height: 100%;
-    left: -50px;
-    position: relative;
-}*/
 
 /* =======================================================*/
 /*----------------Our Team Section------------------------*/
@@ -2218,8 +2136,68 @@ phone {
 /*-------------Full Publications Page - MOBILE--------------*/
 /*==========================================================*/
 /*==========================================================*/
-img {
-    width: 20px;
+#publicationListTop {
+    position: relative;
+    top: 80px;
+    left: -4vw;
+    width: 100vw;
+    height: 80px;
+    background-color: gray;
+}
+#publicationListTop h2 {
+    position: absolute;
+    width: inherit;
+    margin: auto 0;
+    text-align: center;
+    color: lightgray;
+    background-color: gray;
+    font-size: 22pt;
+    padding-top: 20px;
+}
+#publicationListTop h3 {
+    position: relative;
+    width: inherit;
+    text-align: right;
+    margin: 0;
+    color: darkgray;
+    top: 60px;
+    right: 8vw;
+}
+.publicationContent {
+    position: relative;
+    width: 100vw;
+    top: 80px;
+    left: -4vw;
+    background-color: darkgray;
+}
+.mostRecent {
+    position: relative;
+    top: 50px;
+    margin: 0 5vw;
+    padding: 4vw;
+    background-color: lightgray;
+}
+.yearHeadingTop {
+    position: absolute;
+    margin: 0 0 11px 4vw;
+    font-family: 'Exo', sans-serif;
+    font-size: 30pt;
+    color: lightgray;
+    top: -38px;
+}
+.publicationTile {
+    width: 76.5vw;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.publicationTile ul {
+    font-size: 11pt;
+    text-indent: -4vw;
+}
+.publicationFrame img {
+    display: none;
+    visibility: hidden;
 }
 }
 /*====TABLET====*/
