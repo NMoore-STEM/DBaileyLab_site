@@ -2136,28 +2136,32 @@ phone {
 /*-------------Full Publications Page - MOBILE--------------*/
 /*==========================================================*/
 /*==========================================================*/
-#publicationsListTop {
+#publicationListTop {
     position: relative;
     top: 80px;
     left: -4vw;
     width: 100vw;
+    height: 80px;
     background-color: gray;
 }
-#publicationsListTop h2 {
-    position: relative;
-    top: 44px;
+#publicationListTop h2 {
+    position: absolute;
     width: inherit;
-    margin: 0 4vw 10vw -4vw;
+    margin: auto 0;
     text-align: center;
     color: lightgray;
     background-color: gray;
+    font-size: 22pt;
+    padding-top: 20px;
 }
-#publicationsListTop h3 {
+#publicationListTop h3 {
     position: relative;
     width: inherit;
     text-align: right;
     margin: 0;
     color: darkgray;
+    top: 60px;
+    right: 8vw;
 }
 .publicationContent {
     position: relative;
@@ -2177,21 +2181,20 @@ phone {
     position: absolute;
     margin: 0 0 11px 4vw;
     font-family: 'Exo', sans-serif;
-    font-size: 22pt;
+    font-size: 30pt;
     color: lightgray;
+    top: -38px;
 }
 .publicationTile {
-    display: flex;
-    width: 200px;
-    height: 200px;
+    width: 76.5vw;
+    background-color: whitesmoke;
+    padding: 10px;
 }
 .publicationFrame {
-    width: inherit;
-    height: inherit;
 }
 .publicationFrame img {
-    width: 200px;
-    height: 200px;
+    display: none;
+    visibility: hidden;
 }
 }
 /*====TABLET====*/
