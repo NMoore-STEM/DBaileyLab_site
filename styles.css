@@ -2136,7 +2136,63 @@ phone {
 /*-------------Full Publications Page - MOBILE--------------*/
 /*==========================================================*/
 /*==========================================================*/
-
+#publicationsListTop {
+    position: relative;
+    top: 80px;
+    left: -4vw;
+    width: 100vw;
+    background-color: gray;
+}
+#publicationsListTop h2 {
+    position: relative;
+    top: 44px;
+    width: inherit;
+    margin: 0 4vw 10vw -4vw;
+    text-align: center;
+    color: lightgray;
+    background-color: gray;
+}
+#publicationsListTop h3 {
+    position: relative;
+    width: inherit;
+    text-align: right;
+    margin: 0;
+    color: darkgray;
+}
+.publicationContent {
+    position: relative;
+    width: 100vw;
+    top: 80px;
+    left: -4vw;
+    background-color: darkgray;
+}
+.mostRecent {
+    position: relative;
+    top: 50px;
+    margin: 0 5vw;
+    padding: 4vw;
+    background-color: lightgray;
+}
+.yearHeadingTop {
+    position: absolute;
+    margin: 0 0 11px 4vw;
+    font-family: 'Exo', sans-serif;
+    font-size: 22pt;
+    color: lightgray;
+}
+.publicationTile {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+.publicationFrame {
+    width: inherit;
+    height: inherit;
+}
+.publicationFrame img {
+    width: 200px;
+    height: 200px;
+}
 }
 /*====TABLET====*/
 @media only screen and (max-width: 1024px) and (min-width: 600px) {}
