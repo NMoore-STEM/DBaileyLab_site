@@ -2189,8 +2189,11 @@ phone {
     width: 76.5vw;
     background-color: whitesmoke;
     padding: 10px;
+    margin-bottom: 10px;
 }
-.publicationFrame {
+.publicationTile ul {
+    font-size: 11pt;
+    text-indent: -4vw;
 }
 .publicationFrame img {
     display: none;
