@@ -2169,6 +2169,7 @@ phone {
     top: 80px;
     left: -4vw;
     background-color: darkgray;
+    margin-bottom: -250px;
 }
 .mostRecent {
     position: relative;
@@ -2198,6 +2199,32 @@ phone {
 .publicationFrame img {
     display: none;
     visibility: hidden;
+}
+.allOthers {
+    position: relative;
+    top: 50px;
+    margin: 50px 5vw 0;
+    padding: 4vw;
+    background-color: lightgray;
+}
+.yearHeading {
+    position: relative;
+    top: -48px;
+    padding-left: 4vw;
+    font-family: 'Exo', sans-serif;
+    font-size: 24pt;
+    color: lightgray;
+}
+.yearGroup {
+    position: relative;
+    top: -40px;
+    padding: 4vw;
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+.yearGroup li {
+    margin-bottom: 15px;
 }
 }
 /*====TABLET====*/
