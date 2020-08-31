@@ -1901,12 +1901,13 @@ article {
     padding-top: 80px;
 }
 #alumni h2 {
-    width: 200px;
+    width: 92vw;
     text-align: center;
     margin: 20px auto 0;
+    padding: 20px 0;
 }
 .headingPost {
-    background-color: silver;
+    background-color: darkgray;
 }
 .headingPost h2 {
     background-color: transparent;
@@ -1921,7 +1922,7 @@ article {
     top: 5vw;
 }
 .headingPost .studentList {
-    background-color: darkgray;
+    background-color: silver;
     padding-left: 10vw;
 }
 .picText {
@@ -1952,7 +1953,7 @@ article {
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
     width: 80vw !important;
-    font-size: 16pt;
+    font-size: 15pt;
     margin: auto !important;
 }
 .collapseButton2 h3 {
