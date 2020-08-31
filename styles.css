@@ -1918,12 +1918,13 @@ article {
     border-radius: 50% 0;
     position: relative;
     width: 20vw;
-    left: 58vw;
+    left: 50vw;
     top: 5vw;
 }
 .headingPost .studentList {
     background-color: silver;
     padding-left: 10vw;
+    margin: 4vw;
 }
 .picText {
     position: relative;
@@ -2012,7 +2013,7 @@ person .smallPic {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    top: 320px;
+    top: 70vw;
     background-color: gray;
     left: -4vw;
     justify-items: center;
@@ -2036,7 +2037,7 @@ person .smallPic {
 /*======================================================*/
 #footer {
     position: relative;
-    top: 320px;
+    top: 70vw;
     display: grid;
     width: 100vw;
     left: -4vw;
@@ -2214,9 +2215,7 @@ phone {
     color: darkgray;
 }
 .yearGroup {
-    position: relative;
-    top: -40px;
-    padding: 4vw 4vw 150px 6vw;
+    padding: 4vw 4vw 80px 6vw;
     font-size: 11pt;
     font-family: 'Roboto', sans-serif;
     list-style: none;
@@ -2230,7 +2229,7 @@ phone {
     display: inline-block;
     position: fixed;
     bottom: 75px;
-    right: 50px;
+    right: 2.8vw;
     height: 50px;
     width: 50px;
     background-color: white;
@@ -2242,11 +2241,6 @@ phone {
 }
 .reveal {
     opacity: 1 !important;
-}
-#buttonToTop:hover {
-    box-shadow: 0 6px 4px 0 darkgray;
-    bottom: 78px;
-    transition: all 0.2s ease;
 }
 #buttonToTop:active {
     background-color: white;
