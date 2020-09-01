@@ -2290,7 +2290,8 @@ h2 {
 /*-----------------WELCOME - TABLET-------------------------*/
 /*==========================================================*/
 #welcome {
-    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     overflow: hidden;
     position: relative;
     z-index: 6;
@@ -2310,7 +2311,7 @@ h2 {
     position: relative;
     /*width: 62vw;*/
     background-color: lightgray;
-    margin: 400px 0 0 0;
+    margin: 360px 0 0 0;
     padding: 4vw 4vw 6vw;
     /*width: 580px;*/
     min-width: auto;
@@ -2333,14 +2334,76 @@ h2 {
 /*========================================================*/
 #research {
     overflow: hidden;
+    position: relative;
 }
 #leuc01 {
     position: absolute;
     max-width: 92vw;
     max-height: 600px;
-    left: 4vw;
+    left: 0;
 }
 #researchText {
     position: relative;
+    background-color: lightgray;
+    max-width: 580px;
+    padding: 4vw;
+    right: 0;
+    margin-top: 300px;
+    left: 13vw;
+}
+#researchText h2 {
+    width: inherit;
+    text-align: center;
+}
+/*========================================================*/
+/*------------------Publications - TABLET-----------------*/
+/*========================================================*/
+#publications {
+    margin-top: -80px;
+    padding-top: 80px;
+    background-color: gray;
+}
+#publications button {
+    display: none;
+    visibility: hidden;
+}
+#publications img {
+    width: 200px;
+    height: 200px;
+}
+#carouselReel {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/*========================================================*/
+/*--------------Our Team - TABLET-------------------------*/
+/*========================================================*/
+#ourTeam {
+
+}
+.teamTop {
+    display: flex;
+}
+.team {
+    width: inherit;
+    margin: auto;
+}
+/*========================================================*/
+/*----------------------NEWS - TABLET---------------------*/
+/*========================================================*/
+#news {
+    display: block;
+    position: relative;
+    background-color: white;
+}
+#news h2 {
+    width: inherit;
+    text-align: center;
+}
+#newsContainer {
+    padding: 4vw;
+    border: 1px solid gray;
+    background-color: whitesmoke;
 }
 }
