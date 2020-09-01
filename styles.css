@@ -2283,8 +2283,64 @@ svg {
 /*============================================================*/
 
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
+h2 {
+    background-color: transparent;
+}
 /*==========================================================*/
 /*-----------------WELCOME - TABLET-------------------------*/
 /*==========================================================*/
-
+#welcome {
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+#welcome article {
+    display: none;
+    visibility: hidden;
+}
+#foster {
+    position: absolute;
+    max-width: 92vw;
+    max-height: 500px;
+    right: 0;
+}
+.welcomeSub {
+    display: block;
+    position: relative;
+    /*width: 62vw;*/
+    background-color: lightgray;
+    margin: 400px 0 0 0;
+    padding: 4vw 4vw 6vw;
+    /*width: 580px;*/
+    min-width: auto;
+    max-width: 580px;
+}
+.welcomeSub h2 {
+    margin: 0;
+    width: inherit;
+    text-align: center;
+}
+.welcomeText {
+    line-height: 1.5;
+}
+#introPic {
+    visibility: hidden;
+    display: none;
+}
+/*========================================================*/
+/*-----------------RESEARCH - TABLET----------------------*/
+/*========================================================*/
+#research {
+    overflow: hidden;
+}
+#leuc01 {
+    position: absolute;
+    max-width: 92vw;
+    max-height: 600px;
+    left: 4vw;
+}
+#researchText {
+    position: relative;
+}
 }
