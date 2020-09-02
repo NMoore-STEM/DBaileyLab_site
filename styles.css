@@ -2364,10 +2364,9 @@ h2 {
 /*========================================================*/
 #publications {
     position: relative;
-    display: inline-grid;
+    display: grid;
     /*margin-top: -80px;
     padding-top: 80px;*/
-    background-color: gray;
     /*top: 200px;*/
     padding-bottom: 80px;
 }
@@ -2375,10 +2374,15 @@ h2 {
     margin: 4vw;
     top: 160px;
     position: relative;
+    width: 84vw;
+    border-bottom: 2px solid darkgray;
 }
 .pubLink {
     position: relative;
-    top: 160px;
+    top: 100px;
+    right: -58vw;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 #publications button {
     display: none;
@@ -2389,13 +2393,45 @@ h2 {
     height: 200px;
 }
 #carouselWindow {
-    padding: 160px 10px;
-    background-color: darkgray;
+    padding: 160px 4vw 100px;
+    background-color: gray;
+    width: 84vw;
 }
 #carouselReel {
-    display: flex;
+    display: grid;
     overflow-x: scroll;
     overflow-y: hidden;
+    height: 480px;
+    grid-template-columns: repeat(9, 220px);
+    grid-template-rows: repeat(2, 220px);
+    width: 100%;
+}
+#carouselReel a {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+.research1 {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 2px 2px 6px black;
+}
+.overlayTitle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
 }
 /*========================================================*/
 /*--------------Our Team - TABLET-------------------------*/
