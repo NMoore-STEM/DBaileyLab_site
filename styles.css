@@ -1424,11 +1424,6 @@ h1 {
     margin: auto;
     margin-left: -5px;
 }
-h2 {
-    font-size: 42px;
-    width: min-content;
-    background-color: darkgray;
-}
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -1565,7 +1560,11 @@ ul {
 
 /*@media only screen and (max-width:840px)*/
 @media only screen and (max-width:599px) {
-
+h2 {
+        font-size: 42px;
+        width: min-content;
+        background-color: darkgray;
+}
 /*====================================================*/
 /*--------------WELCOME - MOBILE----------------------*/
 /*====================================================*/
@@ -2279,12 +2278,16 @@ svg {
 }
 }
 /*============================================================*/
+
 /*=========================TABLET=============================*/
+
 /*============================================================*/
 
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
 h2 {
     background-color: transparent;
+    font-size: 32px;
+    width: min-content;
 }
 /*==========================================================*/
 /*-----------------WELCOME - TABLET-------------------------*/
@@ -2311,7 +2314,7 @@ h2 {
     position: relative;
     /*width: 62vw;*/
     background-color: lightgray;
-    margin: 360px 0 0 0;
+    margin: 450px 0 0 0;
     padding: 4vw 4vw 6vw;
     /*width: 580px;*/
     min-width: auto;
@@ -2346,22 +2349,36 @@ h2 {
     position: relative;
     background-color: lightgray;
     max-width: 580px;
-    padding: 4vw;
-    right: 0;
-    margin-top: 300px;
-    left: 13vw;
+    padding: 4vw 4vw 6vw;
+    float: right;
+    margin-top: 450px;
+    line-height: 1.5;
 }
 #researchText h2 {
     width: inherit;
     text-align: center;
+    margin: 0;
 }
 /*========================================================*/
 /*------------------Publications - TABLET-----------------*/
 /*========================================================*/
 #publications {
-    margin-top: -80px;
-    padding-top: 80px;
+    position: relative;
+    display: inline-grid;
+    /*margin-top: -80px;
+    padding-top: 80px;*/
     background-color: gray;
+    /*top: 200px;*/
+    padding-bottom: 80px;
+}
+#publications h2 {
+    margin: 4vw;
+    top: 160px;
+    position: relative;
+}
+.pubLink {
+    position: relative;
+    top: 160px;
 }
 #publications button {
     display: none;
@@ -2370,6 +2387,10 @@ h2 {
 #publications img {
     width: 200px;
     height: 200px;
+}
+#carouselWindow {
+    padding: 160px 10px;
+    background-color: darkgray;
 }
 #carouselReel {
     display: flex;
@@ -2405,5 +2426,27 @@ h2 {
     padding: 4vw;
     border: 1px solid gray;
     background-color: whitesmoke;
+}
+/*=======================================================*/
+/*-------------------ALUMNI - TABLET---------------------*/
+/*=======================================================*/
+#alumni {
+    position: relative;
+    background-color: darkgray;
+}
+#alumni h2 {
+    text-align: center;
+    width: 100%;
+}
+.headingPost {
+    display: inline-flex;
+    background-color: silver;
+    flex-flow: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+.studentList {
+
 }
 }
