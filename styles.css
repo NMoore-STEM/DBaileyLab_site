@@ -2571,9 +2571,47 @@ h2 {
     grid-column-end: span 2;
 }
 #alumni svg {
-    height: 60px;
+    height: 40px;
 }
-#accordian, #accordian2 {
-
+.accordian {
+    display: inline-flex;
+    flex-direction: column;
+    width: 92vw;
+    margin: 5vw 0 0;
+}
+#accordian1 h2 {
+    margin: 24px 0 0;
+}
+#accordian2 h2 {
+    margin: 13.5px 0 0;
+}
+#accordian2 h3 {
+    margin: 0;
+}
+#accordian2 .expand_button {
+    position: relative;
+    right: 2vw;
+    top: -47px;
+    float: right;
+}
+.collapseButton, .collapseButton2 {
+    cursor: pointer;
+    background-color: silver;
+    height: 80px;
+    border: none;
+    padding: 0;
+}
+.collapseButton h2, .collapseButton2 h2 {
+    font-size: 18pt;
+}
+.collapseButton h3 {
+    font-size: 14pt;
+    color: darkgray;
+}
+.expand_button {
+    position: relative;
+    right: 2vw;
+    top: -36px;
+    float: right;
 }
 }
