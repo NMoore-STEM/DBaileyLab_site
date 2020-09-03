@@ -2437,14 +2437,60 @@ h2 {
 /*--------------Our Team - TABLET-------------------------*/
 /*========================================================*/
 #ourTeam {
-
+    margin-top: -80px;
+    padding-top: 80px;
+    background-color: whitesmoke;
 }
 .teamTop {
     display: flex;
+    background-color: white;
+}
+.teamTop img {
+    max-width: 50vw;
 }
 .team {
     width: inherit;
     margin: auto;
+}
+#bailey {
+    padding: 0 4vw;
+    display: flex;
+    border-top: 2px solid lightgray;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    border-bottom: 2px solid lightgray;
+}
+.smallPic3 {
+    padding: 30px;
+    margin: auto;
+    flex: 3;
+    max-width: 150px;
+    min-width: 100px;
+}
+#bailey div {
+    flex: 12;
+    padding-left: 4vw;
+}
+#bailey h4 {
+    font-size: 14pt;
+}
+#bailey ul {
+    padding: 0;
+}
+.currentTeam {
+    width: 100%;
+    text-align: center;
+    font-size: 17pt;
+}
+.currentStudents {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.studentList {
+    background-color: white;
+    flex: 2;
+    padding: 2vw;
 }
 /*========================================================*/
 /*----------------------NEWS - TABLET---------------------*/
@@ -2453,10 +2499,17 @@ h2 {
     display: block;
     position: relative;
     background-color: white;
+    margin-top: -80px;
+    padding-top: 80px;
+    top: 80px;
 }
 #news h2 {
     width: inherit;
     text-align: center;
+}
+#news li {
+    padding-bottom: 2vw;
+    font-family: 'Roboto', sans-serif;
 }
 #newsContainer {
     padding: 4vw;
