@@ -2614,4 +2614,109 @@ h2 {
     top: -36px;
     float: right;
 }
+.collapseBody {
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 6vw 4vw;
+    display: flex;
+    flex-flow: row wrap;
+}
+person {
+    border-top: 2px solid lightgray;
+    display: grid;
+    margin-top: 8vw;
+    padding-top: 4vw;
+    min-width: 40vw;
+    max-width: 40vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1.3fr;
+}
+person .smallPic {
+    border-radius: 0 50%;
+    width: 100px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    margin: 1vw;
+}
+person h3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    padding: 0;
+    margin: auto 0 0 0;
+    text-align: right;
+}
+.title2 {
+    grid-row-start: 2;
+    text-align: right;
+}
+.specialty2 {
+    grid-row-start: 3;
+    margin: 0;
+}
+.collapseBody2 {
+    outline: 2px solid darkgray;
+    outline-offset: -2px;
+    padding: 4vw 6vw 4vw;
+    text-align: center;
+}
+.collapseBody2 ul {
+    padding: 0;
+}
+/*====================================================*/
+/*---------------PARTNERS - TABLET--------------------*/
+/*====================================================*/
+#fundingPartners {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    top: 70vw;
+    background-color: gray;
+    left: -4vw;
+    justify-items: center;
+    display: grid;
+    padding: 0 0 10vw;
+}
+#fundingPartners img {
+    height: 150px;
+}
+/*=======================================================*/
+/*------------------FOOTER - TABLET----------------------*/
+/*=======================================================*/
+#footer {
+    position: relative;
+    top: 70vw;
+    display: grid;
+    width: 100vw;
+    left: -4vw;
+    background-color: silver;
+    grid-template-rows: 40px 30px 192px 60px 170px 50px;
+    grid-template-columns: 4vw 1fr 1fr 4vw;
+}
+.copyright {
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    margin: auto;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px purple;
+}
+.footerHeadings {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    margin: auto 0;
+}
+#footerContent {
+    font-size: 10pt;
+    border-top: 2px solid darkgray;
+    grid-column-end: span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    display: grid;
+    grid-template-rows: 45px 135px;
+    grid-template-columns: 1fr 1fr;
+}
 }
