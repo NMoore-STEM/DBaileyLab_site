@@ -2375,7 +2375,7 @@ h2 {
     top: 160px;
     position: relative;
     width: 84vw;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 2px solid lightgray;
 }
 .pubLink {
     position: relative;
@@ -2394,7 +2394,7 @@ h2 {
 }
 #carouselWindow {
     padding: 160px 4vw 100px;
-    background-color: gray;
+    background-color: darkgray;
     width: 84vw;
 }
 #carouselReel {
@@ -2439,11 +2439,12 @@ h2 {
 #ourTeam {
     margin-top: -80px;
     padding-top: 80px;
-    background-color: lightgray;
 }
 .teamTop {
     display: flex;
-    background-color: white;
+    background-color: whitesmoke;
+    border-top: 40px solid lightgray;
+    border-bottom: 40px solid lightgray;
 }
 .teamTop img {
     max-width: 50vw;
@@ -2490,9 +2491,12 @@ h2 {
     padding: 20px;
 }
 .studentList {
-    background-color: white;
+    background-color: whitesmoke;
     flex: 2;
     padding: 2vw;
+}
+.studentName {
+    padding-left: 2vw;
 }
 /*========================================================*/
 /*----------------------NEWS - TABLET---------------------*/
@@ -2502,7 +2506,7 @@ h2 {
     position: relative;
     background-color: white;
     margin-top: -80px;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
     padding-top: 80px;
     top: 80px;
 }
@@ -2523,7 +2527,7 @@ h2 {
 /*-------------------ALUMNI - TABLET---------------------*/
 /*=======================================================*/
 #alumni {
-    padding-top: 100px;
+    padding-top: 110px;
 }
 #alumni h2 {
     text-align: center;
@@ -2629,7 +2633,7 @@ person {
     min-width: 40vw;
     max-width: 40vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr 1.3fr;
+    grid-template-rows: 80px 50px 1.3fr;
 }
 person .smallPic {
     border-radius: 0 50%;
@@ -2637,7 +2641,7 @@ person .smallPic {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
-    margin: 1vw;
+    margin: auto;
 }
 person h3 {
     grid-row-start: 1;
@@ -2649,9 +2653,11 @@ person h3 {
 .title2 {
     grid-row-start: 2;
     text-align: right;
+    padding-left: 4vw;
 }
 .specialty2 {
     grid-row-start: 3;
+    padding-top: 1.5vw;
     margin: 0;
 }
 .collapseBody2 {
@@ -2670,7 +2676,6 @@ person h3 {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    top: 70vw;
     background-color: gray;
     left: -4vw;
     justify-items: center;
@@ -2685,7 +2690,6 @@ person h3 {
 /*=======================================================*/
 #footer {
     position: relative;
-    top: 70vw;
     display: grid;
     width: 100vw;
     left: -4vw;
