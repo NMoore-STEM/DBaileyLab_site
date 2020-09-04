@@ -369,11 +369,11 @@ article h3 {
 /*========================================================*/
 
 #publications {
-    display: block;
+    /*display: block;*/
     position: relative;
     background-color: #808284;
-    grid-column-end: span 2;
-    width: 60vw;
+    /*grid-column-end: span 2;*/
+    /*width: 60vw;*/
     padding: 107px 5vw 8vw 5vw;
     margin: -107px 0 0;
     z-index: 4;
@@ -2132,7 +2132,7 @@ h2 {
     background-color: lightgray;
     padding: 4vw 8vw 6vw;
     min-width: auto;
-    max-width: 580px;
+    max-width: 76vw;
 }
 .welcomeSub h2 {
     margin: 0;
@@ -2340,7 +2340,7 @@ h2 {
 /*-------------------ALUMNI - TABLET---------------------*/
 /*=======================================================*/
 #alumni {
-    padding: 110px 0 50px 0;
+    padding: 110px 0 0 0;
 }
 #alumni h2 {
     text-align: center;
