@@ -1019,7 +1019,6 @@ i {
 }
 .collapseBody2 {
     display: flex;
-    /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -1083,10 +1082,8 @@ i {
     display: block;
     position: relative;
     width: 66vw;
-    /*height: 20vw;*/
     padding: 3.5vw 2vw 6vw;
     background-color:darkgray;
-    /*grid-template-columns: 6fr 5fr 5fr;*/
     grid-column-start: 1;
     color: whitesmoke;
     height: min-content;
@@ -1133,20 +1130,17 @@ i {
     grid-row-start: 1;
 }
 #middle h3:nth-of-type(2) {
-    /*padding-left: 2vw;*/
     font-size: 1.2vw;
 }
 #middle a {
     display: inline-flex;
     flex-direction: row;
-    /*justify-content: center;*/
     align-items: center;
     width: min-content;
 }
 #footer a {
     display: inline-flex;
     flex-direction: row;
-    /*justify-content: center;*/
     align-items: center;
     width: min-content;
 }
@@ -1206,11 +1200,6 @@ i {
     width: 100%;
     padding: 5px 0;
 }
-/*#right a:hover {
-    color: gray;
-    opacity: 0.8;
-    text-shadow: 0 2px 2px 2px darkslategray;
-}*/
 #right a::before {
     content: "";
     position: absolute;
@@ -1237,16 +1226,6 @@ i {
     text-shadow: 1px 1px purple;
     margin-left: 30px;
 }
-/*.copyright::before {
-    font-size: 16pt;
-    background: -webkit-linear-gradient(rgb(3, 24, 218), rgb(160, 0, 160));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.copyright::after {
-    color: radial(circle, rgb(160, 0, 160) 30%, rgb(3, 24, 218) 30%);
-}*/
 
 /*======================================================*/
 /*--------------publications_full stlyes----------------*/
@@ -1352,7 +1331,6 @@ i {
     position: relative;
     margin-right: -6px;
     text-align: right;
-    /*text-shadow: 2px 2px 1.5px darkgray;*/
     padding-top: 2vw;
 }
 .yearGroup {
@@ -1459,7 +1437,6 @@ ul {
     justify-content: center;
 }
 .nmsuBIO {
-    /*display: grid;*/
     display: none;
     position: absolute;
     top: 0;
@@ -1501,7 +1478,6 @@ ul {
     transition: all 0.4s ease;
 }
 .menuClosed .button {
-    /*background-color: transparent;*/
     width: 150px;
     height: 35px;
     transition: all 0.7s ease;
@@ -1548,8 +1524,140 @@ ul {
 .scroll_area {
     padding: 0 4vw;
     width: auto;
-    /*overflow: hidden;*/
-    /*height: 6800px;*/
+}
+/*==========================================================*/
+/*==========================================================*/
+/*-------------Full Publications - MOBILE & TABLET----------*/
+/*==========================================================*/
+/*==========================================================*/
+#publicationListTop {
+    position: relative;
+    top: 80px;
+    left: -4vw;
+    width: 100vw;
+    height: 80px;
+    background-color: gray;
+}
+#publicationListTop h2 {
+    position: absolute;
+    width: inherit;
+    margin: auto 0;
+    text-align: center;
+    color: lightgray;
+    background-color: gray;
+    font-size: 22pt;
+    padding-top: 20px;
+}
+#publicationListTop h3 {
+    position: relative;
+    width: inherit;
+    text-align: right;
+    margin: 0;
+    color: darkgray;
+    top: 60px;
+    right: 8vw;
+}
+.publicationContent {
+    position: relative;
+    width: 100vw;
+    top: 80px;
+    left: -4vw;
+    background-color: darkgray;
+    margin-bottom: -250px;
+}
+.mostRecent {
+    position: relative;
+    top: 50px;
+    margin: 0 5vw;
+    padding: 4vw;
+    background-color: lightgray;
+}
+.yearHeadingTop {
+    position: absolute;
+    margin: 0 0 11px 4vw;
+    font-family: 'Exo', sans-serif;
+    font-size: 30pt;
+    color: lightgray;
+    top: -38px;
+}
+.publicationTile {
+    display: block;
+    width: 76.5vw;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+.publicationTile:focus {
+    text-decoration: underline;
+}
+.publicationTile ul {
+    font-size: 11pt;
+    text-indent: -4vw;
+}
+.publicationFrame img {
+    display: none;
+    visibility: hidden;
+}
+.allOthers {
+    position: relative;
+    top: 50px;
+    margin: 50px 5vw 0;
+    padding: 4vw;
+    background-color: lightgray;
+}
+.yearHeading {
+    font-family: 'Exo', sans-serif;
+    font-size: 24pt;
+    color: darkgray;
+}
+.yearGroup {
+    padding: 4vw 4vw 80px 6vw;
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    border-top: 2px solid darkgray;
+}
+.yearGroup li {
+    margin-bottom: 15px;
+    text-indent: -15px;
+}
+#buttonToTop {
+    display: inline-block;
+    position: fixed;
+    bottom: 75px;
+    right: 2.8vw;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 2px 0 darkgray;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.reveal {
+    opacity: 1 !important;
+}
+#buttonToTop:active {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 darkgray;
+    bottom: 74px;
+    transition: all 0.2s ease;
+}
+polygon {
+    fill: lightgray;
+    stroke: none;
+    fill-rule: nonzero;
+}
+svg {
+    transition: all 0.2s ease;
+}
+#buttonToTop svg:active {
+    transform: scale(1.3);
+    transform-origin: center;
+    transition: all 0.2s ease;
 }
 }
 /*===============================================================*/
@@ -1558,7 +1666,6 @@ ul {
 
 /*===============================================================*/
 
-/*@media only screen and (max-width:840px)*/
 @media only screen and (max-width:599px) {
 h2 {
         font-size: 42px;
@@ -1572,7 +1679,6 @@ h2 {
     margin-top: -80px;
     z-index: 5;
     position: relative;
-    /*padding-top: 160px;*/
 }
 .welcomeSub {
     position: relative;
@@ -1616,19 +1722,6 @@ article {
     position: relative;
     margin: 80px 0 0 0;
 }
-/*@media only screen and (min-width:450px) {
-    #foster {
-        /*width: 130%;*/
-        /*right: -15px;
-        position: absolute;
-        top: 80px;
-        height: 90vw;
-        max-height: 600px;
-    }
-    .welcomeSub {
-        top: 280px;
-    }
-}*/
 @media only screen and (min-width:675px) {
     .welcomeSub {
         opacity: 0.8;
@@ -1648,20 +1741,14 @@ article {
 #researchText {
     position: relative;
     top: -18px;
-    /*top: 290px;*/
-    /*top: 80vw;*/
     z-index: 1;
-    /*padding-top: 10px;*/
 }
 #researchText h2 {
-    /*top: -85px;*/
     position: relative;
     float: right;
     font-size: 20pt;
     width: 70vw;
-    /*font-size: 32px;*/
     background-color: lightgray;
-    /*margin: 0 0 30px;*/
     margin: 0 0 11vw 25vw;
     padding-left: 5vw;
 }
@@ -1671,8 +1758,6 @@ article {
     padding: 0 8vw;
 }
 #leuc01 {
-    /*width: 140%;
-    left: -100px;*/
     position: relative;
     width: 100vw;
     top: 0px;
@@ -1708,8 +1793,6 @@ article {
     width: 200px;
 }
 #publications img {
-    /*max-width: 150px;
-    max-height: 150px;*/
     width: 100%;
     object-fit: contain;
 }
@@ -1727,7 +1810,6 @@ article {
 }
 #carouselWindow {
     margin-top: 30px;
-    /*overflow: hidden;*/
     height: 320px;
     display: block;
     z-index: 2;
@@ -1757,7 +1839,6 @@ article {
 .overlayTitle {
     display: grid;
     position: absolute;
-    /*opacity: 0.5;*/
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(0,0,0,0.5);
@@ -1774,8 +1855,6 @@ article {
 /*---------------OUR TEAM - MOBILE---------------------*/
 /*=====================================================*/
 #ourTeam {
-    /*width: 80%;
-    overflow: hidden;*/
     position: relative;
     top: 140px;
     margin-top: -80px;
@@ -1819,7 +1898,6 @@ article {
 }
 #bailey h4 {
     position: relative;
-    /*left: 120px;*/
     margin: 15px 0;
     font-size: 16pt;
 }
@@ -2117,10 +2195,6 @@ phone {
     align-items: center;
     margin: auto;
 }
-/*.baileyFooter {
-}
-#baileyIndent {
-}*/
 .footerIndent address:first-child {
     padding-top: 10px;
     position: relative;
@@ -2142,140 +2216,6 @@ phone {
 #right .footerIndent a {
     text-decoration: none;
 }
-/*==========================================================*/
-/*==========================================================*/
-/*-------------Full Publications Page - MOBILE--------------*/
-/*==========================================================*/
-/*==========================================================*/
-#publicationListTop {
-    position: relative;
-    top: 80px;
-    left: -4vw;
-    width: 100vw;
-    height: 80px;
-    background-color: gray;
-}
-#publicationListTop h2 {
-    position: absolute;
-    width: inherit;
-    margin: auto 0;
-    text-align: center;
-    color: lightgray;
-    background-color: gray;
-    font-size: 22pt;
-    padding-top: 20px;
-}
-#publicationListTop h3 {
-    position: relative;
-    width: inherit;
-    text-align: right;
-    margin: 0;
-    color: darkgray;
-    top: 60px;
-    right: 8vw;
-}
-.publicationContent {
-    position: relative;
-    width: 100vw;
-    top: 80px;
-    left: -4vw;
-    background-color: darkgray;
-    margin-bottom: -250px;
-}
-.mostRecent {
-    position: relative;
-    top: 50px;
-    margin: 0 5vw;
-    padding: 4vw;
-    background-color: lightgray;
-}
-.yearHeadingTop {
-    position: absolute;
-    margin: 0 0 11px 4vw;
-    font-family: 'Exo', sans-serif;
-    font-size: 30pt;
-    color: lightgray;
-    top: -38px;
-}
-.publicationTile {
-    display: block;
-    width: 76.5vw;
-    background-color: whitesmoke;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-}
-.publicationTile:focus {
-    text-decoration: underline;
-}
-.publicationTile ul {
-    font-size: 11pt;
-    text-indent: -4vw;
-}
-.publicationFrame img {
-    display: none;
-    visibility: hidden;
-}
-.allOthers {
-    position: relative;
-    top: 50px;
-    margin: 50px 5vw 0;
-    padding: 4vw;
-    background-color: lightgray;
-}
-.yearHeading {
-    font-family: 'Exo', sans-serif;
-    font-size: 24pt;
-    color: darkgray;
-}
-.yearGroup {
-    padding: 4vw 4vw 80px 6vw;
-    font-size: 11pt;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-    border-top: 2px solid darkgray;
-}
-.yearGroup li {
-    margin-bottom: 15px;
-    text-indent: -15px;
-}
-#buttonToTop {
-    display: inline-block;
-    position: fixed;
-    bottom: 75px;
-    right: 2.8vw;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 3px 2px 0 darkgray;
-    z-index: 10;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-.reveal {
-    opacity: 1 !important;
-}
-#buttonToTop:active {
-    background-color: white;
-    box-shadow: 0 2px 4px 0 darkgray;
-    bottom: 74px;
-    transition: all 0.2s ease;
-}
-polygon {
-    fill: lightgray;
-    stroke: none;
-    fill-rule: nonzero;
-}
-svg {
-    transition: all 0.2s ease;
-}
-#buttonToTop svg:active {
-    transform: scale(1.3);
-    transform-origin: center;
-    transition: all 0.2s ease;
-}
 }
 /*============================================================*/
 
@@ -2294,29 +2234,21 @@ h2 {
 /*==========================================================*/
 #welcome {
     padding-top: 80px;
-    padding-bottom: 80px;
     overflow: hidden;
-    position: relative;
-    z-index: 6;
+    display: flex;
+    flex-direction: column;
 }
 #welcome article {
     display: none;
     visibility: hidden;
 }
 #foster {
-    position: absolute;
-    max-width: 92vw;
-    max-height: 500px;
-    right: 0;
+    max-width: 62vw;
+    align-self: center;
 }
 .welcomeSub {
-    display: block;
-    position: relative;
-    /*width: 62vw;*/
     background-color: lightgray;
-    margin: 450px 0 0 0;
-    padding: 4vw 4vw 6vw;
-    /*width: 580px;*/
+    padding: 4vw 8vw 6vw;
     min-width: auto;
     max-width: 580px;
 }
@@ -2337,22 +2269,20 @@ h2 {
 /*========================================================*/
 #research {
     overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #leuc01 {
-    position: absolute;
     max-width: 92vw;
     max-height: 600px;
-    left: 0;
 }
 #researchText {
-    position: relative;
     background-color: lightgray;
-    max-width: 580px;
-    padding: 4vw 4vw 6vw;
-    float: right;
-    margin-top: 450px;
+    max-width: 520px;
+    padding: 4vw 8vw 6vw;
     line-height: 1.5;
+    align-self: center;
+    margin-top: -100px;
 }
 #researchText h2 {
     width: inherit;
@@ -2365,6 +2295,7 @@ h2 {
 #publications {
     position: relative;
     display: grid;
+    margin-top: -80px;
 }
 #publications h2 {
     margin: 4vw;
@@ -2685,6 +2616,7 @@ person h3 {
     display: grid;
     padding: 0 0 10vw;
     gap: 4vw;
+    margin-top: 260px;
 }
 #fundingPartners h4 {
     font-size: 16pt;
