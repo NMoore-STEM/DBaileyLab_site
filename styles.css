@@ -2435,12 +2435,12 @@ h2 {
 #ourTeam {
     margin-top: -80px;
     padding-top: 80px;
+    border-bottom: 20px solid lightgray;
 }
 .teamTop {
     display: flex;
     background-color: whitesmoke;
     border-top: 40px solid lightgray;
-    border-bottom: 40px solid lightgray;
 }
 .teamTop img {
     max-width: 50vw;
@@ -2684,9 +2684,16 @@ person h3 {
     justify-items: center;
     display: grid;
     padding: 0 0 10vw;
+    gap: 4vw;
 }
-#fundingPartners img {
+#fundingPartners h4 {
+    font-size: 16pt;
+}
+.first, .third {
     height: 150px;
+}
+.second {
+    height: 110px;
 }
 /*=======================================================*/
 /*------------------FOOTER - TABLET----------------------*/
@@ -2697,11 +2704,11 @@ person h3 {
     width: 100vw;
     left: -4vw;
     background-color: silver;
-    grid-template-rows: 40px 30px 192px 60px 170px 50px;
+    grid-template-rows: 40px 30px 320px 50px;
     grid-template-columns: 4vw 1fr 1fr 4vw;
 }
 .copyright {
-    grid-row-start: 6;
+    grid-row-start: 4;
     grid-column-start: 2;
     grid-column-end: span 2;
     margin: auto;
@@ -2710,9 +2717,14 @@ person h3 {
     text-shadow: 1px 1px purple;
 }
 .footerHeadings {
+    display: grid;
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row-start: 2;
+    grid-template-rows: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.footerHeadings h4 {
     margin: auto 0;
 }
 #footerContent {
@@ -2723,7 +2735,58 @@ person h3 {
     grid-row-start: 3;
     grid-row-end: span 2;
     display: grid;
-    grid-template-rows: 45px 135px;
+    grid-template-rows: 15px 30px 110px 15px 30px 110px;
     grid-template-columns: 1fr 1fr;
+}
+.footerIndent {
+    grid-row-start: 3;
+    display: grid;
+    grid-template-rows: repeat(5, 20px);
+}
+.footerIndent a {
+    grid-row-start: 1;
+    display: flex;
+}
+.footerIndent ul {
+    margin: 0;
+    padding-left: 5px;
+}
+.number {
+    grid-row-start: 2;
+    display: flex;
+    gap: 5px;
+}
+phone {
+    margin: auto 0;
+}
+address {
+    padding-left: 25px;
+}
+#footerContent img {
+    height: 20px;
+}
+#footerContent h3:first-child {
+    margin: 0;
+    grid-row-start: 2;
+}
+.baileyFooter {
+    grid-row-start: 5;
+    margin: 0;
+}
+#baileyIndent {
+    grid-row-start: 6;
+}
+#right {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    padding: 0 0 2vw 6vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    font-size: 12pt;
+}
+#right .footerIndent {
+    display: flex;
+    flex-direction: column;
 }
 }
