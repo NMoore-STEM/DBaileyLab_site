@@ -47,9 +47,6 @@ h4 {
     grid-column-end: span 2;
 }
 h5 {
-    /*font-size: 220%;
-    min-width: 30vw;*/
-
     display: inline-block;
     font-size: 220%;
     padding-top: 1vh;
@@ -80,16 +77,11 @@ img {
 }
 .container {
     background-color: #D1D2D4;
-    /*height: 100vh;
-    width: 100vw;*/
-    /*overflow-y: scroll;*/
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 p {
     font-family: 'Exo 2', sans-serif;
-    /*font-size: 0.8em;*/
-    /*font-size: 1.095vw;*/
     font-size: 14.25px;
     margin: 0 0 1.5vw 0;
 }
@@ -100,14 +92,6 @@ a {
     align-content: center;
     color: black;
 }
-/*a:active {
-    /*color: blue;*/
-    /*background: -webkit-linear-gradient(45deg, rgb(93, 117, 250), rgb(10, 13, 165));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s;
-}*/
 /* =======================================================*/
 /*------------Header, Title, Navigation-------------------*/
 /*========================================================*/
@@ -115,22 +99,17 @@ a {
     display: grid;
     position: fixed;
     background-color: white;
-    /*justify-content: center;*/
     box-shadow: 0 0 2em black;
     grid-template-columns: 14vw 12vw 12vw 12vw 12vw 12vw 12vw 14vw;
     grid-template-rows: 63px 44px;
     z-index: 3;
     min-height: 107px;
-    /*top: 0;*/
 }
 #nmsu {
     display: grid;
-    /*min-height: 90px;*/
-    /*align-content: center;*/
     justify-items: center;
     grid-row-start: 1;
     grid-row-end: span 2;
-    /*z-index: 2;*/
 }
 #top {
     height: 63px;
@@ -148,7 +127,6 @@ a {
 }
 nav:hover {
     background-color:whitesmoke;
-    /*transition: all 0.3s;*/
 }
 .button {
     font-family: 'Darker Grotesque', sans-serif;
@@ -207,35 +185,19 @@ nav:hover {
     opacity: 0.8;
     transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-/*#nav_container {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: span 11;
-    grid-row-start: 2;
-}
-#top h1.fade::after {
-    width: 100%
-}*/
-
 .nmsuBIO {
     display: grid;
-    /*position: absolute;*/
     justify-items: center;
     align-content: center;
     max-width: 100%;
     min-width: 110px;
-    /*max-height: 80px;*/
     min-height: 95px;
-    /*grid-column-start: 13;*/
     grid-row-end: span 2;
     z-index: 3;
 }
 #mobileMenu {
     display: none;
 }
-/*.menuClosed {
-    display: none;
-}*/
 
 /* =======================================================*/
 /*-----------General/ Main content Elements---------------*/
@@ -245,16 +207,13 @@ nav:hover {
     display: grid;
     position: relative;
     min-width: 70vw;
-    /*grid-template-columns: 1fr 40vw 30vw 1fr;*/
     grid-template-columns: 1fr 70vw 1fr;
-    /*grid-template-rows: 67vh 67vh;*/
     z-index: 1;
 }
 .scroll_area {
     display: inline-grid;
     position: relative;
     height: auto;
-    /*overflow: hidden;*/
     grid-column-start: 2;
     z-index: 1;
 }
@@ -276,8 +235,6 @@ nav:hover {
     position: relative;
     width: 70vw;
     max-height: 600px;
-    /*min-height: 550px;*/
-    /*margin: -107px 0 0;*/
     padding: 107px 0 0;
     background-color: white;
     z-index: 6;
@@ -309,8 +266,6 @@ article li {
     float: left;
     margin: 3.5vw 1.5em 0 1em;
     padding-top: 2em;
-    /*margin-left: 1em;
-    margin-top: 1em;*/
     height: 280px;
 }
 figcaption {
@@ -338,7 +293,6 @@ figcaption {
     article {
         float: inline-end !important;
         margin-top: 4.5vw;
-        /*transition: all 150ms ease;*/
         background-color: whitesmoke;
         padding-bottom: 20px;
     }
@@ -349,14 +303,11 @@ figcaption {
 .welcomeText {
     display: block;
     position: relative;
-    /*font-size: 1.095vw;*/
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0 1em 0 0;
 }
 article {
-    /*display: inline-block;*/
-    /*margin-top: 2vw;*/
     float: inline-start;
 }
 article h3 {
@@ -406,7 +357,7 @@ article h3 {
 #researchText {
     position: absolute;
     max-width: 30vw;
-    height: 81%; /* (parent div padding/specified height)-1  */
+    height: 81%;
     padding: 0em 2vw 30px 3vw;
     right: 0px;
     background-color: white;
@@ -427,28 +378,10 @@ article h3 {
     margin: -107px 0 0;
     z-index: 4;
 }
-/* -- Alternate carousel button style (darker grays, more translucent
-#carouselLeft {
-    position: absolute;
-    display: block;
-    cursor: cell;
-    background: gray;
-    padding: 0;
-    margin: 0;
-    width: 75px;
-    height: 75px;
-    top: 420px;
-    left: 2vw;
-    z-index: 100;
-    border: 1px solid darkgray;
-    border-radius: 50%;
-    opacity: 50%;
-}  --  */
 #carousel_NavLeft {
     position: absolute;
     display: block;
     cursor:cell;
-    /*background-color: transparent;*/
     background: lightgray;
     padding: 0;
     margin: 0;
@@ -478,7 +411,6 @@ article h3 {
     position: absolute;
     display: block;
     cursor:cell;
-    /*background-color: transparent;*/
     background: lightgray;
     padding: 0;
     margin: 0;
@@ -518,32 +450,13 @@ article h3 {
     color: lightgray;
     box-shadow: 1px 1px 1px 1px black;
 }
-/*.pubLink::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 20px;
-    border-bottom: 2px solid silver;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-.pubLink:hover::before {
-    content: "";
-    width: 16vw;
-    height: 20px;
-    border-bottom: 2px solid silver;
-    opacity: 1;
-    transition: all 0.4s ease;
-}*/
 #carouselWindow {
     display: block;
     position: relative;
     overflow: hidden;
     height: 450px;
     width: 60vw;
-    /*margin-top: 2vw;*/
     z-index: 50;
-    /*box-shadow: 4px 4px 20px inset;*/
     padding-top: 60px;
     border-top: 2px solid darkgray;
 }
@@ -587,7 +500,6 @@ article h3 {
     text-align: center;
     text-overflow: ellipsis;
     -webkit-line-clamp: 4;
-    /* white-space: nowrap; */
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -635,7 +547,6 @@ article h3 {
     background-color: white;
     z-index: 5;
     grid-template-columns: 40vw 40vw;
-    /*box-shadow: 0px 8px 8px -4px black;*/
 }
 .teamTop img {
     width: 100%;
@@ -645,7 +556,6 @@ article h3 {
 }
 .team {
     margin: auto;
-    /*margin-left: 0;*/
     grid-column-start: 2;
 }
 #bailey {
@@ -671,7 +581,6 @@ article h3 {
     grid-column-end: span 3;
     grid-row-start: 2;
     font-size: 1em;
-    /*padding-left: 0;*/
 }
 .title2 {
     display: block;
@@ -683,10 +592,6 @@ article h3 {
     margin-bottom: 1.7vw;
 }
 .education1 {
-    /*display: inline-block;
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    grid-row-start: 3;*/
     font-size: 0.75em;
     padding-bottom: 5px;
 }
@@ -714,20 +619,15 @@ article h3 {
 .smallPic2 {
     max-height: 100px;
     vertical-align: top;
-    /*margin-top: 1vw;*/
-    /*max-width: 100px;*/
     margin: auto;
     border-radius: 50% 0;
 }
-/*--- delete below style??? ---*/
 #ourTeam h1 {
     font-size: 250%;
-    /*padding-top: 15px;*/
     text-align: center;
     margin: 0 0 0 5vw;
     padding: 10px 0 10px 0;
     width: 60vw;
-    /*border-bottom: 10px solid gray;*/
 }
 .currentTeam {
     width: 100%;
@@ -741,13 +641,10 @@ article h3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 10px 20px 20px 100px;
     width: 70vw;
-    /*height: 25vh;*/
     vertical-align: top;
     align-content: center;
     justify-content: center;
     gap:3.5vw;
-    /*margin-top: 1.5vw;*/
-    /*margin-bottom: 4vw;*/
 }
 div.formerPost .title2 {
     vertical-align: top;
@@ -817,7 +714,6 @@ div.formerPost .title2 {
     align-content: center;
     justify-content: center;
     gap: 5vw;
-    /*margin-top: 1.5vw;*/
     margin-bottom: 4vw;
 }
 .studentName {
@@ -832,12 +728,10 @@ div.formerPost .title2 {
 #news {
     display: block;
     position: relative;
-    /*height: 100%;*/
     background-color: white;
     grid-column-start: 1;
     margin: -107px 0 0;
     padding: 112px 0 0;
-    /*padding-top: 5vw;*/
     z-index: 2;
 }
 #news h1 {
@@ -870,7 +764,6 @@ div.formerPost .title2 {
 #alumni h2 {
     text-align: center;
     width: 100%;
-    /*margin: 3vw 0 3vw 0;*/
 }
 .headingPost {
     display: inline-flex;
@@ -881,7 +774,6 @@ div.formerPost .title2 {
     gap: 2vw;
     margin: 0 5vw 0 5vw;
     padding: 0 0 30px;
-    /* height: 6vw; */
     border: none;
     align-items: center;
 }
@@ -909,10 +801,8 @@ div.formerPost .title2 {
     align-items: center;
 }
 .collapseButton:hover {
-    /*margin-bottom: 10px;*/
     box-shadow: 0 3px 10px -8px black;
     outline: 2px solid gray;
-    /*transition: 0.3s ease;*/
 }
 .expand_button {
     position: absolute;
@@ -932,7 +822,6 @@ i {
 }
 .collapseBody {
     display: flex;
-    /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -980,12 +869,6 @@ i {
     font-size: 0.95vw;
     height: auto;
 }
-/*.accordian2 {
-    display: inline-flex;
-    flex-direction: column;
-    width: 60vw;
-    margin: 0 5vw 0 5vw;
-}*/
 .collapseButton2 {
     cursor: pointer;
     display: inline-flex;
@@ -1001,7 +884,6 @@ i {
 .collapseButton2:hover {
     box-shadow: 0 3px 10px -8px black;
     outline: 2px solid gray;
-    /*transition: 0.3s ease;*/
 }
 .collapseButton2 h2 {
     font-size: 1.9vw;
