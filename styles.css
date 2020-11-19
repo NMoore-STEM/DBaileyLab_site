@@ -1949,7 +1949,7 @@ article {
     margin: auto;
     justify-items: center;
     text-align: center;
-    width: 92vw;
+    width: 88.3vw;
     outline: 2px solid darkgray;
     outline-offset: -2px;
     padding: 4vw 0 4vw;
@@ -1974,7 +1974,7 @@ person .smallPic {
     line-height: 1.8;
 }
 .listColumn1, .listColumn2, .listColumn3 {
-    width: 92vw;
+    width: 88.3vw;
 }
 /*==========================================================*/
 /*-----------------PARTNERS - MOBILE------------------------*/
