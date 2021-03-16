@@ -2604,4 +2604,7 @@ address {
     display: flex;
     flex-direction: column;
 }
+.test {
+    display: none;
+}
 }
