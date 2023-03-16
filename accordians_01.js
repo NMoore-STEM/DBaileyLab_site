@@ -1,18 +1,21 @@
+$(document).ready(function() {
 //top three list items from #news section (cloned)//
-$(function() {
-    var cloneFunction = $("#topNews").clone();
-    $("#topNewsClone").html(cloneFunction);
-  });
+    $(function() {
+        var cloneFunction = $("#topNews").clone();
+        $("#topNewsClone").html(cloneFunction);
+    });
   
 //accordian behavior//
 $(document).ready(function () {
     $('.collapseBody').hide();
-    $('.collapseButton').click(function () {
+    // $('.collapseButton').click(function () {
+    $('.collapseButton').on('click', function () {
         $('rect.vert').toggle();
         $('.collapseBody').slideToggle("slow");
     }),
     $('.collapseBody2').hide();
-    $('.collapseButton2').click(function() {
+    // $('.collapseButton2').click(function() {
+    $('.collapseButton2').on('click', function() {
         $('rect.vert2').toggle();
         $('.collapseBody2').slideToggle("fast");
     });
@@ -20,7 +23,8 @@ $(document).ready(function () {
 
 //To Top button on full publication list page//
 $(document).ready(function(){
-    $(document).scroll(function(){
+    // $(document).scroll(function(){
+    $(document).on('scroll', function(){
         if ($(document).scrollTop() > 450) {
             $('#buttonToTop').addClass('reveal');
         } else {
@@ -29,7 +33,7 @@ $(document).ready(function(){
     });
 
     //Click event to scroll to top
-    $('#buttonToTop').click(function(){
+    $('#buttonToTop').on('click', function(){
         $('html, body').animate({scrollTop : 0},250);
         return false;
     });
@@ -41,6 +45,7 @@ function applyBeforeunload() {
     $(window).on('beforeunload', function() {
       $('body').hide();
       $(window).scrollTop(0);
+      console.log('applyBeforeunload ran')
     });
   }
   applyBeforeunload();
@@ -85,3 +90,4 @@ $(document).ready(function(){
         $('#mobileMenu').removeClass('menuButtonOpen');
     })
 });
+})
