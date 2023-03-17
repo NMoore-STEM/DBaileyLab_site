@@ -975,7 +975,7 @@ i {
     margin:0;
 }
 #footer h3, #footer h4, #footer a {
-    color: whitesmoke !important;
+    color: whitesmoke;
     font-family: 'Roboto', sans-serif;
 }
 .footerHeadings {
@@ -1029,13 +1029,13 @@ i {
 #footer a:hover {
     text-decoration: 2px solid darkgray;
 }
-.footerIndent {
+/* .footerIndent {
     display: inline-block;
     width: 100%;
     padding-top: 3px !important;
     padding-left: 2vw !important;
     margin-bottom: 1.5vw !important;
-}
+} */
 #footerContent .footerIndent:first-of-type {
     grid-column-start: 1;
 }
@@ -1079,6 +1079,7 @@ i {
 }
 #right a {
     display: inline-flex;
+    position: relative;
     width: 100%;
     padding: 5px 0;
 }
@@ -1090,14 +1091,20 @@ i {
     border-bottom: 2px solid silver;
     opacity: 0;
     transition: all 0.3s ease;
+    /* fix */
+    height: 70%;
+}
+#right a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px gray;
+    transition: all 200ms ease;
 }
 #right a:hover::before {
     content: "";
-    width: 16vw;
-    height: 20px;
     border-bottom: 2px solid silver;
     opacity: 1;
     transition: all 0.4s ease;
+    width: 100%;
 }
 .copyright {
     display: block;
@@ -1204,16 +1211,21 @@ i {
     padding-left: 20px;
 }
 .yearHeading {
-    writing-mode: sideways-lr;
+    /* Ideally use "writing-mode: sideways-lr;" but doesnt work in chromium */
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 0;
+    margin: 0;
+    top: 20px;
     font-family: 'Exo', sans-serif;
     font-size: 30px;
-    line-height: 1.45;
+    line-height: 1.40;
     width: min-content;
     display: block;
     position: relative;
-    margin-right: -6px;
+    /* margin-right: -6px; */
     text-align: right;
-    padding-top: 2vw;
+    /* padding-top: 2vw; */
 }
 .yearGroup {
     background-color: lightgray;
