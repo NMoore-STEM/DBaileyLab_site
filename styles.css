@@ -1914,11 +1914,12 @@ article {
 }
 .collapseButton, .collapseButton2 {
     display: flex;
-    width: 88.3vw;
     height: 80px;
     background-color: silver;
     border: none;
     padding: 0 15px 0 0;
+    width: 100%;
+    padding-inline: 0;
 }
 .collapseButton h2, .collapseButton2 h2 {
     background-color: transparent;
@@ -1933,6 +1934,7 @@ article {
     display: inline-block;
     position: relative;
     margin: auto 0;
+    padding-right: 15px;
     width: 35px;
     right: 0;
 }
