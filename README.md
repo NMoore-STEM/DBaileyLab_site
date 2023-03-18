@@ -14,4 +14,4 @@ I anticipate future projects will have smoother version control documentation as
 I have extensive experience in version control systems as I often authored Standard Operating Procedures for ISO accredited labs during my career in that field.
 Because of this, I understand the importance of utilizing such systems, especially for complex operations.
 
-Through the course of developing this website, I have learned many many things. The most notable were how to manipulate HTML pseudo-elements, use script to monitor the position of the document in relation to the window
+Through the course of developing this website, I have learned many many things. The most notable were how to manipulate HTML pseudo-elements, use script to monitor the position of the document in relation to the window, and how to identify and resolve cross-browser CSS compatibility issues.
