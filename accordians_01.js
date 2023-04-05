@@ -1,10 +1,8 @@
 // Bailey Lab Website Script
 $(document).ready(function() {
 //top three list items from #news section (cloned)//
-    $(function() {
-        var cloneFunction = $("#topNews").clone();
-        $("#topNewsClone").html(cloneFunction);
-    });
+    var cloneFunction = $('#topNews').clone();
+    $('#topNewsClone').html(cloneFunction);
 //accordian behavior//
     $(function () {
         $('.collapseBody').hide();
