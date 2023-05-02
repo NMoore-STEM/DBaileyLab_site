@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- DEV NOTES -->
-<!-- this website was built with: HTML5,CSS3,JQUERY + MIGRATE,
-    KRAKEN.IO=>img compression,VSCODE=>editor -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,7 +9,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <!-- Remove below preload if page loading speed is slowed too much (lighthouse) -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&Darker+Grotesque&family=Exo:wght@700&family=Exo+2&display=swap" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&Darker+Grotesque&family=Exo:wght@700&family=Exo+2&display=swap" rel="stylesheet" crossorigin="">
     <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.ico">
@@ -173,56 +169,51 @@
                         <polygon points="25,14 35,31 14,31"></polygon>
                     </svg>
                 </a>
-
-                <footer id=footer>
-                    <div class=copyright>COPYRIGHT &#169 2023 ASC,LLC.</div>
-                    <div class=footerHeadings>
-                        <h4>Contact Information</h4>
-                        <h4 class=additionalFull>Additional Resources</h4>
-                    </div>
-                    <div id=footerContent>
-                        <h3>Foster Hall</h3>
-                        <div class=footerIndent>
-                            <a href="mailto:biomail@.nmsu.edu">
-                                <img src="images/email_svg_icon.svg">
-                                <ul href="mailto:biomail@.nmsu.edu">biomail@.nmsu.edu</ul>
-                            </a>
-                            <div class=number>
-                                <img src="images\phone_white_outl_icon.svg">
-                                <phone>575-6**-****</phone>
-                            </div>
-                            <address>Dept of Biology</address>
-                            <address>New Mexico State University</address>
-                            <address>Las Cruces, NM 88003-8001</address>
-                        </div>
-                        <h3 class=baileyFooter>Dr. Donovan Bailey</h3>
-                        <div class=footerIndent id=baileyIndent>
-                            <a href="mailto:dbailey@nmsu.edu">
-                                <img src="images/email_svg_icon.svg">
-                                <ul href="mailto:dbailey@nmsu.edu">dbailey@nmsu.edu</ul>
-                            </a>
-                            <div class=number>
-                                <img src="images\phone_white_outl_icon.svg">
-                                <phone>575-6**-****</phone>
-                            </div>
-                            <address>Room #237, Foster Hall</address>
-                        </div>
-                        <div id=right>
-                            <div class=footerIndent>
-                                <a href="http://www.msb.unm.edu/divisions/herbarium/index.html">
-                                    UNM Herbarium</a>
-                                <a href="https://www.sanjuancollege.edu/science-math-and-engineering/herbarium/">
-                                    San Juan College Herbarium</a>
-                                <a href="http://swbiodiversity.org/seinet/index.php">
-                                    SEINet - SW US Botanical Database</a>
-                                <a href="https://www.ipni.org/">International Plant Names Index</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
             </main>
         </div>
     </div>
+
+    <!-- New footer HTML (and CSS) 20230430 -->
+    <footer id=footer>
+        <h4>Contact Information</h4>
+        <div class=address_container>
+            <address>
+                <h3>Foster Hall</h3>
+                <div class=footerIndent>
+                    <a class=email href="mailto:biomail@.nmsu.edu">biomail@.nmsu.edu</a>
+                    <div class=number>575-6**-****</div>
+                    Dept of Biology<br />
+                    New Mexico State University<br />
+                    Las Cruces, NM 88003-8001<br />
+                </div>
+            </address>
+            <address>
+                <h3 class=baileyFooter>Dr. Donovan Bailey</h3>
+                <div class=footerIndent id=baileyIndent>
+                    <a class=email href="mailto:dbailey@nmsu.edu">dbailey@nmsu.edu</a>
+                    <div class=number>575-6**-****</div>
+                    Room #237, Foster Hall<br />
+                    New Mexico State University<br />
+                    Las Cruces, NM 88003-8001<br />
+                </div>
+            </address>
+        </div>
+        <div class=resource_links>
+            <h4>Additional Resources</h4>
+            <div id=right>
+                <div class=footerIndent>
+                    <a href="http://www.msb.unm.edu/divisions/herbarium/index.html">
+                        UNM Herbarium</a>
+                    <a href="https://www.sanjuancollege.edu/science-math-and-engineering/herbarium/">
+                        San Juan College Herbarium</a>
+                    <a href="http://swbiodiversity.org/seinet/index.php">
+                        SEINet - SW US Botanical Database</a>
+                    <a href="https://www.ipni.org/">International Plant Names Index</a>
+                </div>
+            </div>
+        </div>
+        <div class=copyright>COPYRIGHT &#169 2023 ASC,LLC.</div>
+    </footer>
+
 </body>
 </html>
