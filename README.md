@@ -1,5 +1,8 @@
-# Dr Bailey Lab Website
+# Lab Website
+### This is one my earliest web dev projects.  
+### It is included in my portfolio to show how my coding has improved over time.
 
+<br/>
 I chose this website for a project as I had prior working relationships with the people at the lab when I obtained my degree at NMSU. 
 I worked under Dr. Bailey as a teaching assistant and as a herbarium curator during my undergrad.
 
