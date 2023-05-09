@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NMSU Bailey Lab</title>
     <meta name="description" content="Doctor Donovan Bailey's NMSU lab webpage" />
     <meta name="robots" content="noindex,nofollow,nosnippet,noarchive,noodp,noydir"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&Darker+Grotesque&family=Exo:wght@700&family=Exo+2&family=Biryani&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.ico">
-    <!-- <script src="jquery-3.5.1.js"></script> -->
-    <!--<script src="practice_01.js"></script>-->
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../ASC-LLC-Redesign/jquery3.6.4.min.js"></script>
-    <script src="accordians_01.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
-
 <body>
-
     <div class=container>
-
         <header id=header>
-
             <a href="https://www.nmsu.edu/" id=nmsu>
                 <img src="images/red_logo.gif"></img>
             </a>
-
             <div id=top>
             <h1><a href="#welcome">Bailey Lab</a></h1>
             </div>
@@ -51,11 +45,9 @@
                     <a href="https://aces.nmsu.edu/herbarium/index.html">NMC Herbarium</a>
                 </nav>
             </menu>
-
             <a class="nmsuBIO" href="https://bio.nmsu.edu/">
-                <img src="images\bioDept.svg"></img>
+                <img src="images/bioDept.svg"></img>
             </a>
-
             <a id=mobileMenu>
                 <svg width=50px height=50px>
                     <rect height="5" width="25" y="13" x="12.5"/>
@@ -63,26 +55,18 @@
                     <rect height="5" width="25" y="33" x="12.5"/>
                 </svg>
             </a>
-
         </header>
-
         <div class=wrapper>
             <main class=scroll_area>
-
                 <section id=welcome>
-
-                    <img id=foster src="images/NMSU_Foster_Hall_cropped2.jpg" 
+                    <img id=foster src="images/foster-crop.jpg" 
                     alt="NMSU Foster Hall"></img>
-
                     <div class=welcomeSub>
-
                         <h2>welcome</h2>
-
                         <figure class=intro id=introPic>
-                            <img src="images/Donovan2.JPG" alt="Dr Donovan Bailey">
+                            <img src="images/Donovan2.jpg" alt="Dr Donovan Bailey">
                             <figcaption>Dr. Donovan Bailey</figcaption>
                         </figure>
-
                         <p class=welcomeText>The variety of topics researched in my lab are selected 
                             to engage graduate and undergraduate students in aspects 
                             of molecular biology, integrative evolutionary biology, 
@@ -93,18 +77,15 @@
                             and endangered species that provide well-rounded projects 
                             involving studies derived from fieldwork, molecular biology, 
                             and morphology.</p>
-
                         <article>
                             <h3>NEWS & UPDATES</h3>
                             <div id=topNewsClone></div>
                             <a class=newsLink href=#news>All news and updates...</a>
                         </article>
                     </div>
-
                 </section>
-
                 <section id=research name="research interests">
-                    <img id=leuc01 src="images/L thichandra.jpg">
+                    <img id=leuc01 src="images/thich.jpg">
                     <div id=researchText>
                         <h2>research interests</h2>
                         <br>
@@ -121,7 +102,6 @@
                             Please see our developing page on the <a href="http://biology-web.nmsu.edu/~bailey/Leucaena/">project</a> for further details.</p>
                     </div>
                 </section>
-
                 <section id=publications>
                     <button id=carousel_NavLeft>
                         <svg id=inlineSVG_1 viewBox="0 0 100 100">
@@ -139,123 +119,122 @@
                         <div id=carouselReel>
                             <div class=research1>
                                 <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15732">
-                                    <img id=research2 src="images\2019_r1e1.jpg">
+                                    <img id=research2 src="images/2019-r1e1.jpg">
                                     <div class=overlayTitle>Nikolov LA, et al. (2019)<br>"Resolving the backbone of the Brassicaceae phylogeny..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://researchrepository.murdoch.edu.au/id/eprint/46478/1/leucaena.pdf">
-                                    <img id=research3 src="images\WApastorale1.jpg">
+                                    <img id=research3 src="images/WApastorale1.jpg">
                                     <div class=overlayTitle>Real D, et al. (2019)<br>"Strategies to breed sterile leucaena for Western Australia."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="http://www.tropicalgrasslands.info/index.php/tgft/article/view/527/298">
-                                    <img id=research4 src="images\L_trichandra_CEH1233_inflorescence2e1.jpg">
+                                    <img id=research4 src="images/trich2.jpg">
                                     <div class=overlayTitle>Abair A, et al. (2019)<br>"The evolutionary history of Leucaena: Recent research..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://peerj.com/articles/7649/">
-                                    <img id=research5 src="images\Asyriaca_infl_fig1e1.jpg">
+                                    <img id=research5 src="images/asyriaca1.jpg">
                                     <div class=overlayTitle>Weitemier K, et al. (2019)<br>"A draft genome and transcriptome of common milkweed..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://academic.oup.com/gbe/article/10/9/2501/5076815">
-                                    <img id=research6 src="images\Bailey_Rao_2018m_evy179f2e1.png">
+                                    <img id=research6 src="images/bailey-rao-18.png">
                                     <div class=overlayTitle>Kovar L, M Nageswara-Rao, et al. (2018)<br>"PacBio-based mitochondrial genome of Leucaena trichandra..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5943444/pdf/phytokeys-98-015.pdf">
-                                    <img id=research7 src="images\Boechera1e1.JPG">
+                                    <img id=research7 src="images/Boechera1e1.jpg">
                                     <div class=overlayTitle>Morin, PJ Alexander, et al. (2018)<br>"Deciphering the sexual diploid members of the Boechera..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="http://www.phytoneuron.net/2017Phytoneuron/45PhytoN-Sphaerocardamum.pdf">
-                                    <img id=research8 src="images\Sphaerocardamume1.jpg">
+                                    <img id=research8 src="images/Sphaerocardamume1.jpg">
                                     <div class=overlayTitle>Bailey CD (2017)<br>"A monographic revision of Sphaerocardamum (Brassicaceae)"</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://onlinelibrary.wiley.com/doi/epdf/10.12705/661.3">
-                                    <img id=research9 src="images\Caesale1.jpg">
+                                    <img id=research9 src="images/Caesale1.jpg">
                                     <div class=overlayTitle>The Legume Phylogeny Working Group (2017)<br>"A new subfamily classification of the Leguminosae..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="http://genesdev.cshlp.org/content/30/21/2370.full.pdf">
-                                    <img id=research10 src="images\Genes Deve1.bmp">
+                                    <img id=research10 src="images/genes-deve1.bmp">
                                     <div class=overlayTitle>Vuolo F, et al. (2016)<br>"Coupled enhancer and coding sequence evolution of a homeobox..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://static1.squarespace.com/static/55f0641de4b0ee42a61f5192/t/5734973b45bf21dc5c4d457b/1463064381570/Windham_etal_2015.pdf">
-                                    <img id=research11 src="images\Windham_etal_2015e1.bmp">
+                                    <img id=research11 src="images/windham-2015.bmp">
                                     <div class=overlayTitle>Windham MD, et al. (2015)<br>"Searching for Diamonds in the Apomictic Rough..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/jse.12179">
-                                    <img id=research12 src="images\jsee1.bmp">
+                                    <img id=research12 src="images/jsee1.bmp">
                                     <div class=overlayTitle>Schwarz EN, et al. (2015)<br>"Plastid genome sequences of legumes reveal parallel inversions..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://www.researchgate.net/publication/281307774_Weaving_a_Tangled_Web_Divergent_and_Reticulate_Speciation_in_Boechera_fendleri_Sensu_Lato_Brassicaceae_Boechereae">
-                                    <img id=research13 src="images\Boechera_fend_3May10_8889e1.jpg">
+                                    <img id=research13 src="images/b-fend-2010.jpg">
                                     <div class=overlayTitle>Alexander PJ, et al. (2015)<br>"Weaving a Tangled Web: Divergent and Reticulate Speciation..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://www.nature.com/articles/srep16958.pdf">
-                                    <img id=research14 src="images\srepe1.png">
+                                    <img id=research14 src="images/srepe1.png">
                                     <div class=overlayTitle>Dugas DV, Hernandez D, et al. (2015)<br>"Mimosoid legume plastome evolution: IR expansion, tandem repeat expansions..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://bsapubs.onlinelibrary.wiley.com/doi/epdf/10.3732/apps.1400064">
-                                    <img id=research15 src="images\1-s2.0-S0167488908002644-gr1e1.jpg">
+                                    <img id=research15 src="images/helix-2644.jpg">
                                     <div class=overlayTitle>Yigit E, Hernandez D, et al. (2014)<br>"Genome and Metagenome Sequencing: Using the Human Methyl-Binding Domain..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://pubmed.ncbi.nlm.nih.gov/24531971/">
-                                    <img id=research16 src="images\cardamine_hirsuta_hairy_bittercress_wholee1.jpg">
+                                    <img id=research16 src="images/bittercress1.jpg">
                                     <div class=overlayTitle>Vlad D, et al. (2014)<br>"Leaf shape evolution through duplication, regulatory diversification..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://bioone.org/journals/Systematic-Botany/volume-38/issue-3/036364413X670322/Phylogeny-of-Leavenworthia-and-Selenia-Brassicaceae/10.1600/036364413X670322.short">
-                                    <img id=research17 src="images\Selenia_aur_26Mar08_1385e1.jpg">
+                                    <img id=research17 src="images/s-aur-2008.jpg">
                                     <div class=overlayTitle>Urban L, Bailey CD (2013)<br>"Phylogeny of Leavenworthia and Selenia (Brassicaceae)"</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://www.researchgate.net/profile/Patrick_Alexander/publication/259076712_Molecular_Phylogenetics_and_Taxonomy_of_the_Genus_Boechera_and_Related_Genera_Brassicaceae_Boechereae/links/0c960529e143a6ddd4000000/Molecular-Phylogenetics-and-Taxonomy-of-the-Genus-Boechera-and-Related-Genera-Brassicaceae-Boechereae.pdf">
-                                    <img id=research18 src="images\Boechera_phylogenye1.png">
+                                    <img id=research18 src="images/boechera-phylogeny.png">
                                     <div class=overlayTitle>Alexander PJ, et al. (2013)<br>"Molecular phylogenetics and taxonomy of the genus Boechera and related genera..."</div>
                                 </a>
                             </div>
                             <div class=research1>
                                 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4439519/pdf/bts524.pdf">
-                                    <img id=research19 src="images\highSSRe1.png">
+                                    <img id=research19 src="images/highSSRe1.png">
                                     <div class=overlayTitle>Churbanov A, et al. (2012)<br>"HighSSR software: High throughput SSR characterization and locus..."</div>
                                 </a>
                             </div>
                         </div>
                     </scroll>
                 </section>
-
                 <section id=ourTeam>
                     <div class=teamTop>
-                        <img src="images\bailey_lab2019.jpg">
+                        <img src="images/lab2019.jpg">
                         <h2 class=team>Meet Our Team</h2>
                     </div>
                     <div id=bailey>
-                        <img class=smallPic3 src="images\bailey_donovan_02_021413.jpg">
+                        <img class=smallPic3 src="images/d-bailey-021413.jpg">
                         <div>    
                             <h4>dr. donovan bailey</h4>
                             <ul class=title>New Mexico State University - 
@@ -268,14 +247,6 @@
                     </div>
                     <h4 class=currentTeam>current associates</h4>
                     <section class=currentStudents>
-                        <!--<person>
-                                <h4>Post-Docs</h4>
-                                <img class=smallPic src="">
-                                <h6>name here</h6>
-                                <ul class=title2>enter title here</ul>
-                                <ul class=specialty2><strong>Specialty:</strong>enter specialty
-                                info here</ul>
-                        </person>-->
                         <div class=studentList>
                             <h4 id=current>Graduates</h4>
                             <ul class=studentName>Rubin Tamrakar</ul>
@@ -292,7 +263,6 @@
                         </div>
                     </section>
                 </section>
-
                 <section id=news>
                     <h2>news & updates</h2>
                     <div id=newsContainer>
@@ -330,13 +300,12 @@
                             grama.</li>
                     </div>
                 </section>
-
                 <section id="alumni">
                     <h2 style="background-color:transparent;">alumni</h2>
                     <div class=headingPost>
                         <h2>Former Post-Docs</h2>
                         <div class=studentList>
-                            <img class=smallPic2 src="images\Rao1.jpg">
+                            <img class=smallPic2 src="images/Rao1.jpg">
                             <div class=picText>
                                 <h6>M. Nageswara-Rao<br>(Rao for short)</h6>
                                 <ul class=title2><!--dates?--><i>Leucaena</i> transcriptome project.</ul>
@@ -346,7 +315,7 @@
                                 resistance and related topics.</ul>
                         </div>
                         <div class=studentList>
-                            <img class=smallPic2 src="images\Dianaphoto1.JPG">
+                            <img class=smallPic2 src="images/Dianaphoto1.JPG">
                             <div class=picText>
                                 <h6>Diana Toups Dugas</h6>
                                 <ul class=title2><!--dates?--><i>Leucaena</i> transcriptome project.</ul>
@@ -374,7 +343,7 @@
                                         Currently a Ph.D. student with U. of Georgia.</ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\allif1.jpg">
+                                    <img class=smallPic src="images/allif1.jpg">
                                     <h3>allison heneghan</h3>
                                     <ul class=title2>MS Student 2013</ul>
                                     <ul class=specialty2><strong>Speciality:</strong> <i>Bouteloua eriopoda</i> 
@@ -392,20 +361,20 @@
                                         with the University of Florida.</ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\Da_hern.jpg">
+                                    <img class=smallPic src="images/hernandez.jpg">
                                     <h3>david hernandez</h3>
                                     <ul class=title2>MS Student 2012</ul>
                                     <ul class=specialty2>Speciality: Bacterial endophytes in 
                                         Leucaena.</ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\D_morin.jpg">
+                                    <img class=smallPic src="images/morin.jpg">
                                     <h3>david moran</h3>
                                     <ul class=title2>MS Student 2012</ul>
                                     <ul class=specialty2>Speciality: Boechera suffrutescens complex.</ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\nabeeh1.jpg">
+                                    <img class=smallPic src="images/nabeeh1.jpg">
                                     <h3>nabeeh hasan</h3>
                                     <ul class=title2>Ph.D Student 2012</ul>
                                     <ul class=specialty2>Speciality: Population genetics in 
@@ -415,7 +384,7 @@
                                         Denver.</ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\lillis1.jpg">
+                                    <img class=smallPic src="images/lillis1.jpg">
                                     <h3>lillis urban</h3>
                                     <ul class=title2>Ph.D Student 2011</ul>
                                     <ul class=specialty2>Speciality: <i>Selenia</i> and <i>Leavenworthia</i> 
@@ -426,7 +395,7 @@
                                     <ul></ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\patrick2.jpg">
+                                    <img class=smallPic src="images/patrick2.jpg">
                                     <h3>patrick alexander</h3>
                                     <ul class=title2>Ph.D 2011</ul>
                                     <ul class=specialty2>Speciality: <i>Boechera</i> systematics and 
@@ -438,7 +407,7 @@
                                     <ul></ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\Raj1.jpg">
+                                    <img class=smallPic src="images/Raj1.jpg">
                                     <h3>rajanikanth govindarajulu</h3>
                                     <ul class=title2>Ph.D 2010</ul>
                                     <ul class=specialty2>Speciality: <i>Leucaena</i> phylogenetics 
@@ -447,7 +416,7 @@
                                     <ul></ul>
                                 </person>
                                 <person>
-                                    <img class=smallPic src="images\christine1.jpg">
+                                    <img class=smallPic src="images/christine1.jpg">
                                     <h3>christine bacon</h3>
                                     <ul class=title2>MS 2006</ul>
                                     <ul class=specialty2>Speciality: Palm systematics. Christine 
@@ -495,59 +464,64 @@
                         </div>
                     </div>
                 </section>
-
                 <section id=fundingPartners>
                     <h4>Our Partners</h4>
-                    <img class=first src="images\NSF_Logo.svg">
+                    <img class=first src="images/nsf-logo.svg">
                     <img class=second src="images/oxweb-logo-rect.svg">
-                    <img class=third src="images/cornell_white_seal_simple.svg">
+                    <img class=third src="images/cornell-wh-simple.svg">
                 </section>
-
                 
             </main>
         </div>
     </div>
-
     <footer id=footer>
-        <h4>Contact Information</h4>
-        <div class=address_container>
-            <address>
-                <h3>Foster Hall</h3>
-                <div class=footerIndent>
-                    <a class=email href="mailto:biomail@.nmsu.edu">biomail@.nmsu.edu</a>
-                    <div class=number>575-6**-****</div>
-                    Dept of Biology<br />
-                    New Mexico State University<br />
-                    Las Cruces, NM 88003-8001<br />
-                </div>
-            </address>
-            <address>
-                <h3 class=baileyFooter>Dr. Donovan Bailey</h3>
-                <div class=footerIndent id=baileyIndent>
-                    <a class=email href="mailto:dbailey@nmsu.edu">dbailey@nmsu.edu</a>
-                    <div class=number>575-6**-****</div>
-                    Room #237, Foster Hall<br />
-                    New Mexico State University<br />
-                    Las Cruces, NM 88003-8001<br />
-                </div>
-            </address>
+        <div class=footerHeadings>
+            <h4>Contact Information</h4>
+            <h4 class=additionalFull>Additional Resources</h4>
         </div>
-        <div class=resource_links>
-            <h4>Additional Resources</h4>
-            <div id=right>
-                <div class=footerIndent>
-                    <a href="http://www.msb.unm.edu/divisions/herbarium/index.html">
-                        UNM Herbarium</a>
-                    <a href="https://www.sanjuancollege.edu/science-math-and-engineering/herbarium/">
-                        San Juan College Herbarium</a>
-                    <a href="http://swbiodiversity.org/seinet/index.php">
-                        SEINet - SW US Botanical Database</a>
-                    <a href="https://www.ipni.org/">International Plant Names Index</a>
+        <div id=footerContent>
+            <h3>Foster Hall</h3>
+            <div class=footerIndent>
+                <a href="mailto:biomail@.nmsu.edu">
+                    <img src="images/email-icon.svg">
+                    <ul href="mailto:biomail@.nmsu.edu">biomail@.nmsu.edu</ul>
+                </a>
+                <div class=number>
+                    <img src="images/phone-icon.svg">
+                    <phone>575-6**-****</phone>
+                </div>
+                <address>Dept of Biology</address>
+                <address>New Mexico State University</address>
+                <address>Las Cruces, NM 88003-8001</address>
+            </div>
+            <h3 class=baileyFooter>Dr. Donovan Bailey</h3>
+            <div class=footerIndent id=baileyIndent>
+                <a href="mailto:dbailey@nmsu.edu">
+                    <img src="images/email-icon.svg">
+                    <ul href="mailto:dbailey@nmsu.edu">dbailey@nmsu.edu</ul>
+                </a>
+                <div class=number>
+                    <img src="images/phone-icon.svg">
+                    <phone>575-6**-****</phone>
+                </div>
+                <address>Room #237, Foster Hall</address>
+            </div>
+            <div class=resource_links>
+                <h4>Additional Resources</h4>
+                <div id=right>
+                    <div class=footerIndent>
+                        <a href="http://www.msb.unm.edu/divisions/herbarium/index.html">
+                            UNM Herbarium</a>
+                        <a href="https://www.sanjuancollege.edu/science-math-and-engineering/herbarium/">
+                            San Juan College Herbarium</a>
+                        <a href="http://swbiodiversity.org/seinet/index.php">
+                            SEINet - SW US Botanical Database</a>
+                        <a href="https://www.ipni.org/">International Plant Names Index</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class=copyright>COPYRIGHT &#169 2023 ASC,LLC.</div>
+        <div class=copyright>COPYRIGHT &#169; 2023 ASC,LLC.</div>
     </footer>
-
 </body>
 </html>
