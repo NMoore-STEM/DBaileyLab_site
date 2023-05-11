@@ -1511,7 +1511,7 @@ svg {
     transform-origin: center;
     transition: all 0.2s ease;
 }
-#fundingPartners {
+#fundingPartners h4{
     font-size: 1.7em;
 }
 }
