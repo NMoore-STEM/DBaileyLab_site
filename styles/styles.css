@@ -1271,13 +1271,16 @@ ul {
     box-shadow: 1px 2px 8px black;
     display: block;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 8;
 }
 #header a {
     text-decoration: none;
     color: black;
+}
+.wrapper_pub {
+    margin-top: 80px;
 }
 #nmsu {
     display: inline-grid;
@@ -1381,15 +1384,15 @@ ul {
     padding: 0 4vw;
     width: auto;
 }
+.scroll_area_pub {
+    padding: 0;
+}
 /*==========================================================*/
 /*==========================================================*/
 /*-------------Full Publications - MOBILE & TABLET----------*/
 /*==========================================================*/
 /*==========================================================*/
 #publicationListTop {
-    position: relative;
-    top: 80px;
-    left: -4vw;
     width: 100vw;
     height: 80px;
     background-color: gray;
@@ -1414,12 +1417,7 @@ ul {
     right: 8vw;
 }
 .publicationContent {
-    position: relative;
-    width: 100vw;
-    top: 80px;
-    left: -4vw;
     background-color: darkgray;
-    margin-bottom: -250px;
 }
 .mostRecent {
     position: relative;
@@ -1624,8 +1622,6 @@ article {
 /*===================================================*/
 #publications {
     position: relative;
-    top: 50px;
-    margin-top: -80px;
     padding-top: 80px;
     height: 530px;
 }
@@ -1711,10 +1707,7 @@ article {
 /*---------------OUR TEAM - MOBILE---------------------*/
 /*=====================================================*/
 #ourTeam {
-    position: relative;
-    top: 140px;
-    margin-top: -80px;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .teamTop {
     height: 258px;
@@ -1810,9 +1803,6 @@ article {
 /*------------------NEWS - MOBILE--------------------*/
 /*===================================================*/
 #news {
-    position: relative;
-    top: 40vw;
-    margin-top: -80px;
     padding-top: 80px;
 }
 #news h2 {
@@ -1838,9 +1828,6 @@ article {
 /*--------------ALUMNI - MOBILE--------------------*/
 /*=================================================*/
 #alumni {
-    /* position: relative;
-    top: 55vw; */
-    margin-top: -80px;
     padding-top: 80px;
 }
 #alumni h2 {
@@ -1950,15 +1937,12 @@ person .smallPic {
 /*-----------------PARTNERS - MOBILE------------------------*/
 /*==========================================================*/
 #fundingPartners {
-    /* width: 100vw; */
     overflow: hidden;
-    /* position: relative;
-    top: 70vw; */
     background-color: gray;
-    /* left: -4vw; */
     justify-items: center;
     display: grid;
     padding: 0 0 10vw;
+    margin-top: 5vw;
 }
 .first {
     height: 175px;
@@ -1980,7 +1964,6 @@ footer {
     background-color: silver;
     grid-template-columns: 5vw 1fr 1fr 5vw;
     padding-top: 70px;
-    margin-top: 240px;
 }
 footer h4 {
     font-size: 1.7em;
@@ -2187,7 +2170,7 @@ h2 {
 #carouselWindow {
     padding: 160px 4vw 100px;
     background-color: darkgray;
-    width: 84vw;
+    width: 82vw;
 }
 #carouselReel {
     display: grid;
@@ -2324,6 +2307,7 @@ h2 {
 /*=======================================================*/
 #alumni {
     padding: 110px 0 0 0;
+    margin-bottom: 10vw;
 }
 #alumni h2 {
     text-align: center;
@@ -2460,6 +2444,9 @@ person h3 {
     margin: 0;
 }
 .collapseBody2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     outline: 2px solid darkgray;
     outline-offset: -2px;
     padding: 4vw 6vw 4vw;
@@ -2472,19 +2459,16 @@ person h3 {
 /*---------------PARTNERS - TABLET--------------------*/
 /*====================================================*/
 #fundingPartners {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    position: relative;
     background-color: gray;
-    left: -4vw;
     justify-items: center;
     display: grid;
     padding: 0 0 10vw;
     gap: 4vw;
-    margin-top: 260px;
 }
 #fundingPartners h4 {
-    font-size: 16pt;
+    font-size: 1.7em;
 }
 .first, .third {
     height: 150px;
